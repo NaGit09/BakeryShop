@@ -1,28 +1,29 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
+    width : 100%
 }
+
 .wrap {
-    width:100%; 
-        height:700px;
-        margin-top : 200px;
+    height: 700px;
+    margin-top: 200px;
 }
 /*header*/
 .header {
@@ -113,4 +114,271 @@ body {
 .col li {
     font-size: 20px;
     color: #ADB29E;
+}
+
+.absolute-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduce {
+    margin-top: 100px;
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    background: url("../img/bg.png") no-repeat center;
+}
+
+.title {
+    font-size: 100px;
+    width: 600px;
+}
+
+.desc {
+    width: 400px;
+}
+
+.button {
+    margin: 0 10px;
+    width: 164px;
+    height: 64px;
+}
+
+.book-btn {
+    background-color: #ad343e;
+    color: #fff;
+}
+
+.menu-btn {
+    background-color: transparent;
+}
+
+.menu {
+    height: 700px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.card {
+    width: 306px;
+    height: 375px;
+    padding: 20px 10px;
+}
+
+.card-header {
+    background-color: #4d592b3e;
+    width: 100px;
+    height: 100px;
+}
+
+.card-img-top {
+    height: 50px;
+    width: 40px;
+}
+
+.card-title {
+    font-size: 25px;
+}
+
+.card-text {
+    width: 238px;
+    font-size: 18px;
+}
+
+.menu-title {
+    font-size: 55px;
+}
+
+.Explore {
+    color: #ad343e;
+}
+
+.about {
+    max-width: 90%;
+    gap: 50px;
+    margin-bottom: 90px;
+}
+
+.about_img {
+    max-width: 600px;
+    max-height: 566px;
+}
+
+.about-title {
+    font-size: 60px;
+    width: 557px;
+    height: 121px;
+    line-height: 60px;
+}
+
+.about-right {
+    margin-left: 50px;
+    width: 557px;
+    height: 457px;
+}
+
+.about-desc {
+    margin: 20px 0;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.about-left {
+    position: relative;
+}
+
+.about-message {
+    position: absolute;
+    right: -40px;
+    bottom: -20px;
+    background-color: #474747;
+}
+
+    .about-message p {
+        font-size: 16px;
+        color: #fff;
+    }
+
+.about-card-title {
+    font-size: 24px;
+    color: #fff;
+}
+
+.type-title {
+    width: 675px;
+    height: 121px;
+    font-size: 55px;
+}
+
+.event-card {
+    width: 18rem;
+}
+
+.event-title {
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.event-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.grid-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 cột */
+    gap: 10px; /* Khoảng cách giữa các hình */
+    max-height: 700px; /* Chiều cao toàn màn hình */
+}
+
+.left-image {
+    grid-row: span 2; /* Hình bên trái chiếm 2 hàng */
+}
+
+.image {
+    object-fit: cover; /* Tự động chỉnh kích thước hình ảnh */
+    border-radius: 8px; /* Bo góc hình ảnh */
+}
+
+.delivery {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.grid-holder {
+    max-width: 745px;
+    max-height: 627px;
+}
+
+.delivery-title {
+    width: 461px;
+    height: 121px;
+    font-size: 55px;
+    line-height: 60px;
+}
+
+.delivery li {
+    margin: 40px;
+}
+
+    .delivery li i {
+        background-color: #ad343e;
+        color: #fff;
+    }
+
+.customer {
+    height: 700px;
+}
+
+
+.blog-title {
+    font-size: 50px;
+    height: 78px;
+}
+
+.blog-btn {
+    color: #fff;
+    background-color: #ad343e;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 800px;
+}
+
+.blog-left {
+    grid-row: span 2;
+    max-width: 636px;
+    height: 732px;
+}
+
+.blog-right-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia 2 cột */
+    grid-template-rows: 1fr 1fr; /* Chia 2 hàng */
+    gap: 30px; /* Khoảng cách giữa các hình nhỏ */
+}
+
+.blog-card {
+    width: 306px;
+    height: 340px;
+}
+
+.blog-img {
+    width: 306px;
+    height: 200px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+}
+
+.blog-card-title {
+    height: 70px;
+    width: 256px;
+    margin-left: 10px;
+}
+
+.blog-card-left {
+    flex-direction: column;
+}
+
+.blog-card-title-left {
+    max-width: 568px;
+    height: 52;
+    font-size: 25px;
+    margin-left: 40px;
+    line-height: 24px;
+}
+
+.blog-desc {
+    max-width: 554px;
+    height: 72px;
+    font-size: 20px;
+    margin: 20px;
+    line-height: 24px;
 }
