@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nhuta\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
+      "projectUniqueName": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
       "projectName": "BakeryShop",
-      "projectPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
-      "packagesPath": "C:\\Users\\nhuta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\obj\\",
+      "projectPath": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nhuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

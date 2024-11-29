@@ -1,5 +1,8 @@
 html {
-    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
