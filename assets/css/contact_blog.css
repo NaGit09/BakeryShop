@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --main-bg-color: #f9f9f7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  vertical-align: baseline;
+}
+ul {
+  padding: 0;
+}
+main {
+  padding-top: 130px;
+}
+.main-detail,
+.main-content {
+  background-color: var(--main-bg-color);
+}
+.constance-text {
+  height: 50px;
+}
+.constance-text-detail {
+  height: 15px;
+}
+/* blog */
+.main-content-detail-blog-bottom-inner,
+.main-content-detail-blog,
+.main-content-top-blog {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.main-content-detail-blog-bottom-inner .main-title-blog,
+.main-content-top-blog h1 {
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+  font-size: 60px;
+}
+.sub-title-blog {
+  width: 40%;
+  display: inline-block;
+  font-size: 18px;
+}
+.list-foods-blog {
+  padding-top: 50px;
+}
+.list-foods-blog a {
+  text-decoration: none;
+  color: black;
+}
+.blog-tag {
+  width: 263px;
+  margin: 20px;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px -16px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 50px -16px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 50px -16px rgba(0,0,0,0.75);
+}
+
+.food-img-blog img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.in-content-bottom {
+  padding: 10px;
+}
+.bottom-content span {
+  display: block;
+  text-align: left;
+  font-weight: 700;
+}
+.bottom-content span:first-child {
+  color: #737865;
+  font-size: 14px;
+}
+/* blog-detail */
+
+.main-content-detail-blog {
+  padding: 0 50px;
+}
+.main-content-detail-blog .main-content-title-detail-blog {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.main-content-detail-blog .main-content-title-detail-blog h1 {
+  font-family: "Libre Baskerville", serif;
+}
+
+.main-content-main-detail-blog img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.main-content-main-detail-blog .content-detail {
+  text-align: left;
+}
+.main-content-main-detail-blog .content-detail ul {
+  padding-left: 32px;
+}
+.main-content-main-detail-blog .content-detail ul li {
+  list-style: decimal;
+  padding: 10px 0;
+  line-height: 30px;
+}
+.main-content-detail-blog-bottom {
+  background-color: white;
+}
+/* contact */
+.container.contact-blog,
+.main-content-contact{
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+.main-content-contact .title-contact{
+  text-align: center;
+}
+.main-content-contact .title-contact h1{
+  font-family: "Libre Baskerville", serif;
+  font-size: 70px;
+}
+.main-content-contact .title-contact .sub-title{
+  width: 60%;
+  margin: 0 auto;
+}
+.main-contact-input{
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 50px -16px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 50px -16px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 50px -16px rgba(0,0,0,0.75);
+  border-radius: 15px;
+}
+.main-contact-input label{
+  display: block;
+  margin-left: 5px;
+  font-weight: 700;
+}
+.main-contact-input input{
+  padding: 10px 15px;
+  margin: 5px 0 15px 0;
+  border-radius: 30px;
+  border: 1px solid #ece5e5;
+  outline: none;
+}
+
+.main-contact-name-email{
+  display: flex;
+
+}
+.main-contact-name{
+  margin-right: 160px;
+}
+.main-contact-name-email input{
+  width: 163%;
+}
+.main-contact-submit-btn,.main-contact-submit-btn button,
+.main-contact-max-width input{
+  width: 100%;
+}
+.main-contact-subject textarea{
+  height: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 6px;
+  border: 1px solid #ece5e5;
+  resize: none;
+  border-radius: 15px;
+}
+.main-contact-submit-btn button{
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: #AD343E;
+  color: white;
+  border-radius: 30px;
+}
+.container.contact-blog span{
+  display: block;
+}
+.container.contact-blog span:first-child{
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.container.contact-blog span:last-child{
+  font-size: 15px;
+}
