@@ -1,0 +1,40 @@
+﻿@section CSS {
+    <link rel="stylesheet" href="~/css/Track.css" />
+}
+@section Header {
+    <partial name="header2" />
+}
+<main class="absolute-center flex-column" style="margin-top: 100px">
+    <div class="d-flex align-items-start flex-column" style="width: 100%">
+        <div class="d-flex align-items-center justify-content-between mb-5"
+             style="width: 100%">
+            <a asp-controller="BakeryShop" asp-action="Index">
+                <i class="bi bi-arrow-left"></i>
+                <span class="fs-5">Quay lại</span>
+            </a>
+            <div><h2 class="login-title">Theo dõi đơn hàng</h2></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="search">
+        <div class="card text-center mb-3 p-2">
+            <div class="card-body">
+                <h5 class="card-title mt-3 mb-4">
+                    Chỉ áp dụng cho đơn hàng giao hàng
+                </h5>
+                <div class="input-group m-2">
+                    <input type="search"
+                           class="input p-2-hover form-control rounded"
+                           placeholder="Nhập vào số điện thoại hoặc mã đơn hàng"
+                           aria-label="Search"
+                           aria-describedby="search-addon" />
+                    <button type="button"
+                            class="ms-3 p-2 rounded btn search-btn"
+                            data-mdb-ripple-init>
+                        Tìm kiếm
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

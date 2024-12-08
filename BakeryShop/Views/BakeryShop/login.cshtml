@@ -1,0 +1,54 @@
+﻿@section CSS {
+    <link rel="stylesheet" href="~/css/login.css" />
+}
+@section Header {
+    <partial name="header2"/>
+}
+<main>
+    <div class="d-flex align-items-start flex-column">
+        <div class="d-flex align-items-center justify-content-between w100">
+            <a asp-controller="BakeryShop" asp-action="Index">
+                <i class="bi bi-arrow-left"></i>
+                <span class="fs-5">Quay lại</span>
+                </a>
+            <div><h2 class="login-title">Đăng nhập</h2></div>
+            <div></div>
+        </div>
+        <div class="form d-flex align-items-center justify-content-center w100 mb-5">
+            <form class="login-form rounded shadow">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input autocomplete="on"
+                           autofocus
+                           required
+                           placeholder="Vui lòng nhập email của bạn"
+                           type="email"
+                           class="form-control input-hover"
+                           id="exampleInputEmail1"
+                           aria-describedby="emailHelp" />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input required
+                           placeholder="Vui lòng nhập mật khẩu của bạn"
+                           type="password"
+                           class="form-control input-hover"
+                           id="exampleInputPassword1" />
+                </div>
+                <div class="mb-3 form-check d-flex align-items-center justify-content-start">
+                    <input type="checkbox" />
+                    <label class="ms-2 form-check-label" for="exampleCheck1">Lưu mật khẩu</label>
+                </div>
+                <div class="mb-3 float-end">
+                    <a href="" class="form-link">Forgot password</a>
+                </div>
+                <button type="submit" class="btn btn-primary w100 mb-3">
+                    Submit
+                </button>
+                <div class="mb-3 text-center">
+                    <p>Bạn chưa có tài khoản <a href="" class="form-link">Tạo tài khoản </a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

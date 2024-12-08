@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\BakeryShop.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\Basket.css",
+      "PackagePath": "staticwebassets\\css\\Basket.css"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\Nabar&Footer.css",
+      "PackagePath": "staticwebassets\\css\\Nabar&Footer.css"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\Track.css",
+      "PackagePath": "staticwebassets\\css\\Track.css"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\reset.css",
       "PackagePath": "staticwebassets\\css\\reset.css"
     },
@@ -17,100 +41,64 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\B1G3_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\B1G3_Gray.webp"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\BOGO_Red.webp",
+      "PackagePath": "staticwebassets\\img\\BOGO_Red.webp"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\CateBanner_BOGO_Desktop_VI.webp",
+      "PackagePath": "staticwebassets\\img\\CateBanner_BOGO_Desktop_VI.webp"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\CateBanner_Chicken_Desktop_VI.webp",
+      "PackagePath": "staticwebassets\\img\\CateBanner_Chicken_Desktop_VI.webp"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\Chicken_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\Chicken_Gray.webp"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\ComboLarge_Product_Desktop_VIwebp.webp",
+      "PackagePath": "staticwebassets\\img\\ComboLarge_Product_Desktop_VIwebp.webp"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\ComboMedium_Product_Desktop_VI.webp",
+      "PackagePath": "staticwebassets\\img\\ComboMedium_Product_Desktop_VI.webp"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\Combo_Gray.png",
+      "PackagePath": "staticwebassets\\img\\Combo_Gray.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\HA538@@Chicken_Mala_4pcs.webp",
+      "PackagePath": "staticwebassets\\img\\HA538@@Chicken_Mala_4pcs.webp"
+    },
+    {
       "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\Logo.png",
       "PackagePath": "staticwebassets\\img\\Logo.png"
     },
     {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\bg.png",
-      "PackagePath": "staticwebassets\\img\\bg.png"
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\Mybox_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\Mybox_Gray.webp"
     },
     {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\cakeIcon.png",
-      "PackagePath": "staticwebassets\\img\\cakeIcon.png"
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\Pizza_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\Pizza_Gray.webp"
     },
     {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\charming-female-blowing-candles-birthday-cake-after-making-her-wish-party 1.png",
-      "PackagePath": "staticwebassets\\img\\charming-female-blowing-candles-birthday-cake-after-making-her-wish-party 1.png"
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\Water_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\Water_Gray.webp"
     },
     {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\cofeIcon.png",
-      "PackagePath": "staticwebassets\\img\\cofeIcon.png"
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\Navbar%Footer.js",
+      "PackagePath": "staticwebassets\\js\\Navbar%Footer.js"
     },
     {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\drinkIcon.png",
-      "PackagePath": "staticwebassets\\img\\drinkIcon.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\eiliv-aceron-d5PbKQJ0Lu8-unsplash 1.png",
-      "PackagePath": "staticwebassets\\img\\eiliv-aceron-d5PbKQJ0Lu8-unsplash 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\footerIcon.png",
-      "PackagePath": "staticwebassets\\img\\footerIcon.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\group-friends-eating-restaurant 1.png",
-      "PackagePath": "staticwebassets\\img\\group-friends-eating-restaurant 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\happy-man-wife-sunny-day 1.png",
-      "PackagePath": "staticwebassets\\img\\happy-man-wife-sunny-day 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\kebab-set-table 1.png",
-      "PackagePath": "staticwebassets\\img\\kebab-set-table 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\mid-shot-chef-holding-plate-with-pasta-making-ok-sign 1.png",
-      "PackagePath": "staticwebassets\\img\\mid-shot-chef-holding-plate-with-pasta-making-ok-sign 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pexels-andra-918581 1.png",
-      "PackagePath": "staticwebassets\\img\\pexels-andra-918581 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pexels-ash-376464 1.png",
-      "PackagePath": "staticwebassets\\img\\pexels-ash-376464 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pexels-ella-olsson-1640772 1.png",
-      "PackagePath": "staticwebassets\\img\\pexels-ella-olsson-1640772 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pexels-katerina-holmes-5908226 1.png",
-      "PackagePath": "staticwebassets\\img\\pexels-katerina-holmes-5908226 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pexels-leonardo-luz-13998974 1.png",
-      "PackagePath": "staticwebassets\\img\\pexels-leonardo-luz-13998974 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pexels-sebastian-coman-photography-3791088 1.png",
-      "PackagePath": "staticwebassets\\img\\pexels-sebastian-coman-photography-3791088 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pexels-steve-3789885 1.png",
-      "PackagePath": "staticwebassets\\img\\pexels-steve-3789885 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pexels-suzy-hazelwood-2966196 1.png",
-      "PackagePath": "staticwebassets\\img\\pexels-suzy-hazelwood-2966196 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\riceIcon.png",
-      "PackagePath": "staticwebassets\\img\\riceIcon.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\sadj-iron-pot-with-various-salads 1.png",
-      "PackagePath": "staticwebassets\\img\\sadj-iron-pot-with-various-salads 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food 1.png",
-      "PackagePath": "staticwebassets\\img\\sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food 1.png"
-    },
-    {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\taco.png",
-      "PackagePath": "staticwebassets\\img\\taco.png"
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\Register.js",
+      "PackagePath": "staticwebassets\\js\\Register.js"
     },
     {
       "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\site.js",

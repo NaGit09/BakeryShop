@@ -1,0 +1,32 @@
+﻿main {
+    margin-top: 100px;
+}
+
+.login-title {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.login-form {
+    width: 512px;
+    padding: 24px 42px;
+    margin-top: 24px;
+    margin-left: 60px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.input-hover:hover {
+    border: 1px solid #c8102e;
+}
+
+.form-link {
+    margin-left: 10px;
+    color: #c8102e;
+}

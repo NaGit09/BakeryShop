@@ -1,0 +1,124 @@
+﻿@section CSS {
+    <link rel="stylesheet" href="~/css/register.css" />
+}
+@section Header {
+    <partial name="header2" />
+}
+<main style="margin-top: 40px">
+    <div class="d-flex align-items-start flex-column">
+        <div class="d-flex align-items-center justify-content-between w100">
+            <a asp-controller="BakeryShop" asp-action="Index">
+                <i class="bi bi-arrow-left"></i>
+                <span class="fs-5">Quay lại</span>
+            </a>
+            <div><h2 class="login-title">Đăng nhập</h2></div>
+            <div></div>
+        </div>
+        <div class="form d-flex align-items-center justify-content-center w100 mb-5">
+            <form class="login-form rounded shadow">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Tên *</label>
+                    <input placeholder="Nhập tên của bạn "
+                           type="email"
+                           class="form-control input-hover"
+                           id="exampleInputEmail1"
+                           aria-describedby="emailHelp" />
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Ngày sinh *</label>
+                    <div class="input-group">
+                        <select id="yearSelect" class="form-select" aria-label="năm">
+                            <option selected value="Năm">Năm</option>
+                        </select>
+                        <select id="monthSelect" class="form-select" aria-label="tháng">
+                            <option selected value="Tháng">Tháng</option>
+                        </select>
+                        <select id="daySelect" class="form-select" aria-label="ngày">
+                            <option selected value="Ngày">Ngày</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">
+                        Giới tính *
+                    </label>
+                    <div class="input-group">
+                        <select id="gender" class="form-select" aria-label="năm">
+                            <option selected value="">Chọn giới tính</option>
+                            <option value="Nam">Nam</option>
+                            <option value="Nữ">Nữ</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Email *</label>
+                    <input required
+                           placeholder="Vui lòng nhập mật khẩu của bạn"
+                           type="email"
+                           class="form-control input-hover"
+                           id="exampleInputPassword1" />
+                </div>
+
+                <div class="mb-3 password-container">
+                    <label for="exampleInputPassword1" class="form-label">Mật khẩu *</label>
+                    <input type="password"
+                           id="passwordInput"
+                           placeholder="Vui lòng nhập mật khẩu của bạn "
+                           class="form-control input-hover" />
+                    <button type="button"
+                            class="toggle-password"
+                            id="togglePassword">
+                        👁️
+                    </button>
+                </div>
+                <div class="mb-3 password-container">
+                    <label for="exampleInputPassword1" class="form-label">Xác nhận mật khẩu *</label>
+                    <input type="password"
+                           id="CheckPasswordInput"
+                           placeholder=" Nhập lại  mật khẩu của bạn "
+                           class="form-control input-hover" />
+                    <button type="button"
+                            class="toggle-password"
+                            id="CheckTogglePassword">
+                        👁️
+                    </button>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" />
+                    <span for="agreeTerm"
+                          class="text-base text-black ms-2 select-none cursor-pointer">
+                        Tôi đồng ý tham gia
+                        <span>
+                            <a class="text-blue underline" href="/reward">Thành viên HUT REWARDS</a>
+                        </span>
+                        và chấp nhận
+                        <span>
+                            <a class="text-blue underline" href="/info?TNC">
+                                các điều khoản, điều kiện và chính sách bảo mật của Pizza
+                                Hut Vietnam
+                            </a>
+                        </span>
+                    </span>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" />
+                    <span for="agreeTerm"
+                          class="text-base text-black ms-2 select-none cursor-pointer">
+                        Tôi đồng ý và chấp nhận các điều khoản, điều kiện và chính
+                        sách bảo mật của Pizza Hut Vietnam
+                    </span>
+                </div>
+                <button type="submit" class="btn btn-primary w100 mb-3">
+                    Submit
+                </button>
+                <div class="mb-3 text-center">
+                    <p>Bạn đã có tài khoản <a href="">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+@section JS {
+    <script src="~/js/Register.js"></script>
+}

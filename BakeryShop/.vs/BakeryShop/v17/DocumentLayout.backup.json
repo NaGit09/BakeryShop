@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakeryshop\\views\\bakeryshop\\basket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\bakeryshop\\basket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakeryshop\\controllers\\bakeryshopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:controllers\\bakeryshopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakeryshop\\views\\bakeryshop\\track.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\bakeryshop\\track.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakeryshop\\views\\bakeryshop\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\bakeryshop\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakeryshop\\views\\bakeryshop\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\bakeryshop\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakeryshop\\views\\bakeryshop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\bakeryshop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakeryshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakeryshop\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,46 +61,85 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Track.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Track.cshtml",
+              "RelativeDocumentMoniker": "Views\\BakeryShop\\Track.cshtml",
+              "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Track.cshtml",
+              "RelativeToolTip": "Views\\BakeryShop\\Track.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T07:11:55.874Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAAC8AAAAVAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "login.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\login.cshtml",
+              "RelativeDocumentMoniker": "Views\\BakeryShop\\login.cshtml",
+              "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\login.cshtml",
+              "RelativeToolTip": "Views\\BakeryShop\\login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T12:58:36.072Z",
+              "WhenOpened": "2024-12-08T07:04:05.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAAAIEAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-27T12:37:44.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\BakeryShop\\Index.cshtml",
               "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Index.cshtml",
               "RelativeToolTip": "Views\\BakeryShop\\Index.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-27T12:22:43.306Z",
+              "WhenOpened": "2024-12-08T07:02:54.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\BakeryShop\\Register.cshtml",
+              "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Register.cshtml",
+              "RelativeToolTip": "Views\\BakeryShop\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T07:01:59.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Basket.cshtml",
+              "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Basket.cshtml",
+              "RelativeDocumentMoniker": "Views\\BakeryShop\\Basket.cshtml",
+              "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Basket.cshtml",
+              "RelativeToolTip": "Views\\BakeryShop\\Basket.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T06:59:54.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BakeryShopController.cs",
+              "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Controllers\\BakeryShopController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BakeryShopController.cs",
+              "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Controllers\\BakeryShopController.cs",
+              "RelativeToolTip": "Controllers\\BakeryShopController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA0wBwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T06:30:49.681Z",
               "EditorCaption": ""
             }
           ]

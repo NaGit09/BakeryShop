@@ -1,307 +1,310 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@model BakeryShop.Models.Cake
-@{
+﻿@{
     ViewData["title"] = "index";
 }
-<main class="absolute-center flex-lg-column">
-    <div class="introduce absolute-center">
-        <h1 class="title text-center">best food for your taste</h1>
-        <p class="desc text-center mt-3 fs-6 lh-base">
-            Discover delectable cuisine and unforgettable moments in our
-            welcoming, culinary haven.
-        </p>
-        <div class="d-flext m-3">
-            <button type="button"
-                    class="book-btn button p-1 fw-bold fs-5 rounded-pill">
-                Book a table
+@section CSS {
+    <link rel="stylesheet" href="~/css/index.css" />
+}
+@section Header {
+    <partial name="header1"/>
+}
+<main style="margin-top: 100px">
+    <div class="slider container">
+        <div id="carouselExampleDark"
+             class="carousel slide"
+             data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+                <button type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="https://plus.unsplash.com/premium_photo-1675278299389-4165d19f59d2?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         class="object-cover slider-img d-block w-100"
+                         alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://plus.unsplash.com/premium_photo-1679076060484-1852c96149d2?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         class="object-cover slider-img d-block w-100"
+                         alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="https://plus.unsplash.com/premium_photo-1667682939994-4c9e874dc175?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                         class="object-cover slider-img d-block w-100"
+                         alt="..." />
+                </div>
+            </div>
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon fs-1"
+                      aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <button type="button"
-                    class="menu-btn button p-1 fw-bold fs-5 rounded-pill">
-                Explore menu
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                      aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
-    <div class="menu absolute-center">
-        <h2 class="menu-title">Browse Our Menu</h2>
-        <ul class="d-flex gap-4 mt-5">
-            <li>
-                <div class="card absolute-center">
-                    <div class="card-header rounded-circle absolute-center">
-                        <img src="~/img/cofeIcon.png" class="card-img-top" alt="..." />
-                    </div>
-                    <div class="card-body flex-md-column absolute-center">
-                        <h5 class="card-title text-center fw-bold">Breakfast</h5>
-                        <p class="card-text text-center">
-                            In the new era of technology we look in the future with
-                            certainty and pride for our life.
-                        </p>
-                        <a href="#" class="Explore fw-bold fs-4 btn">Explore Menu</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card absolute-center">
-                    <div class="card-header rounded-circle absolute-center">
-                        <img src="~/img/riceIcon.png" class="card-img-top" alt="..." />
-                    </div>
-                    <div class="card-body flex-md-column absolute-center">
-                        <h5 class="card-title text-center fw-bold">Main Dishes</h5>
-                        <p class="card-text text-center">
-                            In the new era of technology we look in the future with
-                            certainty and pride for our life.
-                        </p>
-                        <a href="#" class="Explore fw-bold fs-4 btn">Explore Menu</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card absolute-center">
-                    <div class="card-header rounded-circle absolute-center">
-                        <img src="~/img/drinkIcon.png"
+    <div class="menu d-flex align-items-center m-5 justify-content-between text-center">
+        <div class="group menu_btn">
+            <i class="icon bi bi-search fs-3"></i>
+            <p class="menu_btn-search mt-4 fs-5">Tìm kiếm</p>
+        </div>
+        <div class="group menu_btn">
+            <img src="./img/Combo_Gray.png" alt="" class="type-img" />
+
+            <p class="menu_btn-search mt-4 fs-5">Bánh Sinh nhật</p>
+        </div>
+        <div class="group menu_btn">
+            <img src="./img/Chicken_Gray.webp" alt="" class="type-img" />
+
+            <p class="menu_btn-search mt-4 fs-5">Gà rán</p>
+        </div>
+        <div class="group menu_btn">
+            <img src="./img/Mybox_Gray.webp" alt="" class="type-img" />
+            <p class="menu_btn-search mt-4 fs-5">Bánh ngọt</p>
+        </div>
+        <div class="group menu_btn">
+            <img src="./img/Water_Gray.webp" alt="" class="type-img" />
+
+            <p class="menu_btn-search mt-4 fs-5">Giải khát</p>
+        </div>
+    </div>
+    <div class="discount">
+        <div class="discount-title mb-2">
+            <h2 class="discount-title-h2 d-flex justify-content-center align-items-center">
+                <hr />
+                Mua 1 tặng 1
+                <hr />
+            </h2>
+            <img src="./img/CateBanner_BOGO_Desktop_VI.webp"
+                 class="img mt-2 mb-2"
+                 alt="" />
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/ComboMedium_Product_Desktop_VI.webp"
                              class="card-img-top"
                              alt="..." />
-                    </div>
-                    <div class="card-body flex-md-column absolute-center">
-                        <h5 class="card-title text-center fw-bold">Drinks</h5>
-                        <p class="card-tex text-center">
-                            In the new era of technology we look in the future with
-                            certainty and pride for our life.
-                        </p>
-                        <a href="#" class="Explore fw-bold fs-4 btn">Explore Menu</a>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="card absolute-center">
-                    <div class="card-header rounded-circle absolute-center">
-                        <img src="~/img/cakeIcon.png" class="card-img-top" alt="..." />
-                    </div>
-                    <div class="card-body flex-md-column absolute-center">
-                        <h5 class="card-title text-center fw-bold">Desserts</h5>
-                        <p class="card-text text-center">
-                            In the new era of technology we look in the future with
-                            certainty and pride for our life.
-                        </p>
-                        <a href="#" class="Explore fw-bold fs-4 btn">Explore Menu</a>
+                        <div class="card-body">
+                            <h5 class="card-title discount-title-h5 fw-bold">
+                                mua 1 tặng 1 pizza (cỡ vừa)
+                            </h5>
+                            <p class="card-text truncated-text">
+                                This is a longer card with supporting text below as a
+                                natural lead-in to additional content. This content is a
+                                little bit longer.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </div>
-    <div class="about d-flex align-items-center justify-content-between">
-        <div class="about-left">
-            <img src="~/img/taco.png" class="about_img align-bottom" alt="" />
-            <div class="card about-message text-start"
-                 style="width: 18rem; height: 14rem">
-                <div class="card-body absolute-center flex-md-column gap-2">
-                    <h5 class="card-title about-card-title fw-bold">
-                        Come and visit us
-                    </h5>
-                    <p class="card-text p-1">
-                        <i class="bi bi-telephone"></i> 0387822490
-                    </p>
-                    <p class="card-text p-1">
-                        <i class="bi bi-envelope"></i> 22130015@st.hcmuaf.edu.vn
-                    </p>
-                    <p class="card-text p-1">
-                        <i class="bi bi-geo-alt"></i> THU DUC CITY
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="about-right">
-            <h1 class="about-title">We provide healthy food for your family.</h1>
-            <p class="about-desc">
-                Our story began with a vision to create a unique dining experience
-                that merges fine dining, exceptional service, and a vibrant
-                ambiance. Rooted in city's rich culinary culture, we aim to honor
-                our local roots while infusing a global palate.
-            </p>
-            <p class="about-desc">
-                At place, we believe that dining is not just about food, but also
-                about the overall experience. Our staff, renowned for their warmth
-                and dedication, strives to make every visit an unforgettable event.
-            </p>
-            <button type="button" class="menu-btn button">More About Us</button>
-        </div>
-    </div>
-    <div class="type">
-        <h2 class="type-title">
-            We also offer unique services for your events
-        </h2>
-        <ul class="d-flex gap-4 mt-5">
-            <li>
-                <div class="event-card">
-                    <img src="~/img/kebab-set-table 1.png"
-                         class="card-img rounded"
-                         alt="..." />
-                    <div class="card-body">
-                        <h5 class="event-title fw-bold fs-4">Caterings</h5>
-                        <p class="event-text">
-                            In the new era of technology we look in the future with
-                            certainty for life.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="event-card">
-                    <img src="~/img/charming-female-blowing-candles-birthday-cake-after-making-her-wish-party 1.png"
-                         class="card-img rounded"
-                         alt="..." />
-                    <div class="card-body">
-                        <h5 class="event-title fw-bold fs-4">Caterings</h5>
-                        <p class="event-text">
-                            In the new era of technology we look in the future with
-                            certainty for life.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="event-card">
-                    <img src="~/img/happy-man-wife-sunny-day 1.png"
-                         class="card-img rounded"
-                         alt="..." />
-                    <div class="card-body">
-                        <h5 class="event-title fw-bold fs-4">Caterings</h5>
-                        <p class="event-text">
-                            In the new era of technology we look in the future with
-                            certainty for life.
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="event-card">
-                    <img src="~/img/group-friends-eating-restaurant 1.png"
-                         class="card-img rounded"
-                         alt="..." />
-                    <div class="card-body">
-                        <h5 class="event-title fw-bold fs-4">Caterings</h5>
-                        <p class="event-text">
-                            In the new era of technology we look in the future with
-                            certainty for life.
-                        </p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="delivery d-flex align-items-center">
-        <div class="grid-holder">
-            <div class="left-image">
-                <img src="~/img/mid-shot-chef-holding-plate-with-pasta-making-ok-sign 1.png"
-                     alt="Left Image"
-                     class="image" />
-            </div>
-            <div class="right-top">
-                <img src="~/img/sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food 1.png"
-                     alt="Right Top Image"
-                     class="image" />
-            </div>
-            <div class="right-bottom">
-                <img src="~/img/sadj-iron-pot-with-various-salads 1.png"
-                     alt="Right Bottom Image"
-                     class="image" />
-            </div>
-        </div>
-        <div class="about-right">
-            <h1 class="delivery-title">Fastest Food Delivery in City</h1>
-            <p class="about-desc">
-                Our visual designer lets you quickly and of drag a down your way to
-                customapps for both keep desktop.
-            </p>
-            <ul>
-                <li>
-                    <i class="rounded-circle p-2 bi bi-clock"></i> Delivery within 30
-                    minutes
-                </li>
-                <li>
-                    <i class="rounded-circle p-2 bi bi-truck"></i> Best Offer & Prices
-                </li>
-                <li>
-                    <i class="rounded-circle p-2 bi bi-cart"></i> Online Services
-                    Available
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="blog">
-        <div class="blog-header d-flex align-items-between justify-content-between">
-            <h2 class="blog-title">Our Blog & Articles</h2>
-            <button type="button" class="blog-btn rounded-pill p-2">
-                Read All Articles
-            </button>
-        </div>
-        <div class="blog-grid m-5">
-            <div class="blog-left shadow">
-                <div class="blog-card-left absolute-center">
-                    <img src="~/img/pexels-andra-918581 1.png"
-                         class="blog-img-left"
-                         alt="" />
-                    <div class="blog-card-body">
-                        <p class="card-text m-3">January 3, 2023</p>
-                        <h5 class="blog-card-title-left">
-                            The secret tips & tricks to prepare a perfect burger & pizza
-                            for our customers
-                        </h5>
-                        <p class="blog-desc">
-                            Lorem ipsum dolor sit amet consectetur of a adipiscing
-                            elitilmim semper adipiscing massa gravida nisi cras enim quis
-                            nibholm varius amet gravida ut facilisis neque egestas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="blog-right-grid">
-                <div class="blog-card shadow">
-                    <img src="~/img/pexels-suzy-hazelwood-2966196 1.png"
-                         class="blog-img card-img-top"
-                         alt="" />
-                    <div class="blog-card-body">
-                        <p class="card-text m-2">January 3, 2023</p>
-                        <h5 class="blog-card-title fs-5">
-                            How to prepare the perfect french fries in an air fryere
-                        </h5>
-                    </div>
-                </div>
-                <div class="blog-card shadow">
-                    <img src="~/img/pexels-leonardo-luz-13998974 1.png"
-                         class="blog-img card-img-top"
-                         alt="" />
-                    <div class="blog-card-body">
-                        <p class="card-text m-2">January 3, 2023</p>
-                        <h5 class="blog-card-title fs-5 ms-2">
-                            How to prepare the perfect french fries in an air fryere
-                        </h5>
-                    </div>
-                </div>
-                <div class="blog-card shadow">
-                    <img src="~/img/pexels-sebastian-coman-photography-3791088 1.png"
-                         class="blog-img card-img-top"
-                         alt="" />
-                    <div class="blog-card-body">
-                        <p class="card-text m-2">January 3, 2023</p>
-                        <h5 class="blog-card-title fs-5">
-                            How to prepare the perfect french fries in an air fryere
-                        </h5>
-                    </div>
-                </div>
-                <div class="blog-card shadow">
-                    <img src="~/img/pexels-katerina-holmes-5908226 1.png"
-                         class="blog-img card-img-top"
-                         alt="" />
-                    <div class="blog-card-body">
-                        <p class="card-text m-2">January 3, 2023</p>
-                        <h5 class="blog-card-title fs-5">
-                            How to prepare the perfect french fries in an air fryere
-                        </h5>
+                <div class="col">
+                    <div class="card">
+                        <img src="./img/ComboLarge_Product_Desktop_VIwebp.webp"
+                             class="card-img-top"
+                             alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title discount-title-h5 fw-bold">
+                                mua 1 tặng 1 pizza (cỡ lớn)
+                            </h5>
+                            <p class="card-text truncated-text">
+                                This is a longer card with supporting text below as a
+                                natural lead-in to additional content. This content is a
+                                little bit longer.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="product">
+        <div class="product-title mt-4 mb-2">
+            <h2 class="product-title-h2 d-flex justify-content-center align-items-center">
+                <hr />
+                Ghiền gà
+                <hr />
+            </h2>
+            <img src="./img/CateBanner_Chicken_Desktop_VI.webp"
+                 class="img mt-2 mb-2"
+                 alt="" />
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://plus.unsplash.com/premium_photo-1700590072629-c051ca7ce0f3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                     class="img-fluid rounded-start object-fit-cover"
+                                     style="height : 250px; width:200px;"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title product-title-h5 fw-bold">
+                                      Bánh Mochi 
+                                    </h5>
+                                    <p class="card-text">
+                                        Bánh Nhật dẻo mềm, nhân kem lạnh hoặc đậu đỏ, hương vị đa dạng.
+                                    </p>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             fill="none"
+                                             viewBox="0 0 34 16"
+                                             class="md:h-6 h-4 object-contain new-label">
+                                            <rect width="34"
+                                                  height="16"
+                                                  fill="#C8102E"
+                                                  rx="4"></rect>
+                                            <path fill="#fff"
+                                                  d="M12.003 3.273V12h-1.21L6.357 5.6h-.081V12H4.959V3.273h1.219l4.44 6.409h.08v-6.41zm4.64 8.86q-.968 0-1.667-.414a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183.519.183.933.575t.652 1.018q.24.623.239 1.513v.452h-5.203v-.955h3.954a1.9 1.9 0 0 0-.205-.89 1.55 1.55 0 0 0-.575-.618 1.6 1.6 0 0 0-.86-.226q-.538 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933-.371.396-.934.618a3.5 3.5 0 0 1-1.274.217M22.271 12l-1.926-6.545h1.316l1.283 4.806h.064l1.287-4.806h1.317l1.278 4.785h.064l1.274-4.785h1.317L27.624 12h-1.3l-1.33-4.726h-.097L23.567 12z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <p class="price">20.000/ 2 cái</p>
+                                        <button type="button" class="AddToCart text-light rounded-circle">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1529978215771-45f0bcc12de3?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                     class="img-fluid rounded-start object-fit-cover"
+                                     style="height : 250px; width:200px;"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title product-title-h5 fw-bold">
+                                        Bánh Croissant
+                                    </h5>
+                                    <p class="card-text">
+                                        Bánh giòn, xốp với nhiều lớp bơ thơm béo, thường ăn kèm mứt hoặc phô mai.
+                                    </p>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             fill="none"
+                                             viewBox="0 0 34 16"
+                                             class="md:h-6 h-4 object-contain new-label">
+                                            <rect width="34"
+                                                  height="16"
+                                                  fill="#C8102E"
+                                                  rx="4"></rect>
+                                            <path fill="#fff"
+                                                  d="M12.003 3.273V12h-1.21L6.357 5.6h-.081V12H4.959V3.273h1.219l4.44 6.409h.08v-6.41zm4.64 8.86q-.968 0-1.667-.414a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183.519.183.933.575t.652 1.018q.24.623.239 1.513v.452h-5.203v-.955h3.954a1.9 1.9 0 0 0-.205-.89 1.55 1.55 0 0 0-.575-.618 1.6 1.6 0 0 0-.86-.226q-.538 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933-.371.396-.934.618a3.5 3.5 0 0 1-1.274.217M22.271 12l-1.926-6.545h1.316l1.283 4.806h.064l1.287-4.806h1.317l1.278 4.785h.064l1.274-4.785h1.317L27.624 12h-1.3l-1.33-4.726h-.097L23.567 12z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <p class="price"> 35.000 VNĐ/cái</p>
+                                        <button type="button" class="AddToCart text-light rounded-circle">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://images.unsplash.com/photo-1601654847092-712aff26313c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                     class="img-fluid rounded-start object-fit-cover"
+                                     style="height : 250px; width:200px;"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title product-title-h5 fw-bold">
+                                        Panna Cotta
+                                    </h5>
+                                    <p class="card-text">
+                                        Bánh có kết cấu mềm mại, tan ngay trong miệng, rất thích hợp làm món tráng miệng trong các bữa tiệc.
+                                    </p>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             fill="none"
+                                             viewBox="0 0 34 16"
+                                             class="md:h-6 h-4 object-contain new-label">
+                                            <rect width="34"
+                                                  height="16"
+                                                  fill="#C8102E"
+                                                  rx="4"></rect>
+                                            <path fill="#fff"
+                                                  d="M12.003 3.273V12h-1.21L6.357 5.6h-.081V12H4.959V3.273h1.219l4.44 6.409h.08v-6.41zm4.64 8.86q-.968 0-1.667-.414a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183.519.183.933.575t.652 1.018q.24.623.239 1.513v.452h-5.203v-.955h3.954a1.9 1.9 0 0 0-.205-.89 1.55 1.55 0 0 0-.575-.618 1.6 1.6 0 0 0-.86-.226q-.538 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933-.371.396-.934.618a3.5 3.5 0 0 1-1.274.217M22.271 12l-1.926-6.545h1.316l1.283 4.806h.064l1.287-4.806h1.317l1.278 4.785h.064l1.274-4.785h1.317L27.624 12h-1.3l-1.33-4.726h-.097L23.567 12z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <p class="price">50.000 VNĐ/ly</p>
+                                        <button type="button" class="AddToCart text-light rounded-circle">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="https://plus.unsplash.com/premium_photo-1670895802275-ed748ced4309?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                     class="img-fluid rounded-start object-fit-cover"
+                                     style="height : 250px; width:200px;"
+                                     alt="..." />
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title product-title-h5 fw-bold">
+                                        Cookie
+                                    </h5>
+                                    <p class="card-text">
+                                        tiện lợi để ăn nhẹ, làm quà tặng, hoặc dùng kèm trà và cà phê.
+                                    </p>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                             fill="none"
+                                             viewBox="0 0 34 16"
+                                             class="md:h-6 h-4 object-contain new-label">
+                                            <rect width="34"
+                                                  height="16"
+                                                  fill="#C8102E"
+                                                  rx="4"></rect>
+                                            <path fill="#fff"
+                                                  d="M12.003 3.273V12h-1.21L6.357 5.6h-.081V12H4.959V3.273h1.219l4.44 6.409h.08v-6.41zm4.64 8.86q-.968 0-1.667-.414a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183.519.183.933.575t.652 1.018q.24.623.239 1.513v.452h-5.203v-.955h3.954a1.9 1.9 0 0 0-.205-.89 1.55 1.55 0 0 0-.575-.618 1.6 1.6 0 0 0-.86-.226q-.538 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933-.371.396-.934.618a3.5 3.5 0 0 1-1.274.217M22.271 12l-1.926-6.545h1.316l1.283 4.806h.064l1.287-4.806h1.317l1.278 4.785h.064l1.274-4.785h1.317L27.624 12h-1.3l-1.33-4.726h-.097L23.567 12z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <p class="price">80.000 VNĐ/hộp</p>
+                                        <button type="button" class="AddToCart text-light rounded-circle">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </main>

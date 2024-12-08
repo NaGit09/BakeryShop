@@ -1,0 +1,82 @@
+﻿
+
+/* slide css */
+.slider {
+    max-height: 422px;
+}
+
+.slider-img {
+    height: 442px;
+    border-radius: 20px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: block;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.group {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 10px;
+    width: 40%;
+}
+
+.img {
+    width: 100%;
+}
+
+.discount-title-h2, .product-title-h2 {
+    font-size: 40px;
+    padding: 0 10px;
+}
+
+.discount-title-h5 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.product-title-h5 {
+    font-size: 24px;
+}
+
+.truncated-text {
+    font-size: 18px;
+    white-space: nowrap; /* Không cho phép xuống dòng */
+    overflow: hidden; /* Ẩn phần văn bản vượt quá kích thước */
+    text-overflow: ellipsis; /* Thay phần vượt quá bằng dấu "..." */
+    width: 100%; /* Đặt chiều rộng cho phần tử để giới hạn */
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+}
+
+.card-footer {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    float: inline-end;
+}
+
+.new-label {
+    width: 50px;
+    height: 50px;
+}
+
+.price {
+    font-size: 30px;
+}
+.img-fluid {
+    max-height : 250px;
+}

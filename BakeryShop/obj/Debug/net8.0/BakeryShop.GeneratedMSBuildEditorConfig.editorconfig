@@ -18,12 +18,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\nhuta\source\repos\BakeryShop\BakeryShop
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/BakeryShop/Basket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxCYXNrZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/BakeryShop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/BakeryShop/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/BakeryShop/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/BakeryShop/Track.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxUcmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/Shared/header1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGhlYWRlcjEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/Shared/header2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGhlYWRlcjIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/nhuta/source/repos/BakeryShop/BakeryShop/Views/Shared/_ValidationScriptsPartial.cshtml]

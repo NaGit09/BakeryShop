@@ -1,0 +1,19 @@
+﻿.input-hover {
+    height: 50px;
+    padding: 20px;
+}
+
+.search {
+    width: 600px;
+    padding: 20px;
+}
+
+.login-title {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.search-btn {
+    background-color: #c8102e;
+    color: white;
+}
