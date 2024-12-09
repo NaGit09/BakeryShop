@@ -4,10 +4,11 @@
 @section Header {
     <partial name="header2" />
 }
-<main style="margin-top: 40px">
+@model BakeryShop.Util.RegisterValidation
+<main class="mt-lg-4">
     <div class="d-flex align-items-start flex-column">
         <div class="d-flex align-items-center justify-content-between w100">
-            <a asp-controller="BakeryShop" asp-action="Index">
+            <a asp-page="/" >
                 <i class="bi bi-arrow-left"></i>
                 <span class="fs-5">Quay lại</span>
             </a>
@@ -15,29 +16,52 @@
             <div></div>
         </div>
         <div class="form d-flex align-items-center justify-content-center w100 mb-5">
-            <form class="login-form rounded shadow">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Tên *</label>
-                    <input placeholder="Nhập tên của bạn "
-                           type="email"
-                           class="form-control input-hover"
-                           id="exampleInputEmail1"
-                           aria-describedby="emailHelp" />
+            <form method="post" class="login-form rounded shadow">
+                <div class="mb-3 form-group">
+                    <label asp-for="FirstName" class="form-label"></label>
+                    <input asp-for="FirstName" class="form-control" placeholder="Enter Your First Name"/>
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+                <div class="mb-3  form-group">
+                    <label asp-for="LastName" class="form-label"></label>
+                    <input asp-for="LastName" class="form-control" placeholder="Enter Your Last Name" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Ngày sinh *</label>
+                    <label class="form-label">Ngày sinh *</label>
+                    <span asp-validation-for="BirthDay"></span>
+                    <span asp-validation-for="BirthMonth"></span>
+                    <span asp-validation-for="BirthYear"></span>
                     <div class="input-group">
-                        <select id="yearSelect" class="form-select" aria-label="năm">
+                        <!-- Năm -->
+                        <select asp-for="BirthYear" class="form-select" aria-label="năm">
                             <option selected value="Năm">Năm</option>
+                            @for (int year = DateTime.Now.Year; year >1990 ; year--)
+                            {
+                                <option value="@year">@year</option>
+                            }
                         </select>
-                        <select id="monthSelect" class="form-select" aria-label="tháng">
+
+                        <!-- Tháng -->
+                        <select asp-for="BirthMonth" class="form-select" aria-label="tháng">
                             <option selected value="Tháng">Tháng</option>
+                            @for (int month = 1; month <= 12; month++)
+                            {
+                                <option value="@month">@month</option>
+                            }
                         </select>
-                        <select id="daySelect" class="form-select" aria-label="ngày">
+
+                        <!-- Ngày -->
+                        <select asp-for="BirthDay" class="form-select" aria-label="ngày">
                             <option selected value="Ngày">Ngày</option>
+                            @for (int day = 1; day <= 31; day++)
+                            {
+                                <option value="@day">@day</option>
+                            }
                         </select>
                     </div>
                 </div>
+
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">
                         Giới tính *
@@ -51,38 +75,21 @@
                         </select>
                     </div>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Email *</label>
-                    <input required
-                           placeholder="Vui lòng nhập mật khẩu của bạn"
-                           type="email"
-                           class="form-control input-hover"
-                           id="exampleInputPassword1" />
-                </div>
+                <div class="mb-3 form-group">
 
-                <div class="mb-3 password-container">
-                    <label for="exampleInputPassword1" class="form-label">Mật khẩu *</label>
-                    <input type="password"
-                           id="passwordInput"
-                           placeholder="Vui lòng nhập mật khẩu của bạn "
-                           class="form-control input-hover" />
-                    <button type="button"
-                            class="toggle-password"
-                            id="togglePassword">
-                        👁️
-                    </button>
+                    <label class="form-label" asp-for="Email"></label>
+                    <input class="form-control input-hover" asp-for="Email" placeholder="Vui lòng nhập Email của bạn" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
-                <div class="mb-3 password-container">
-                    <label for="exampleInputPassword1" class="form-label">Xác nhận mật khẩu *</label>
-                    <input type="password"
-                           id="CheckPasswordInput"
-                           placeholder=" Nhập lại  mật khẩu của bạn "
-                           class="form-control input-hover" />
-                    <button type="button"
-                            class="toggle-password"
-                            id="CheckTogglePassword">
-                        👁️
-                    </button>
+                <div class="mb-3 form-group">
+                    <label class="form-label" asp-for="Password"></label>
+                    <input class="form-control input-hover" asp-for="Password" placeholder="Vui lòng nhập Password của bạn" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="mb-3 form-group">
+                    <label class="form-label" asp-for="ConfirmPassword"></label>
+                    <input class="form-control input-hover" asp-for="ConfirmPassword" placeholder="Vui lòng nhập Password của bạn" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
                     <input type="checkbox" />

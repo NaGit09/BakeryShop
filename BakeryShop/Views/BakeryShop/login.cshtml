@@ -4,6 +4,8 @@
 @section Header {
     <partial name="header2"/>
 }
+
+@model BakeryShop.Util.LoginValidation
 <main>
     <div class="d-flex align-items-start flex-column">
         <div class="d-flex align-items-center justify-content-between w100">
@@ -15,38 +17,32 @@
             <div></div>
         </div>
         <div class="form d-flex align-items-center justify-content-center w100 mb-5">
-            <form class="login-form rounded shadow">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input autocomplete="on"
-                           autofocus
-                           required
-                           placeholder="Vui lòng nhập email của bạn"
-                           type="email"
-                           class="form-control input-hover"
-                           id="exampleInputEmail1"
-                           aria-describedby="emailHelp" />
+            <form method="POST" class="login-form rounded shadow">
+                <div class="mb-3 form-group">
+                     
+                    <label class="form-label" asp-for="Email"></label>
+                    <input class="form-control input-hover" asp-for="Email" placeholder="Vui lòng nhập Email của bạn" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input required
-                           placeholder="Vui lòng nhập mật khẩu của bạn"
-                           type="password"
-                           class="form-control input-hover"
-                           id="exampleInputPassword1" />
+                <div class="mb-3 form-group">
+                    <label class="form-label" asp-for="Password"></label>
+                    <input class="form-control input-hover" asp-for="Password" placeholder="Vui lòng nhập Password của bạn" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
-                <div class="mb-3 form-check d-flex align-items-center justify-content-start">
-                    <input type="checkbox" />
-                    <label class="ms-2 form-check-label" for="exampleCheck1">Lưu mật khẩu</label>
+                
+                <div class="form-check">
+                    <input asp-for="SavePassWord" class="form-check-input border-primary" type="checkbox" />
+                    <label asp-for="SavePassWord" class="form-check-label"></label>
+                    <span asp-validation-for="SavePassWord" class="text-danger"></span>
                 </div>
                 <div class="mb-3 float-end">
-                    <a href="" class="form-link">Forgot password</a>
+                    <a asp-action="Forgot" asp-controller="BakeryShop" >Forgot password</a>
                 </div>
-                <button type="submit" class="btn btn-primary w100 mb-3">
+                <button type="submit" asp-page="/Login" class="btn btn-primary w100 mb-3">
                     Submit
                 </button>
                 <div class="mb-3 text-center">
-                    <p>Bạn chưa có tài khoản <a href="" class="form-link">Tạo tài khoản </a></p>
+                    <p>Bạn chưa có tài khoản <a asp-action="Register" asp-controller="BakeryShop">Tạo tài khoản </a></p>
                 </div>
             </form>
         </div>
