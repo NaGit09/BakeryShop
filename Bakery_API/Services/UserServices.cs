@@ -12,13 +12,13 @@ namespace Bakery_API.Services
         public UserServices(BakerySqlContext bakerySqlContext) {
 
             _bakerySqlContext = bakerySqlContext;
-
         }
 
         public ResponseServices<User> SignIn(UserRequest request) // Hiện thực 
         {
            var user = _bakerySqlContext.Users.SingleOrDefault
                 (us => us.Gmail == request.Gmail && us.Password == request.Password);
+
             if (user != null)
             {
                 return new ResponseServices<User>
@@ -34,8 +34,7 @@ namespace Bakery_API.Services
             {
                 return new ResponseServices<User>
                 {
-                    Data = user,
-                    Success = true,
+                    Success = false,
                     Message = "Sign In False",
 
                 };

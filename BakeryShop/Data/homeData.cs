@@ -1,10 +1,8 @@
-﻿using BakeryShop.Models;
-
-namespace BakeryShop.Data
+﻿namespace BakeryShop.Data
 {
     public class homeData
     {
-        public static List<menuType> GetMenuTypes ()
+        public static List<MenuType> GetMenuTypes ()
         {
             List<menuType> list = new List<menuType> ();
             list.Add(new menuType("Breakfast" , "cofeIcon.png" , "Start your day with energy by enjoying a hearty breakfast."));
