@@ -2,6 +2,7 @@
 using BakeryShop.Models;
 using BakeryShop.Util;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 
 namespace BakeryShop.Controllers
@@ -39,14 +40,28 @@ namespace BakeryShop.Controllers
         [HttpGet]
         public IActionResult Register() {
             ViewData["Title"] = "Register";
-            return View(); }
+            RegisterValidation rv = new RegisterValidation();
+            rv.genders = new List<SelectListItem>
+            {
+                    new SelectListItem {Value="Nam", Text="Nam"},
+                    new SelectListItem {Value="Nữ", Text="Nữ"},
+                    new SelectListItem {Value="Khác", Text="Khác"},
+            };
+            return View(rv); }
         [HttpPost]
         public IActionResult Register (RegisterValidation rv)
         {
             if(ModelState.IsValid)
             {
                 return RedirectToAction("/", "BakeryShop");
-            }return View(rv);
+            }
+            rv.genders = new List<SelectListItem>
+            {
+                    new SelectListItem {Value="Nam", Text="Nam"},
+                    new SelectListItem {Value="Nữ", Text="Nữ"},
+                    new SelectListItem {Value="Khác", Text="Khác"},
+            };
+            return View(rv);
         }
         public IActionResult Basket() { return View(); }
         public IActionResult Track() { return View(); }

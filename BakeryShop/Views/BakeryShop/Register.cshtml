@@ -8,7 +8,7 @@
 <main class="mt-lg-4">
     <div class="d-flex align-items-start flex-column">
         <div class="d-flex align-items-center justify-content-between w100">
-            <a asp-page="/" >
+            <a asp-controller="BakeryShop" asp-action="" >
                 <i class="bi bi-arrow-left"></i>
                 <span class="fs-5">Quay lại</span>
             </a>
@@ -63,17 +63,12 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">
-                        Giới tính *
-                    </label>
-                    <div class="input-group">
-                        <select id="gender" class="form-select" aria-label="năm">
-                            <option selected value="">Chọn giới tính</option>
-                            <option value="Nam">Nam</option>
-                            <option value="Nữ">Nữ</option>
-                            <option value="Khác">Khác</option>
+                    <label asp-for="Gender" class="form-label"></label>
+                        <select class="form-select" asp-for="Gender" asp-items="Model.genders">
+                          
                         </select>
-                    </div>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+
                 </div>
                 <div class="mb-3 form-group">
 
@@ -92,24 +87,8 @@
                     <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <input type="checkbox" />
-                    <span for="agreeTerm"
-                          class="text-base text-black ms-2 select-none cursor-pointer">
-                        Tôi đồng ý tham gia
-                        <span>
-                            <a class="text-blue underline" href="/reward">Thành viên HUT REWARDS</a>
-                        </span>
-                        và chấp nhận
-                        <span>
-                            <a class="text-blue underline" href="/info?TNC">
-                                các điều khoản, điều kiện và chính sách bảo mật của Pizza
-                                Hut Vietnam
-                            </a>
-                        </span>
-                    </span>
-                </div>
-                <div class="mb-3">
-                    <input type="checkbox" />
+                    <input type="checkbox" asp-for="agree" />
+
                     <span for="agreeTerm"
                           class="text-base text-black ms-2 select-none cursor-pointer">
                         Tôi đồng ý và chấp nhận các điều khoản, điều kiện và chính
@@ -120,7 +99,7 @@
                     Submit
                 </button>
                 <div class="mb-3 text-center">
-                    <p>Bạn đã có tài khoản <a href="">Đăng nhập</a></p>
+                    <p>Bạn đã có tài khoản <a asp-controller="BakeryShop" asp-action="Login">Đăng nhập</a></p>
                 </div>
             </form>
         </div>

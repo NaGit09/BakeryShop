@@ -26,7 +26,11 @@ namespace BakeryShop.Util
 
         [Required(ErrorMessage = "Confirm Password is required.")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; }
-
+        public string? ConfirmPassword { get; set; }
+        [Required(ErrorMessage ="Select your gender")]
+        public String? Gender { get; set; }
+        public List<SelectListItem> genders { get; set; }
+        [Required(ErrorMessage ="Please agree with Assurance")]
+        public bool agree { get; set; }
     }
     }
