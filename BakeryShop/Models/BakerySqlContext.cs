@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace Bakery_API.Models;
+namespace BakeryShop.Models;
 
 public partial class BakerySqlContext : DbContext
 {

@@ -8,19 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nhuta\\.nuget\\packages\\": {}
+    "C:\\Users\\Van Tran\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
+      "projectUniqueName": "D:\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
       "projectName": "BakeryShop",
-      "projectPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
-      "packagesPath": "C:\\Users\\nhuta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\obj\\",
+      "projectPath": "D:\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
+      "packagesPath": "C:\\Users\\Van Tran\\.nuget\\packages\\",
+      "outputPath": "D:\\BakeryShop\\BakeryShop\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\nhuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Van Tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -70,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

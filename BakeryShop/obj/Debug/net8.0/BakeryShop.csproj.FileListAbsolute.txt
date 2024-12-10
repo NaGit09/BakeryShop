@@ -29,3 +29,14 @@ C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\refint\Bakery
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.pdb
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.genruntimeconfig.cache
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\ref\BakeryShop.dll
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.AssemblyInfoInputs.cache
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.AssemblyInfo.cs
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.csproj.CoreCompileInputs.cache
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.MvcApplicationPartsAssemblyInfo.cache
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.RazorAssemblyInfo.cache
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.RazorAssemblyInfo.cs
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.sourcelink.json
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.dll
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\refint\BakeryShop.dll
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.pdb
