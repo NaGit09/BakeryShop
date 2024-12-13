@@ -1,7 +1,9 @@
-﻿
-using Bakery_API.Interfaces;
+﻿using Bakery_API.Interfaces;
 using Bakery_API.Models;
 using Bakery_API.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
 namespace Bakery_API
 {
@@ -12,17 +14,65 @@ namespace Bakery_API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(options =>
+            {
+                // Cấu hình Swagger để hỗ trợ gửi token trong header
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    Description = "Enter 'Bearer' followed by a space and your token"
+                });
 
-            builder.Services.AddSqlServer<BakerySqlContext>(builder.Configuration.GetConnectionString("Shop"));
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[] {}
+                    }
+                });
+            });
+
             // Cấu hình chuỗi kết nối
+            builder.Services.AddSqlServer<BakerySqlContext>(builder.Configuration.GetConnectionString("Shop"));
 
+            // Cấu hình Dependency Injection (DI)
+            builder.Services.AddScoped<IUser, UserServices>();
+            builder.Services.AddScoped<IProduct, ProductServices>();
+            builder.Services.AddScoped<TokenServices>();
+            builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
-            builder.Services.AddScoped<IUser, UserServices>(); // Cấu hình Dependency Injection (DI)
+            // Cấu hình JWT
+            var secretKey = builder.Configuration.GetValue<string>("AppSettings:SecretKey");
+            var secretKeyBytes = System.Text.Encoding.UTF8.GetBytes(secretKey);
+
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = false, 
+                        ValidateAudience = false, 
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(secretKeyBytes),
+                        ClockSkew = TimeSpan.Zero, 
+                    };
+
+                   
+                });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -33,9 +83,8 @@ namespace Bakery_API
             }
 
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
 
             app.MapControllers();
 

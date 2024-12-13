@@ -29,6 +29,7 @@ C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\refint\Bakery
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.pdb
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.genruntimeconfig.cache
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\ref\BakeryShop.dll
+<<<<<<< HEAD
 C:\Users\nhuta\OneDrive - st.hcmuaf.edu.vn\Desktop\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.csproj.AssemblyReference.cache
 C:\Users\nhuta\OneDrive - st.hcmuaf.edu.vn\Desktop\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nhuta\OneDrive - st.hcmuaf.edu.vn\Desktop\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.AssemblyInfoInputs.cache
@@ -184,3 +185,16 @@ C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\bin\Debug\net8.0\runtimes\win\
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\nhuta\source\repos\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.csproj.Up2Date
+=======
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.AssemblyInfoInputs.cache
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.AssemblyInfo.cs
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.csproj.CoreCompileInputs.cache
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.MvcApplicationPartsAssemblyInfo.cache
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.RazorAssemblyInfo.cache
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.RazorAssemblyInfo.cs
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.sourcelink.json
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.dll
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\refint\BakeryShop.dll
+D:\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.pdb
+>>>>>>> 1df450b3691033f66e6c920207757e579bfe75ad

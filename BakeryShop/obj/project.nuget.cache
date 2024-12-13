@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "J/P+41Hs/LA=",
   "success": true,
   "projectFilePath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
@@ -92,5 +93,11 @@
     "C:\\Users\\nhuta\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\nhuta\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "cGU2aW+CJNs=",
+  "success": true,
+  "projectFilePath": "D:\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> 1df450b3691033f66e6c920207757e579bfe75ad
   "logs": []
 }

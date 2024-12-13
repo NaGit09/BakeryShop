@@ -3,44 +3,84 @@
   "WorkspaceRootPath": "D:\\BakeryShop\\Bakery_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\dto\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:dto\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\services\\responseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\responseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\bakery_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:bakery_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\dto\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:dto\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\BakeryShop\\Bakery_API\\Models\\BakerySqlContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\BakerySqlContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\services\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\models\\bakerysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\bakerysqlcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\models\\groupproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\groupproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\models\\shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|d:\\bakeryshop\\bakery_api\\bakery_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:bakery_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,72 +118,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-10T05:28:15.981Z",
+              "DocumentIndex": 5,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:26:05.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "ProductCategory.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Models\\ProductCategory.cs",
+              "RelativeDocumentMoniker": "Models\\ProductCategory.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Models\\ProductCategory.cs",
+              "RelativeToolTip": "Models\\ProductCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:47:46.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "D:\\BakeryShop\\Bakery_API\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T05:15:03.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Interfaces\\IUser.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IUser.cs",
-              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Interfaces\\IUser.cs",
-              "RelativeToolTip": "Interfaces\\IUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "ResponseServices.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Services\\ResponseServices.cs",
+              "RelativeDocumentMoniker": "Services\\ResponseServices.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Services\\ResponseServices.cs",
+              "RelativeToolTip": "Services\\ResponseServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T05:02:41.489Z",
+              "WhenOpened": "2024-12-10T05:03:20.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-10T04:53:45.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductServices.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Services\\ProductServices.cs",
+              "RelativeDocumentMoniker": "Services\\ProductServices.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Services\\ProductServices.cs",
+              "RelativeToolTip": "Services\\ProductServices.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAMwBgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:13:00.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserServices.cs",
               "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "Services\\UserServices.cs",
               "ToolTip": "D:\\BakeryShop\\Bakery_API\\Services\\UserServices.cs",
               "RelativeToolTip": "Services\\UserServices.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwC8AAABOAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T05:02:06.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Bakery_API",
-              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
-              "RelativeDocumentMoniker": "Bakery_API.csproj",
-              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
-              "RelativeToolTip": "Bakery_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-10T04:57:42.039Z",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T04:54:54.027Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "TokenServices.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Services\\TokenServices.cs",
+              "RelativeDocumentMoniker": "Services\\TokenServices.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Services\\TokenServices.cs",
+              "RelativeToolTip": "Services\\TokenServices.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswB4AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:36:38.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "UserRequest.cs",
               "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\DTO\\UserRequest.cs",
               "RelativeDocumentMoniker": "DTO\\UserRequest.cs",
@@ -156,54 +248,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T04:54:54.027Z",
+              "DocumentIndex": 6,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-10T05:28:15.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Interfaces\\IUser.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUser.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Interfaces\\IUser.cs",
+              "RelativeToolTip": "Interfaces\\IUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:02:41.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Services\\AppSettings.cs",
+              "RelativeDocumentMoniker": "Services\\AppSettings.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Services\\AppSettings.cs",
+              "RelativeToolTip": "Services\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:26:33.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IProduct.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Interfaces\\IProduct.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IProduct.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Interfaces\\IProduct.cs",
+              "RelativeToolTip": "Interfaces\\IProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:51:35.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GroupProduct.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Models\\GroupProduct.cs",
+              "RelativeDocumentMoniker": "Models\\GroupProduct.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Models\\GroupProduct.cs",
+              "RelativeToolTip": "Models\\GroupProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:48:20.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ShoppingCartItem.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Models\\ShoppingCartItem.cs",
+              "RelativeDocumentMoniker": "Models\\ShoppingCartItem.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Models\\ShoppingCartItem.cs",
+              "RelativeToolTip": "Models\\ShoppingCartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:08:16.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Status.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Models\\Status.cs",
+              "RelativeDocumentMoniker": "Models\\Status.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Models\\Status.cs",
+              "RelativeToolTip": "Models\\Status.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:08:16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "BakerySqlContext.cs",
               "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Models\\BakerySqlContext.cs",
               "RelativeDocumentMoniker": "Models\\BakerySqlContext.cs",
               "ToolTip": "D:\\BakeryShop\\Bakery_API\\Models\\BakerySqlContext.cs",
               "RelativeToolTip": "Models\\BakerySqlContext.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAqwA0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T04:54:45.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\BakeryShop\\Bakery_API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-10T04:53:45.008Z",
+              "DocumentIndex": 18,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:47:42.429Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ResponseServices.cs",
-              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Services\\ResponseServices.cs",
-              "RelativeDocumentMoniker": "Services\\ResponseServices.cs",
-              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Services\\ResponseServices.cs",
-              "RelativeToolTip": "Services\\ResponseServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T05:03:20.714Z",
+              "DocumentIndex": 19,
+              "Title": "Bakery_API.csproj",
+              "DocumentMoniker": "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
+              "RelativeDocumentMoniker": "Bakery_API.csproj",
+              "ToolTip": "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
+              "RelativeToolTip": "Bakery_API.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-10T04:57:42.039Z",
               "EditorCaption": ""
             }
           ]

@@ -1,8 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD:BakeryShop/Models/BakeryShopContext.cs
 namespace BakeryShop.Models;
 public partial class BakeryShopContext : DbContext
+=======
+
+namespace BakeryShop.Models;
+
+public partial class BakerySqlContext : DbContext
+>>>>>>> 1df450b3691033f66e6c920207757e579bfe75ad:BakeryShop/Models/BakerySqlContext.cs
 {
     public BakeryShopContext()
     {

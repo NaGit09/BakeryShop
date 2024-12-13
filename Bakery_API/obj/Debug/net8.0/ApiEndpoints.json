@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Bakery_API.Controllers.ProductController",
+    "Method": "GetByProductCategoryId",
+    "RelativePath": "api/Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productCategoryId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Bakery_API.Controllers.UserController",
     "Method": "SignIn",
     "RelativePath": "api/User/SignIn",
@@ -8,14 +24,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Gmail",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "Bakery_API.DTO.UserRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
