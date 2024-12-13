@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Bakery_API.Models;
+namespace BakeryShop.Models { 
 
 public partial class Size
 {
@@ -14,4 +14,5 @@ public partial class Size
     public int ColorId { get; set; }
 
     public virtual Color Color { get; set; } = null!;
+}
 }

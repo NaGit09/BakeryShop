@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Bakery_API.Models;
+namespace BakeryShop.Models { 
 
 public partial class ProductCategory
 {
@@ -12,4 +12,5 @@ public partial class ProductCategory
     public string? Description { get; set; }
 
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
+}
 }

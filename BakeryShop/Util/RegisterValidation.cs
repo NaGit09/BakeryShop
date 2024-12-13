@@ -29,7 +29,7 @@ namespace BakeryShop.Util
         public string? ConfirmPassword { get; set; }
         [Required(ErrorMessage ="Select your gender")]
         public String? Gender { get; set; }
-        public List<SelectListItem> genders { get; set; }
+        public List<SelectListItem>? genders { get; set; }
         [Required(ErrorMessage ="Please agree with Assurance")]
         public bool agree { get; set; }
     }

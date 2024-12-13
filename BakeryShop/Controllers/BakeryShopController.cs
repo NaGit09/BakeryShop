@@ -1,9 +1,9 @@
-﻿using BakeryShop.Data;
-using BakeryShop.Models;
+﻿using BakeryShop.Models;
 using BakeryShop.Util;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
+using System.Linq;
 
 namespace BakeryShop.Controllers
 {
@@ -11,15 +11,16 @@ namespace BakeryShop.Controllers
 
     public class BakeryShopController : Controller
     {
-        private readonly ILogger<BakeryShopController> _logger;
-        public BakeryShopController(ILogger<BakeryShopController> logger)
+        private BakeryShopContext _sqlContext;
+        public BakeryShopController(BakeryShopContext context)
         {
-            _logger = logger;
+            _sqlContext = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            List<Product> products = _sqlContext.Products.ToList();
+            return View(products);
         }
         [HttpGet]
         public IActionResult Login() {

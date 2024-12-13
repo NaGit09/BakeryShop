@@ -1,29 +1,33 @@
-﻿using System;
+﻿using BakeryShop.Models;
+using System;
 using System.Collections.Generic;
 
-namespace Bakery_API.Models;
-
-public partial class Product
+namespace BakeryShop.Models
 {
-    public int ProductId { get; set; }
 
-    public string Name { get; set; } = null!;
+    public partial class Product
+    {
+        public int ProductId { get; set; }
 
-    public decimal Price { get; set; }
+        public string Name { get; set; } = null!;
 
-    public decimal? Discount { get; set; }
+        public decimal Price { get; set; }
 
-    public int ProductCategoryId { get; set; }
+        public decimal? Discount { get; set; }
 
-    public int GroupProductId { get; set; }
+        public int ProductCategoryId { get; set; }
 
-    public virtual ICollection<Color> Colors { get; set; } = new List<Color>();
+        public int GroupProductId { get; set; }
 
-    public virtual GroupProduct GroupProduct { get; set; } = null!;
+        public virtual ICollection<Color> Colors { get; set; } = new List<Color>();
 
-    public virtual ProductCategory ProductCategory { get; set; } = null!;
+        public virtual GroupProduct GroupProduct { get; set; } = null!;
 
-    public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
+        public virtual ProductCategory ProductCategory { get; set; } = null!;
 
-    public virtual ICollection<ShoppingCartItem> ShoppingCartItems { get; set; } = new List<ShoppingCartItem>();
+        public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
+
+        public virtual ICollection<ShoppingCartItem> ShoppingCartItems { get; set; } = new List<ShoppingCartItem>();
+    }
+
 }

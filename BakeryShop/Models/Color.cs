@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Bakery_API.Models;
+namespace BakeryShop.Models;
 
 public partial class Color
 {
