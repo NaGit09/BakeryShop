@@ -7,12 +7,13 @@ namespace BakeryShop.Util
     {
         [Required(ErrorMessage = "Email is required")]
         [DataType(DataType.EmailAddress)]
-        public String? Email { get; set; }
+        public String? Gmail { get; set; }
+
         [Required(ErrorMessage = "Password is required")]
         [DataType(DataType.Password)]
         public String? Password { get; set; }
-        [Required(ErrorMessage = "You must agree to the terms and conditions")]
-        [Display(Name = "I agree to the terms and conditions")]
-        public bool SavePassWord { get; set; }
+        //[Required(ErrorMessage = "You must agree to the terms and conditions")]
+        //[Display(Name = "I agree to the terms and conditions")]
+        //public bool SavePassWord { get; set; }
     }
 }

@@ -2,13 +2,10 @@
 
 namespace Bakery_API.DTO
 {
-    public class UserRequest
-    {
-        [Required]
-        [EmailAddress]
+    public class UserSignInRequest
+    {   
         public string Gmail { get; set; }
 
-        [Required]
         public string Password { get; set; }
     }
 }

@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Bakery_API.Models;
 
-public partial class BakerySqlContext : DbContext
+public partial class BakeryShopContext : DbContext
 {
-    public BakerySqlContext()
+    public BakeryShopContext()
     {
     }
 
-    public BakerySqlContext(DbContextOptions<BakerySqlContext> options)
+    public BakeryShopContext(DbContextOptions<BakeryShopContext> options)
         : base(options)
     {
     }
@@ -43,15 +43,15 @@ public partial class BakerySqlContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=VanTran\\VANTRAN;Initial Catalog=bakerySql;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
+//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+//        => optionsBuilder.UseSqlServer("Data Source=VanTran\\VANTRAN;Initial Catalog=bakerySql;Integrated Security=True;Encrypt=True;Trust Server Certificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Color>(entity =>
         {
-            entity.HasKey(e => e.ColorId).HasName("PK__Colors__70A64FDD0CD6C33A");
+            entity.HasKey(e => e.ColorId).HasName("PK__Colors__70A64FDD54ED9BFD");
 
             entity.Property(e => e.ColorId).HasColumnName("colorId");
             entity.Property(e => e.HexCode)
@@ -70,7 +70,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Delivery>(entity =>
         {
-            entity.HasKey(e => e.DeliveryId).HasName("PK__Deliveri__CDC3A0B273EAB7E6");
+            entity.HasKey(e => e.DeliveryId).HasName("PK__Deliveri__CDC3A0B257FC84DE");
 
             entity.Property(e => e.DeliveryId).HasColumnName("deliveryId");
             entity.Property(e => e.Fee)
@@ -83,7 +83,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<GroupProduct>(entity =>
         {
-            entity.HasKey(e => e.GroupProductId).HasName("PK__GroupPro__61C82376C123BA1C");
+            entity.HasKey(e => e.GroupProductId).HasName("PK__GroupPro__61C823762726C37B");
 
             entity.Property(e => e.GroupProductId).HasColumnName("groupProductId");
             entity.Property(e => e.Image).HasColumnName("image");
@@ -94,7 +94,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Image>(entity =>
         {
-            entity.HasKey(e => e.ImageId).HasName("PK__Images__336E9B55C3D3AD4A");
+            entity.HasKey(e => e.ImageId).HasName("PK__Images__336E9B557491F071");
 
             entity.Property(e => e.ImageId).HasColumnName("imageId");
             entity.Property(e => e.ColorId).HasColumnName("colorId");
@@ -108,7 +108,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Membership>(entity =>
         {
-            entity.HasKey(e => e.MembershipId).HasName("PK__Membersh__86AA3B173C1234A4");
+            entity.HasKey(e => e.MembershipId).HasName("PK__Membersh__86AA3B17A4F87C67");
 
             entity.ToTable("Membership");
 
@@ -121,7 +121,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Order>(entity =>
         {
-            entity.HasKey(e => e.OrderId).HasName("PK__Orders__0809335D23916221");
+            entity.HasKey(e => e.OrderId).HasName("PK__Orders__0809335DEFD17B53");
 
             entity.Property(e => e.OrderId).HasColumnName("orderId");
             entity.Property(e => e.DeliveryAddress)
@@ -153,7 +153,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Payment>(entity =>
         {
-            entity.HasKey(e => e.PaymentId).HasName("PK__Payments__A0D9EFC69622ECFF");
+            entity.HasKey(e => e.PaymentId).HasName("PK__Payments__A0D9EFC6EFE31DB7");
 
             entity.Property(e => e.PaymentId).HasColumnName("paymentId");
             entity.Property(e => e.MethodPayment)
@@ -163,7 +163,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.ProductId).HasName("PK__Products__2D10D16A2B0619D9");
+            entity.HasKey(e => e.ProductId).HasName("PK__Products__2D10D16AB45FBA40");
 
             entity.Property(e => e.ProductId).HasColumnName("productId");
             entity.Property(e => e.Discount)
@@ -192,7 +192,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<ProductCategory>(entity =>
         {
-            entity.HasKey(e => e.ProductCategoryId).HasName("PK__ProductC__A944253BD72282DD");
+            entity.HasKey(e => e.ProductCategoryId).HasName("PK__ProductC__A944253BE326CB70");
 
             entity.ToTable("ProductCategory");
 
@@ -207,7 +207,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Review>(entity =>
         {
-            entity.HasKey(e => e.ReviewId).HasName("PK__Reviews__2ECD6E04AB6B76F0");
+            entity.HasKey(e => e.ReviewId).HasName("PK__Reviews__2ECD6E04D760974E");
 
             entity.Property(e => e.ReviewId).HasColumnName("reviewId");
             entity.Property(e => e.Description)
@@ -229,7 +229,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<ShoppingCartItem>(entity =>
         {
-            entity.HasKey(e => e.ShoppingCartItemId).HasName("PK__Shopping__1CF034B4050697CB");
+            entity.HasKey(e => e.ShoppingCartItemId).HasName("PK__Shopping__1CF034B4BBC41EF3");
 
             entity.Property(e => e.ShoppingCartItemId).HasColumnName("shoppingCartItemId");
             entity.Property(e => e.OrderId).HasColumnName("orderId");
@@ -249,7 +249,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Size>(entity =>
         {
-            entity.HasKey(e => e.SizeId).HasName("PK__Sizes__55B1E5574FF98FDD");
+            entity.HasKey(e => e.SizeId).HasName("PK__Sizes__55B1E557D727EED4");
 
             entity.Property(e => e.SizeId).HasColumnName("sizeId");
             entity.Property(e => e.ColorId).HasColumnName("colorId");
@@ -266,7 +266,7 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<Status>(entity =>
         {
-            entity.HasKey(e => e.StatusId).HasName("PK__Statuses__36257A18855B4283");
+            entity.HasKey(e => e.StatusId).HasName("PK__Statuses__36257A185B29232C");
 
             entity.Property(e => e.StatusId).HasColumnName("statusId");
             entity.Property(e => e.Description)
@@ -285,9 +285,9 @@ public partial class BakerySqlContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__Users__CB9A1CFFAE9602B0");
+            entity.HasKey(e => e.UserId).HasName("PK__Users__CB9A1CFFE1AE9D79");
 
-            entity.HasIndex(e => e.Gmail, "UQ__Users__493D0C0AB6A3C17E").IsUnique();
+            entity.HasIndex(e => e.Gmail, "UQ__Users__493D0C0A65599A6D").IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("userId");
             entity.Property(e => e.CreatedAt).HasColumnName("created_at");
@@ -304,6 +304,17 @@ public partial class BakerySqlContext : DbContext
             entity.Property(e => e.RememberMeToken)
                 .HasMaxLength(255)
                 .HasColumnName("remember_me_token");
+            entity.Property(e => e.Gender)
+            .HasColumnName("gender")
+            .HasColumnType("tinyint")
+            .IsRequired();
+
+            entity.Property(e => e.Name)
+            .HasColumnName("name")
+            .HasMaxLength(50)
+            .IsRequired();
+          
+
             entity.Property(e => e.Role)
                 .HasMaxLength(50)
                 .HasDefaultValue("user")

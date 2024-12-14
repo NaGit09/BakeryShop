@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "Bakery_API.Controllers.UserController",
+    "Method": "CheckOTP",
+    "RelativePath": "api/User/CheckOTP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "checkOTPRequest",
+        "Type": "Bakery_API.DTO.CheckOTPRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bakery_API.Controllers.UserController",
     "Method": "SignIn",
     "RelativePath": "api/User/SignIn",
     "HttpMethod": "POST",
@@ -25,7 +41,23 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Bakery_API.DTO.UserRequest",
+        "Type": "Bakery_API.DTO.UserSignInRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bakery_API.Controllers.UserController",
+    "Method": "SignUp",
+    "RelativePath": "api/User/SignUp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Bakery_API.DTO.UserSignUpRequest",
         "IsRequired": true
       }
     ],

@@ -21,6 +21,12 @@ public partial class User
 
     public string? RememberMeToken { get; set; }
 
+    public byte Gender { get; set; }
+
+    public String Name { get; set; } = null!;
+
+
+
     public virtual Membership? Membership { get; set; }
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();

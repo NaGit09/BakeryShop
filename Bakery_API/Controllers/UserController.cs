@@ -1,4 +1,5 @@
-﻿using Bakery_API.DTO;
+﻿using Azure;
+using Bakery_API.DTO;
 using Bakery_API.Interfaces;
 using Bakery_API.Models;
 using Bakery_API.Services;
@@ -16,52 +17,117 @@ namespace Bakery_API.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUser _user;
-        private readonly TokenServices _tokenServices;
 
 
-        public UserController(IUser user, TokenServices tokenServices) { 
-        
+        public UserController(IUser user, TokenServices tokenServices)
+        {
+
             _user = user;
-            _tokenServices = tokenServices;
 
 
         }
 
 
         [HttpPost("SignIn")]
-        public async Task<IActionResult> SignIn([FromBody] UserRequest request)
+        public IActionResult SignIn([FromBody] UserSignInRequest request)
         {
             var response = _user.SignIn(request);
 
             if (response.Success)
             {
-                if (response.Data == null)
+                return Ok(new ResponseServices<String>
                 {
-                    return BadRequest(new
-                    {
-                        status = false,
-                        message = "Invalid credentials. User not found."
-                    });
-                }
-             
-                return Ok(new
+                    Data = response.Data,
+                    Message = response.Message,
+                    Success = response.Success,
+
+
+                });
+
+            }
+            else
+            {
+                return Ok(new ResponseServices<String>
                 {
-                    status = response.Success,
-                    message = response.Message,
-                    data = _tokenServices.GenerateToken(response.Data)
+                    Data = response.Data,
+                    Message = response.Message,
+                    Success = response.Success,
+
+
+                });
+
+            }
+            
+        }
+
+
+        [HttpPost("SignUp")]
+        public IActionResult SignUp([FromBody] UserSignUpRequest request)
+        {
+            var user = _user.SignUp(request);
+
+            if (user.Success)
+            {
+                return Ok(new ResponseServices<User>
+                {
+
+                    Message = user.Message,
+                    Success = user.Success,
+
+
                 });
             }
             else
             {
-                return BadRequest(new
+                return Ok(new ResponseServices<User>
                 {
-                    status = response.Success,
-                    message = response.Message
+
+                    Message = user.Message,
+                    Success = user.Success,
+
+
                 });
             }
+
+
         }
 
 
 
+
+        [HttpPost("CheckOTP")]
+
+        public IActionResult CheckOTP([FromBody] CheckOTPRequest checkOTPRequest)
+        {
+            var isValid = _user.CheckNumberOTP(checkOTPRequest);
+
+            if (isValid.Success)
+            {
+                return Ok(new ResponseServices<User>
+                {
+
+                    Message = isValid.Message,
+                    Success = isValid.Success,
+
+
+                });
+            }
+            else
+            {
+                return Ok(new ResponseServices<User>
+                {
+
+                    Message = isValid.Message,
+                    Success = isValid.Success,
+
+
+                });
+            }
+
+        }
+
     }
 }
+
+
+

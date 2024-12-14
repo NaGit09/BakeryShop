@@ -6,8 +6,10 @@ namespace Bakery_API.Interfaces
 {
     public interface IUser
     {
-        ResponseServices<User> SignIn (UserRequest request);
-        ResponseServices<User> SignUp(UserRequest request);
+        ResponseServices<String> SignIn(UserSignInRequest request);
+        ResponseServices<User> SignUp(UserSignUpRequest request);
+
+        ResponseServices<User> CheckNumberOTP(CheckOTPRequest checkOTPRequest);
 
 
         // Khai báo những chức năng cơ bản của User
