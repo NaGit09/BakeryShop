@@ -1,13 +1,17 @@
-using BakeryShop.Models;
-using Microsoft.EntityFrameworkCore;
+
+
+
+using BakeryShop.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 // .NET 6/7/8 (Program.cs)
-builder.Services.AddDbContext<BakeryShopContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddHttpClient();
+
+builder.Services.AddScoped<ApiService>();
 
 var app = builder.Build();
 

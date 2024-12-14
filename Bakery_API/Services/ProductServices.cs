@@ -7,9 +7,9 @@ namespace Bakery_API.Services
 {
     public class ProductServices : IProduct
     {
-        private readonly BakerySqlContext _bakerySqlContext;
+        private readonly BakeryShopContext _bakerySqlContext;
 
-        public ProductServices(BakerySqlContext bakerySqlContext) {
+        public ProductServices(BakeryShopContext bakerySqlContext) {
             _bakerySqlContext = bakerySqlContext;
         }
 

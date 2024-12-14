@@ -46,13 +46,14 @@ namespace Bakery_API
             });
 
             // Cấu hình chuỗi kết nối
-            builder.Services.AddSqlServer<BakerySqlContext>(builder.Configuration.GetConnectionString("Shop"));
+            builder.Services.AddSqlServer<BakeryShopContext>(builder.Configuration.GetConnectionString("Shop"));
 
             // Cấu hình Dependency Injection (DI)
             builder.Services.AddScoped<IUser, UserServices>();
             builder.Services.AddScoped<IProduct, ProductServices>();
             builder.Services.AddScoped<TokenServices>();
             builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
+            builder.Services.AddHttpContextAccessor();
 
             // Cấu hình JWT
             var secretKey = builder.Configuration.GetValue<string>("AppSettings:SecretKey");
@@ -63,15 +64,36 @@ namespace Bakery_API
                 {
                     options.TokenValidationParameters = new TokenValidationParameters
                     {
-                        ValidateIssuer = false, 
-                        ValidateAudience = false, 
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
                         ValidateIssuerSigningKey = true,
                         IssuerSigningKey = new SymmetricSecurityKey(secretKeyBytes),
-                        ClockSkew = TimeSpan.Zero, 
+                        ClockSkew = TimeSpan.Zero,
                     };
 
-                   
+
                 });
+
+            // Cấu hình CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowMVC", policy =>
+                {
+                    policy.WithOrigins("https://localhost:7223")
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
+            // Cấu hình Session
+
+            builder.Services.AddDistributedMemoryCache(); // Cần thiết để hỗ trợ session
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30); // Thời gian tồn tại của session
+                options.Cookie.HttpOnly = true; // Bảo mật cookie session
+                options.Cookie.IsEssential = true; // Yêu cầu cookie phải tồn tại
+            });
+
 
             var app = builder.Build();
 
@@ -81,6 +103,7 @@ namespace Bakery_API
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseSession(); // Thêm middleware session
 
             app.UseHttpsRedirection();
             app.UseAuthentication();

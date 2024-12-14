@@ -16,54 +16,22 @@
             <div></div>
         </div>
         <div class="form d-flex align-items-center justify-content-center w100 mb-5">
-            <form method="post" class="login-form rounded shadow">
+            <form method="POST" asp-controller="User" asp-action="SignUp" class="login-form rounded shadow">
                 <div class="mb-3 form-group">
-                    <label asp-for="FirstName" class="form-label"></label>
-                    <input asp-for="FirstName" class="form-control" placeholder="Enter Your First Name"/>
-                    <span asp-validation-for="FirstName" class="text-danger"></span>
-                </div>
-                <div class="mb-3  form-group">
-                    <label asp-for="LastName" class="form-label"></label>
-                    <input asp-for="LastName" class="form-control" placeholder="Enter Your Last Name" />
-                    <span asp-validation-for="LastName" class="text-danger"></span>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Ngày sinh *</label>
-                    <div class="input-group">
-                        <!-- Năm -->
-                        <select asp-for="BirthYear" class="form-select" aria-label="năm">
-                            <option selected value="Năm">Năm</option>
-                            @for (int year = DateTime.Now.Year; year >1990 ; year--)
-                            {
-                                <option value="@year">@year</option>
-                            }
-                        </select>
-
-                        <!-- Tháng -->
-                        <select asp-for="BirthMonth" class="form-select" aria-label="tháng">
-                            <option selected value="Tháng">Tháng</option>
-                            @for (int month = 1; month <= 12; month++)
-                            {
-                                <option value="@month">@month</option>
-                            }
-                        </select>
-
-                        <!-- Ngày -->
-                        <select asp-for="BirthDay" class="form-select" aria-label="ngày">
-                            <option selected value="Ngày">Ngày</option>
-                            @for (int day = 1; day <= 31; day++)
-                            {
-                                <option value="@day">@day</option>
-                            }
-                        </select>
-                    </div>
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter Your First Name"/>
+                    <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="Gender" class="form-label"></label>
-                        <select class="form-select" asp-for="Gender" asp-items="Model.genders">
-                          
-                        </select>
+                        <select class="form-select" asp-for="Gender" >
+                        <option value="0">Nam</option>
+                        <option value="1">Nữ</option>
+                        <option value="2">Khác</option>
+
+
+                    </select>
                     <span asp-validation-for="Gender" class="text-danger"></span>
 
                 </div>
@@ -78,7 +46,7 @@
                     <input class="form-control input-hover" asp-for="Password" placeholder="Vui lòng nhập Password của bạn" />
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
-                <div class="mb-3 form-group">
+               @*  <div class="mb-3 form-group">
                     <label class="form-label" asp-for="ConfirmPassword"></label>
                     <input class="form-control input-hover" asp-for="ConfirmPassword" placeholder="Vui lòng nhập Password của bạn" />
                     <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
@@ -91,10 +59,17 @@
                         Tôi đồng ý và chấp nhận các điều khoản, điều kiện và chính
                         sách bảo mật của Pizza Hut Vietnam
                     </span>
-                </div>
+                </div> *@
                 <button type="submit" class="btn btn-primary w100 mb-3">
                     Submit
                 </button>
+                @if (TempData["ErrorSignUp"] != null)
+                {
+                    <div class="alert alert-danger">
+                        @TempData["ErrorSignUp"]
+                    </div>
+                }
+
                 <div class="mb-3 text-center">
                     <p>Bạn đã có tài khoản <a asp-controller="BakeryShop" asp-action="Login">Đăng nhập</a></p>
                 </div>
