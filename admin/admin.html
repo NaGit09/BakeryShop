@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="asset/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Trang quản lý</title>
+</head>
+<body>
+    <section class="admin">
+       <div class="row-grid">
+        <div class="admin-sidebar">
+            <div class="admin-sidebar-top">
+                <img src="asset/imgs/logo.png" alt="">
+            </div>
+            <div class="admin-sidebar-content">
+                <ul>
+                    <li><a href=""><i class="ri-dashboard-line"></i>Trang quản lý<i class="ri-add-box-line"></i></a>
+                        <ul class="sub-menu">
+                            <div class="sub-menu-items"><li><a href="admin.html"><i class="ri-arrow-right-s-fill"></i>Tổng quan</a></li></div>
+                            
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="ri-file-list-line"></i>Đơn hàng<i class="ri-add-box-line"></i></a>
+                        <ul class="sub-menu">
+                            <div class="sub-menu-items">
+                                <li><a href="order_list.html"><i class="ri-arrow-right-s-fill"></i>Danh sách</a></li>
+                                
+                            </div>
+                            
+                        </ul>
+                    </li>
+                    <li></i><a href=""><i class="ri-file-list-line"></i>Sản phẩm<i class="ri-add-box-line"></i></a>
+                        <ul class="sub-menu">
+                            <div class="sub-menu-items">
+                            <li><a href="product_list.html"><i class="ri-arrow-right-s-fill"></i>Danh sách sản phẩm</a></li>
+                            <li><a href="product_add.html"><i class="ri-arrow-right-s-fill"></i>Thêm</a></li>
+                            </div>
+                        </ul>
+
+                    </li>
+
+                    <li></i><a href="category_product.html"><i class="ri-file-list-line"></i>Danh mục sản phẩm<i class="ri-add-box-line"></i></a>
+                        <ul class="sub-menu">
+                            <div class="sub-menu-items">
+                            <li><a href="category_product_list.html"><i class="ri-arrow-right-s-fill"></i>Quản lý danh mục</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li></i><a href=""><i class="ri-discount-percent-line"></i>Khuyến mãi<i class="ri-add-box-line"></i></a>
+                        <ul class="sub-menu">
+                            <div class="sub-menu-items">
+                            <li><a href="promotion.html"><i class="ri-arrow-right-s-fill"></i>Danh sách mã giảm giá</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="ri-user-line"></i>Người dùng<i class="ri-add-box-line"></i></a>
+                        <ul class="sub-menu">
+                            <div class="sub-menu-items">
+                                <li><a href="manager_user.html"><i class="ri-arrow-right-s-fill"></i>Quản lý người dùng</a></li>
+                                
+                            </div>
+                            
+                        </ul>
+                    </li>
+                    <li><a href=""><i class="ri-feedback-line"></i>Phản hồi<i class="ri-add-box-line"></i></a>
+                        <ul class="sub-menu">
+                            <div class="sub-menu-items">
+                                <li><a href="feedback.html"><i class="ri-arrow-right-s-fill"></i>Phản hồi</a></li>
+                            </div>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+        <div class="admin-content">
+            <div class="admin-content-top">
+                <div class="admin-content-top-left">
+                    <ul class="flex-box">
+                        <li> <i class="ri-search-line"></i></li>
+                        <li><i class="ri-drag-move-line"></i></li>
+                    </ul>
+                </div>
+                <div class="admin-content-top-right">
+                    <ul class="flex-box">
+                        <li><i number = "3" class="ri-notification-4-line"></i ></li>
+                        <li><i number = "5" class="ri-message-2-fill"></i ></li>
+                        <li class="flex-box"><img style="width: 50px;" src="asset/imgs/logo.png" alt="">
+                            <div class="admin-menu"><p><i class="ri-arrow-down-s-fill"></i></p></div>
+                            <div class="sub-menu-admin-container hidden">
+                                <div class="traingle"></div>
+                            <ul class="sub-menu-admin">
+                                <li>
+                                    
+                                    <div class="logout">
+                                        <a href="../dang_nhap.html">Đăng xuất</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="admin-content main">
+                <div class="admin-content-main-title">
+                    <h1>Trang quản lý</h1>
+                </div>
+                <div class="admin-content-main-content admin-dashboard-top">
+                    <div class="admin-content-main-content-home-admin">
+                        <div class="admin-content-main-content-home-table">
+                            <label for="" class="label-table"><h3>Danh sách đơn hàng theo ngày <i class="ri-arrow-down-s-fill"></i></h3></label>
+                            <div id="calender" class="hidden">
+                                <input type="date" id="date-picker" min="" max="">
+                            </div>
+                            <table> <tr>
+                                <th>STT</th>
+                                <th>Mã đơn hàng</th>
+                                <th>Mã khách hàng</th>
+                                <th>Chi tiết đơn hàng</th>
+                                <th>Tổng thanh toán</th>
+                                <th>Trạng thái thanh toán</th>
+                                <th>Trạng thái vận chuyển</th>
+                                <th>Tùy chỉnh</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>xyz</td>
+                                <td>abc</td>
+                                <td><a href="order_detail.html" class="confirm-order">Chi tiết</a></td>
+                                <td>1000000đ</td>
+                                <td><a href="" class="confirm-order">Đã thanh toán</a></td>
+                                <td><a href="" class="confirm-order">Đã giao hàng</a></td>
+                                <td>
+                                    <a href="order_detail.html" class="confirm-order">Sửa</a>
+                                </td>
+                            
+                        </table>
+                                                         
+                        </div>
+                        
+                    </div>
+                    
+                   
+                    
+                </div>
+
+                <div class="admin-content-main-content admin-dashboard-bottom">
+                    <div class="admin-content-main-content-home-admin-bottom">
+                        <div class="admin-content-main-content-home-admin-bottom-left">
+                            <label for=""><h3>Doanh số trong tháng</h3></label>
+                            <canvas id="revenueChart" style="box-sizing: border-box; height: 400px; width: 452px;"></canvas>
+                        </div>
+                        <div class="admin-content-main-content-home-admin-bottom-right">
+                            <label for=""><h3>Sản phẩm bán chạy trong tháng</h3></label>
+                            <div class="admin-content-main-content-home-table">
+                                <table> <tr>
+                                    <th>Mã sản phẩm</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Thương hiệu</th>
+                                    <th>Số lượng đã bán</th>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>abc</td>
+                                    <td>xyz</td>
+                                    <td>gucci</td>
+                                    <td>10</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>abc</td>
+                                    <td>xyz</td>
+                                    <td>gucci</td>
+                                    <td>10</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>abc</td>
+                                    <td>xyz</td>
+                                    <td>gucci</td>
+                                    <td>10</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>abc</td>
+                                    <td>xyz</td>
+                                    <td>gucci</td>
+                                    <td>10</td>
+                                    
+                                </tr>
+                                
+                            </table>
+                                                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       </div>
+    </section>
+    
+    <script src="asset/js/app.js"></script>
+    <script src="asset/js/datapresudo.js"></script>
+</body>
+</html>
