@@ -1,7 +1,9 @@
 ﻿using Bakery_API.Interfaces;
 using Bakery_API.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Bakery_API.Services
 {
@@ -12,7 +14,14 @@ namespace Bakery_API.Services
         public ProductServices(BakeryShopContext bakerySqlContext) {
             _bakerySqlContext = bakerySqlContext;
         }
+        public List<dynamic> GetProducts()
+        {
+            var products = _bakerySqlContext.Products
+                .Select(x => new { x.Price, x.Name , x.description})
+                .ToList();
 
+            return products.Cast<dynamic>().ToList();
+        }
         public List<Product> GetByProductCategoryId(int productCategoryId)
         {
             var products = _bakerySqlContext.Products.Where(pr => pr.ProductId == productCategoryId).ToList();

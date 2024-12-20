@@ -46,7 +46,7 @@ namespace Bakery_API
             });
 
             // Cấu hình chuỗi kết nối
-            builder.Services.AddSqlServer<BakeryShopContext>(builder.Configuration.GetConnectionString("Shop"));
+            builder.Services.AddSqlServer<BakeryShopContext>(builder.Configuration.GetConnectionString("DefaultConnection"));
 
             // Cấu hình Dependency Injection (DI)
             builder.Services.AddScoped<IUser, UserServices>();

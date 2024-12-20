@@ -7,7 +7,7 @@ namespace Bakery_API.Interfaces
         List<Product> GetByProductGroupProductId(int GroupProductId);
 
         List<Product> GetByProductCategoryId (int productCategoryId);
-
+        List<dynamic> GetProducts();
 
 
     }

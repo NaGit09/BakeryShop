@@ -16,9 +16,13 @@ namespace BakeryShop.Services
             var response = await _httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
 
-            var data = await response.Content.ReadFromJsonAsync<List<T>>();
-            return data ?? new List<T>();
+            // Đọc toàn bộ JSON trả về
+            var responseData = await response.Content.ReadFromJsonAsync<ResponseServices<List<T>>>();
+
+            // Trả về dữ liệu từ thuộc tính 'Data', hoặc danh sách rỗng nếu không có dữ liệu
+            return responseData?.Data ?? new List<T>();
         }
+
 
         public async Task<T?> PostAsync<T>(string url, object payload)
         {

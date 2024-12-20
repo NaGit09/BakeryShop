@@ -6,7 +6,7 @@ namespace Bakery_API.Models;
 public partial class Product
 {
     public int ProductId { get; set; }
-
+    public String? description { get; set; }
     public string Name { get; set; } = null!;
 
     public decimal Price { get; set; }

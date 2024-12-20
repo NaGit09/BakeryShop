@@ -7,6 +7,7 @@
 @section Header {
     <partial name="header1"/>
 }
+@model List<Product>
 <main style="margin-top: 100px">
     <div class="slider container">
         <div id="carouselExampleDark"
@@ -99,23 +100,14 @@
                  class="img mt-2 mb-2"
                  alt="" />
             <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/ComboMedium_Product_Desktop_VI.webp"
-                             class="card-img-top"
-                             alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title discount-title-h5 fw-bold">
-                                mua 1 tặng 1 pizza (cỡ vừa)
-                            </h5>
-                            <p class="card-text truncated-text">
-                                This is a longer card with supporting text below as a
-                                natural lead-in to additional content. This content is a
-                                little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <td>@product.name</td>
+                        <td>@product.price.ToString("C")</td> <!-- Hiển thị giá theo định dạng tiền tệ -->
+                        <td>@product.description</td>
+                    </tr>
+                }
                 <div class="col">
                     <div class="card">
                         <img src="./img/ComboLarge_Product_Desktop_VIwebp.webp"

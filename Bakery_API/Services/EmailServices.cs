@@ -11,14 +11,14 @@ namespace Bakery_API.Services
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587, // Sử dụng TLS
-                Credentials = new NetworkCredential("22130320@st.hcmuaf.edu.vn", "cftg ruws ntgw yjrz"),
+                Credentials = new NetworkCredential("22130015@st.hcmuaf.edu.vn", "sqtw uubu kqtc lcje"),
                 EnableSsl = true,
             };
 
             // Tạo email
             var mailMessage = new MailMessage
             {
-                From = new MailAddress("22130320@st.hcmuaf.edu.vn"),
+                From = new MailAddress("22130015@st.hcmuaf.edu.vn"),
                 Subject = "Mã OTP của bạn",
                 Body = $"Mã OTP của bạn là: {otp}",
                 IsBodyHtml = false, // Đặt `true` nếu muốn gửi HTML

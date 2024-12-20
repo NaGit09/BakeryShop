@@ -9,7 +9,7 @@ public partial class Image
 
     public int ColorId { get; set; }
 
-    public byte[] Image1 { get; set; } = null!;
+    public String Image1 { get; set; } = null!;
 
     public virtual Color Color { get; set; } = null!;
 }
