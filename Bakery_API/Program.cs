@@ -51,6 +51,7 @@ namespace Bakery_API
             // Cấu hình Dependency Injection (DI)
             builder.Services.AddScoped<IUser, UserServices>();
             builder.Services.AddScoped<IProduct, ProductServices>();
+            builder.Services.AddScoped<ICart, CartServices>(); // Đăng ký DI cho CartServices
             builder.Services.AddScoped<TokenServices>();
             builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
             builder.Services.AddHttpContextAccessor();
@@ -93,6 +94,14 @@ namespace Bakery_API
                 options.Cookie.HttpOnly = true; // Bảo mật cookie session
                 options.Cookie.IsEssential = true; // Yêu cầu cookie phải tồn tại
             });
+
+            // tùy chọn tuần tự hóa JSON để hỗ trợ chu kỳ tham chiếu
+            builder.Services.AddControllers()
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+            });
+
 
 
             var app = builder.Build();
