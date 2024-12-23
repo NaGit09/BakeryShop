@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VMRmla732Es=",
+  "dgSpecHash": "RRWCt6bzj+0=",
   "success": true,
-  "projectFilePath": "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
+  "projectFilePath": "C:\\Users\\Van Tran\\Desktop\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Van Tran\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Van Tran\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
