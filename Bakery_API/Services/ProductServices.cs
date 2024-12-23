@@ -17,7 +17,7 @@ namespace Bakery_API.Services
         public List<dynamic> GetProducts()
         {
             var products = _bakerySqlContext.Products
-                .Select(x => new { x.Price, x.Name , x.description})
+                .Select(x => new { x.Price, x.Name , x.description , x.Img})
                 .ToList();
 
             return products.Cast<dynamic>().ToList();

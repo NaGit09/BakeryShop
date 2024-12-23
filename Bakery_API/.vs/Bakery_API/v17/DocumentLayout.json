@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakery_api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakery_api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakery_api\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakery_api\\models\\bakeryshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\bakeryshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakery_api\\services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakery_api\\interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|c:\\users\\nhuta\\source\\repos\\bakeryshop\\bakery_api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,15 +62,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "BakeryShopContext.cs",
+              "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Models\\BakeryShopContext.cs",
+              "RelativeDocumentMoniker": "Models\\BakeryShopContext.cs",
+              "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Models\\BakeryShopContext.cs",
+              "RelativeToolTip": "Models\\BakeryShopContext.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T04:28:02.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:34:03.668Z"
+              "WhenOpened": "2024-12-20T14:34:03.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -82,26 +100,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProductServices.cs",
               "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Services\\ProductServices.cs",
               "RelativeDocumentMoniker": "Services\\ProductServices.cs",
               "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Services\\ProductServices.cs",
               "RelativeToolTip": "Services\\ProductServices.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABMAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:30:20.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T13:30:20.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T13:30:04.23Z"
             }

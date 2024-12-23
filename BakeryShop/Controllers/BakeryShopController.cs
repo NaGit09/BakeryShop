@@ -25,7 +25,7 @@ namespace BakeryShop.Controllers
             // Giả sử GetAsync là hàm gọi API và trả về dữ liệu
             string url = "https://localhost:7056/api/Product/GetAll";
             var response = await _apiService.GetAsync<ResponseServices<List<Product>>>(url);
-
+           
             // Truyền danh sách sản phẩm đến View
             return View(response);
         }
