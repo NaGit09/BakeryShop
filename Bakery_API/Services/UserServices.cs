@@ -186,6 +186,94 @@ namespace Bakery_API.Services
 
             }
         }
+
+        public ResponseServices<String> CheckMail(ForgotPasswordValidation forgotPasswordValidation)
+        {
+            var user = _bakerySqlContext.Users.FirstOrDefault(u => u.Gmail == forgotPasswordValidation.Email);
+
+            if (user != null)
+            {
+                String token = _tokenServices.GenerateToken(user);
+                String url = "https://localhost:7223/User/ValidToken?token=" + token;
+                _session.SetString("token", token);
+                _session.SetString("email", forgotPasswordValidation.Email);
+                EmailServices emailServices = new EmailServices();
+                emailServices.SendResetPassword(forgotPasswordValidation.Email, url);
+                return new ResponseServices<String>
+                {
+                    Success = true,
+                    Message = "Chúng tôi đã gửi vào email của bạn cách có thể lấy lại mật khẩu."
+
+
+                };
+            }
+
+
+            return new ResponseServices<String>
+            {
+                Success = false,
+                Message = "Có lỗi xảy ra trong khi xác thực email, hãy thử lại sau."
+
+
+            }; ;
+        }
+
+        public ResponseServices<String> ValidToken(string token)
+        {
+            if (token == _session.GetString("token"))
+            {
+                return new ResponseServices<String>
+                {
+                    Success = true,
+                    Message = "Xác thực thành công"
+
+
+                };
+            }
+            else
+            {
+                return new ResponseServices<String>
+                {
+                    Success = true,
+                    Message = "Xác thực thành công"
+
+
+                };
+            }
+
+        }
+
+        public ResponseServices<string> ResetPassword(ResetPassword resetPassword)
+        {
+            var user = _bakerySqlContext.Users.FirstOrDefault(us => us.Gmail == _session.GetString("email"));
+            if (user != null)
+            {
+                user.Password = HashPassword(resetPassword.Password);
+
+                _bakerySqlContext.Update(user);
+                _bakerySqlContext.SaveChanges();
+
+                return new ResponseServices<String>
+                {
+                    Success = true,
+                    Message = "Đổi mật khẩu thành công."
+
+
+                };
+
+            }
+            else
+            {
+                return new ResponseServices<String>
+                {
+                    Success = false,
+                    Message = "Không thể thay đổi mật khẩu bằng cách này."
+
+                };
+            }
+
+
+        }
     }
 }
 

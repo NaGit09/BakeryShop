@@ -57,7 +57,7 @@ namespace Bakery_API.Controllers
                 });
 
             }
-            
+
         }
 
 
@@ -125,8 +125,87 @@ namespace Bakery_API.Controllers
             }
 
         }
+        [HttpPost("CheckMail")]
+
+        public IActionResult CheckMail([FromBody] ForgotPasswordValidation forgotPasswordValidation)
+        {
+            var check = _user.CheckMail(forgotPasswordValidation);
+            if (check.Success)
+            {
+                return Ok(new ResponseServices<String>
+                {
+                    Success = check.Success,
+                    Message = check.Message,
+
+                });
+            }
+            else
+            {
+                return Ok(new ResponseServices<String>
+                {
+                    Success = check.Success,
+                    Message = check.Message,
+
+                });
+
+            }
+
+        }
+        [HttpGet("ValidToken")]
+        public IActionResult ValidToken(String token)
+        {
+            var check = _user.ValidToken(token);
+            if (check.Success)
+            {
+                return Ok(new ResponseServices<String>
+                {
+                    Success = check.Success,
+                    Message = check.Message,
+
+                });
+            }
+            else
+            {
+                return Ok(new ResponseServices<String>
+                {
+                    Success = check.Success,
+                    Message = check.Message,
+
+                });
+
+            }
+        }
+        [HttpPost("ResetPassword")]
+        public IActionResult ResetPassword(ResetPassword resetPassword)
+        {
+            var check = _user.ResetPassword(resetPassword);
+
+            if (check.Success)
+            {
+                return Ok(new ResponseServices<String>
+                {
+                    Success = check.Success,
+                    Message = check.Message,
+
+                });
+            }
+            else
+            {
+                return Ok(new ResponseServices<String>
+                {
+                    Success = check.Success,
+                    Message = check.Message,
+
+                });
+
+            }
+
+
+        }
 
     }
+
+    
 }
 
 

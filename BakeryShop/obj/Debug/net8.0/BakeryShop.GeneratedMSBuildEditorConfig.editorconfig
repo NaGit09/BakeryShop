@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxDb25maXJtT1RQLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Van Tran/Desktop/BakeryShop/BakeryShop/Views/BakeryShop/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Van Tran/Desktop/BakeryShop/BakeryShop/Views/BakeryShop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Van Tran/Desktop/BakeryShop/BakeryShop/Views/BakeryShop/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Van Tran/Desktop/BakeryShop/BakeryShop/Views/BakeryShop/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Van Tran/Desktop/BakeryShop/BakeryShop/Views/BakeryShop/Track.cshtml]

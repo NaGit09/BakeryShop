@@ -11,6 +11,14 @@ namespace Bakery_API.Interfaces
 
         ResponseServices<User> CheckNumberOTP(CheckOTPRequest checkOTPRequest);
 
+        ResponseServices<String> CheckMail(ForgotPasswordValidation email);
+
+        ResponseServices<String> ValidToken(String token);
+
+        ResponseServices<String> ResetPassword(ResetPassword resetPassword);
+
+
+
 
         // Khai báo những chức năng cơ bản của User
 
