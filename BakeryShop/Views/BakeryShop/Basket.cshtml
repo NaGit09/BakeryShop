@@ -1,9 +1,13 @@
-﻿@section CSS {
+﻿@using BakeryShop.Util
+@section CSS {
     <link rel="stylesheet" href="~/css/Basket.css" />
 }
 @section Header {
     <partial name="header2" />
 }
+
+@model List<ShoppingCartItem>
+
 <main>
     <div class="d-flex align-items-start flex-column"
          style="margin-top: 120px">
@@ -13,7 +17,39 @@
                 <span class="fs-5">Quay lại</span>
             </a>
             <div><h2 class="login-title">Giỏ hàng của bạn</h2></div>
-            <div></div>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.ProductId</td>
+                                <td>
+                                    <form method="post" asp-action="UpdateCart" asp-controller="Cart">
+                                        <input type="hidden" name="CartItemId" value="@item.ShoppingCartItemId" />
+                                        <input type="number" name="Quantity" value="@item.Quantity" min="1" />
+                                        <button type="submit" class="btn btn-primary">Cập nhật</button>
+                                    </form>
+                                </td>
+                                <td>
+                                    <form method="post" asp-action="RemoveFromCart" asp-controller="Cart">
+                                        <input type="hidden" name="cartItemId" value="@item.ShoppingCartItemId" />
+                                        <input type="hidden" name="userId" value="@item.OrderId" />
+                                        <button type="submit" class="btn btn-danger">Xóa</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="container">
             <div class="row">

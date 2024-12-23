@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "Zs86r42kbQPpANMFQ8dhRknPha9dNUpZOxXFewrLOxk=",
+  "Hash": "3BJo6Ru60LifVc3FSdCmvHZFH/ESS1nzsfkR/JF4uG4=",
   "Source": "BakeryShop",
   "BasePath": "_content/BakeryShop",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
+      "Version": 2,
+      "Source": "Bakery_API",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "BakeryShop\\wwwroot",

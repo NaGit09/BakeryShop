@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\views\\bakeryshop\\basket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\bakeryshop\\basket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\views\\shared\\header1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\shared\\header1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\views\\bakeryshop\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\bakeryshop\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\util\\shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:util\\shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\services\\responseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:services\\responseservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\views\\shared\\header2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\shared\\header2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\views\\bakeryshop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:views\\bakeryshop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\util\\updatecartquantity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:util\\updatecartquantity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakeryshop\\util\\loginvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CE7C6A5-07BE-4D79-BBBB-9BCED71C29D2}|BakeryShop.csproj|solutionrelative:util\\loginvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,40 +78,172 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T04:37:30.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "login.cshtml",
-              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\login.cshtml",
-              "RelativeDocumentMoniker": "Views\\BakeryShop\\login.cshtml",
-              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\login.cshtml",
-              "RelativeToolTip": "Views\\BakeryShop\\login.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T04:17:52.266Z"
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "Services\\ApiService.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Services\\ApiService.cs",
+              "RelativeToolTip": "Services\\ApiService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T04:34:29.137Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Title": "CartService.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "Services\\CartService.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Services\\CartService.cs",
+              "RelativeToolTip": "Services\\CartService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBMAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T04:00:01.114Z",
+              "WhenOpened": "2024-12-23T03:58:06.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "header2.cshtml",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\Shared\\header2.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\header2.cshtml",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\Shared\\header2.cshtml",
+              "RelativeToolTip": "Views\\Shared\\header2.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T03:54:42.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "header1.cshtml",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\Shared\\header1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\header1.cshtml",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\Shared\\header1.cshtml",
+              "RelativeToolTip": "Views\\Shared\\header1.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T03:48:34.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Basket.cshtml",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Basket.cshtml",
+              "RelativeDocumentMoniker": "Views\\BakeryShop\\Basket.cshtml",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Basket.cshtml",
+              "RelativeToolTip": "Views\\BakeryShop\\Basket.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwHYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T03:35:37.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ResponseServices.cs",
-              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Services\\ResponseServices.cs",
-              "RelativeDocumentMoniker": "Services\\ResponseServices.cs",
-              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Services\\ResponseServices.cs",
-              "RelativeToolTip": "Services\\ResponseServices.cs",
+              "Title": "CartController.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T03:33:40.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ShoppingCartItem.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Util\\ShoppingCartItem.cs",
+              "RelativeDocumentMoniker": "Util\\ShoppingCartItem.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Util\\ShoppingCartItem.cs",
+              "RelativeToolTip": "Util\\ShoppingCartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T03:41:13.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T03:59:52.039Z"
+              "WhenOpened": "2024-12-23T04:01:04.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T03:47:28.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\BakeryShop\\Index.cshtml",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\Index.cshtml",
+              "RelativeToolTip": "Views\\BakeryShop\\Index.cshtml",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-23T03:47:18.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginValidation.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Util\\LoginValidation.cs",
+              "RelativeDocumentMoniker": "Util\\LoginValidation.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Util\\LoginValidation.cs",
+              "RelativeToolTip": "Util\\LoginValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T03:25:17.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UpdateCartQuantity.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Util\\UpdateCartQuantity.cs",
+              "RelativeDocumentMoniker": "Util\\UpdateCartQuantity.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\BakeryShop\\Util\\UpdateCartQuantity.cs",
+              "RelativeToolTip": "Util\\UpdateCartQuantity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T03:32:03.168Z",
+              "EditorCaption": ""
             }
           ]
         }

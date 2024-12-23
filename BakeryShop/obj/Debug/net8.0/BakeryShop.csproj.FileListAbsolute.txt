@@ -541,3 +541,15 @@ G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\obj\Debug\net8.0\refint\BakeryShop
 G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.pdb
 G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.genruntimeconfig.cache
 G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\obj\Debug\net8.0\ref\BakeryShop.dll
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Bakery_API.deps.json
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Bakery_API.runtimeconfig.json
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Bakery_API.exe
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\BCrypt.Net-Next.dll
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Microsoft.OpenApi.dll
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Bakery_API.dll
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\bin\Debug\net8.0\Bakery_API.pdb
+G:\CodeC#\projectDotNET\BakeryShop\BakeryShop\obj\Debug\net8.0\BakeryShop.MvcApplicationPartsAssemblyInfo.cs

@@ -23,4 +23,8 @@
 		</PackageReference>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Bakery_API\Bakery_API.csproj" />
+	</ItemGroup>
+
 </Project>

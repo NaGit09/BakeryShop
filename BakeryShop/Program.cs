@@ -1,4 +1,4 @@
-
+﻿
 
 
 using BakeryShop.Services;
@@ -10,8 +10,10 @@ builder.Services.AddControllersWithViews();
 // .NET 6/7/8 (Program.cs)
 
 builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<ApiService>();
 
 builder.Services.AddScoped<ApiService>();
+builder.Services.AddScoped<CartService>(); // Thêm dịch vụ CartService vào container
 
 var app = builder.Build();
 
