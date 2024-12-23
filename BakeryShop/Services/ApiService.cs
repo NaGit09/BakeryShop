@@ -24,13 +24,18 @@ namespace BakeryShop.Services
 
         public async Task<T?> GetAsync<T>(string url)
         {
-            var response = await _httpClient.GetAsync(url);
-            response.EnsureSuccessStatusCode();
-            var data = await response.Content.ReadFromJsonAsync<T>();
-            var jsonResponse = await response.Content.ReadAsStringAsync();
-            Console.WriteLine(jsonResponse); // Ghi log để kiểm tra dữ liệu JSON trả về
-
-            return data;
+            try
+            {
+                var response = await _httpClient.GetAsync(url);
+                response.EnsureSuccessStatusCode();
+                var data = await response.Content.ReadFromJsonAsync<T>();
+                return data;
+            }
+            catch (HttpRequestException ex)
+            {
+                // Log lỗi hoặc xử lý lỗi chi tiết hơn
+                throw new Exception($"Lỗi khi gọi API GET: {ex.Message}");
+            }
         }
 
         public async Task<T?> PostAsync<T>(string url, object payload)

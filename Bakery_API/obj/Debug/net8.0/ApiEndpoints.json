@@ -17,14 +17,30 @@
   },
   {
     "ContainingType": "Bakery_API.Controllers.CartController",
+    "Method": "GetAllCartItems",
+    "RelativePath": "api/Cart/all/{orderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bakery_API.Controllers.CartController",
     "Method": "RemoveFromCart",
-    "RelativePath": "api/Cart/remove/{cartItemId}",
+    "RelativePath": "api/Cart/remove/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cartItemId",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -43,22 +59,6 @@
         "Name": "request",
         "Type": "Bakery_API.DTO.UpdateCartItemQuantityRequest",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bakery_API.Controllers.CartController",
-    "Method": "getCartItem",
-    "RelativePath": "api/Cart/userId",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userID",
-        "Type": "System.Int32",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []

@@ -1,6 +1,7 @@
 ﻿using BakeryShop.Services;
 using Bakery_API.DTO;
 using Microsoft.AspNetCore.Mvc;
+using BakeryShop.Util;
 
 namespace BakeryShop.Controllers
 {
@@ -13,35 +14,86 @@ namespace BakeryShop.Controllers
             _cartService = cartService;
         }
 
-        // Lấy danh sách sản phẩm trong giỏ hàng
         public async Task<IActionResult> Index(int userId)
         {
-            var cartItems = await _cartService.GetCartItemsAsync(userId);
-            return View(cartItems);
+            try
+            {
+                // Lấy danh sách giỏ hàng từ API
+                var cartItems = await _cartService.GetCartItemsAsync(userId);
+
+                // Nếu giỏ hàng trống
+                if (cartItems == null || !cartItems.Any())
+                {
+                    ViewBag.Message = "Giỏ hàng của bạn đang trống.";
+                    return View(new List<ShoppingCartItem>());
+                }
+
+                return View(cartItems);
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi nếu API gặp vấn đề
+                ViewBag.ErrorMessage = $"Lỗi: {ex.Message}";
+                return View(new List<ShoppingCartItem>());
+            }
         }
 
-        // Thêm sản phẩm vào giỏ hàng
         [HttpPost]
         public async Task<IActionResult> AddToCart(AddCartRequest request)
         {
-            await _cartService.AddToCartAsync(request);
-            return RedirectToAction("Index", new { userId = request.UserId });
+            if (request == null || request.Quantity <= 0)
+            {
+                return BadRequest("Yêu cầu không hợp lệ.");
+            }
+
+            try
+            {
+                await _cartService.AddToCartAsync(request);
+                return RedirectToAction("Index", new { userId = request.UserId });
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = $"Lỗi: {ex.Message}";
+                return RedirectToAction("Index", new { userId = request.UserId });
+            }
         }
 
-        // Cập nhật số lượng sản phẩm
         [HttpPost]
-        public async Task<IActionResult> UpdateCart(UpdateCartItemQuantityRequest request)
+        public async Task<IActionResult> UpdateCartItem(UpdateCartItemQuantityRequest request)
         {
-            await _cartService.UpdateCartItemAsync(request);
-            return RedirectToAction("Index", new { userId = request.CartItemId });
+            if (request == null || request.Quantity <= 0)
+            {
+                return BadRequest("Số lượng phải lớn hơn 0.");
+            }
+
+            try
+            {
+                await _cartService.UpdateCartItemAsync(request);
+                return RedirectToAction("Index", new { userId = 1 }); // Thay userId bằng giá trị thực tế
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = $"Lỗi: {ex.Message}";
+                return RedirectToAction("Index", new { userId = 1 });
+            }
         }
 
-        // Xóa sản phẩm khỏi giỏ hàng
         [HttpPost]
-        public async Task<IActionResult> RemoveFromCart(int cartItemId, int userId)
+        public async Task<IActionResult> RemoveFromCart(int cartItemId)
         {
-            await _cartService.RemoveCartItemAsync(cartItemId);
-            return RedirectToAction("Index", new { userId });
+            try
+            {
+                await _cartService.RemoveCartItemAsync(cartItemId);
+                return RedirectToAction("Index", new { userId = 1 }); // Thay userId bằng giá trị thực tế
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = $"Lỗi: {ex.Message}";
+                return RedirectToAction("Index", new { userId = 1 });
+            }
         }
+
+
+
     }
 }
