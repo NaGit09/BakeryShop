@@ -14,85 +14,39 @@ namespace BakeryShop.Controllers
             _cartService = cartService;
         }
 
-        public async Task<IActionResult> Index(int userId)
+        public async Task<IActionResult> Index(int orderId)
         {
-            try
-            {
-                // Lấy danh sách giỏ hàng từ API
-                var cartItems = await _cartService.GetCartItemsAsync(userId);
-
-                // Nếu giỏ hàng trống
-                if (cartItems == null || !cartItems.Any())
-                {
-                    ViewBag.Message = "Giỏ hàng của bạn đang trống.";
-                    return View(new List<ShoppingCartItem>());
-                }
-
-                return View(cartItems);
-            }
-            catch (Exception ex)
-            {
-                // Xử lý lỗi nếu API gặp vấn đề
-                ViewBag.ErrorMessage = $"Lỗi: {ex.Message}";
-                return View(new List<ShoppingCartItem>());
-            }
+            var items = await _cartService.GetAllCartItemsAsync(orderId);
+            return View(items);
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddToCart(AddCartRequest request)
+        public async Task<IActionResult> AddToCart(UpdateCartQuantity request)
         {
-            if (request == null || request.Quantity <= 0)
-            {
-                return BadRequest("Yêu cầu không hợp lệ.");
-            }
+            if (!ModelState.IsValid) return View("Error");
 
-            try
-            {
-                await _cartService.AddToCartAsync(request);
-                return RedirectToAction("Index", new { userId = request.UserId });
-            }
-            catch (Exception ex)
-            {
-                ViewBag.ErrorMessage = $"Lỗi: {ex.Message}";
-                return RedirectToAction("Index", new { userId = request.UserId });
-            }
+            var success = await _cartService.AddToCartAsync(request);
+            if (!success) return View("Error");
+
+            return RedirectToAction("Index", new { orderId = request.CartItemId });
         }
 
         [HttpPost]
-        public async Task<IActionResult> UpdateCartItem(UpdateCartItemQuantityRequest request)
+        public async Task<IActionResult> UpdateCart(UpdateCartQuantity request)
         {
-            if (request == null || request.Quantity <= 0)
-            {
-                return BadRequest("Số lượng phải lớn hơn 0.");
-            }
+            if (!ModelState.IsValid) return View("Error");
 
-            try
-            {
-                await _cartService.UpdateCartItemAsync(request);
-                return RedirectToAction("Index", new { userId = 1 }); // Thay userId bằng giá trị thực tế
-            }
-            catch (Exception ex)
-            {
-                ViewBag.ErrorMessage = $"Lỗi: {ex.Message}";
-                return RedirectToAction("Index", new { userId = 1 });
-            }
+            var success = await _cartService.UpdateCartItemQuantityAsync(request);
+            if (!success) return View("Error");
+
+            return RedirectToAction("Index");
         }
 
-        [HttpPost]
-        public async Task<IActionResult> RemoveFromCart(int cartItemId)
+        public async Task<IActionResult> Remove(int id)
         {
-            try
-            {
-                await _cartService.RemoveCartItemAsync(cartItemId);
-                return RedirectToAction("Index", new { userId = 1 }); // Thay userId bằng giá trị thực tế
-            }
-            catch (Exception ex)
-            {
-                ViewBag.ErrorMessage = $"Lỗi: {ex.Message}";
-                return RedirectToAction("Index", new { userId = 1 });
-            }
+            var success = await _cartService.RemoveFromCartAsync(id);
+            return success ? RedirectToAction("Index") : View("Error");
         }
-
 
 
     }

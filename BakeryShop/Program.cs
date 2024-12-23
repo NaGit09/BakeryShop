@@ -12,6 +12,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<ApiService>();
 
+
 builder.Services.AddScoped<ApiService>();
 builder.Services.AddScoped<CartService>(); // Thêm dịch vụ CartService vào container
 

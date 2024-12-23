@@ -19,6 +19,10 @@ namespace Bakery_API.Controllers
         public async Task<IActionResult> GetAllCartItems(int orderId)
         {
             var items = await _cartService.GetAllCartItemsAsync(orderId);
+            if (items == null || !items.Any())
+            {
+                return Ok(new List<CartItem>()); // Trả về danh sách rỗng thay vì null
+            }
             return Ok(items);
         }
 

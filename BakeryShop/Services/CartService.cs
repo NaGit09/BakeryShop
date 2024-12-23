@@ -1,41 +1,46 @@
-﻿using Bakery_API.DTO;
-using Bakery_API.Models;
+﻿using Bakery_API.Models;
+using BakeryShop.Util;
 
 namespace BakeryShop.Services
 {
     public class CartService
     {
         private readonly ApiService _apiService;
-        private readonly string _baseUrl = "https://localhost:7056/api/Cart"; // URL của API
 
         public CartService(ApiService apiService)
         {
             _apiService = apiService;
         }
-
-        public async Task<List<ShoppingCartItem>> GetCartItemsAsync(int userId)
+        public async Task<List<CartItem>> GetAllCartItemsAsync(int orderId)
         {
-            userId = 1;
-            string url = $"{_baseUrl}/userId?userID={userId}";
-            return await _apiService.GetAsync<List<ShoppingCartItem>>(url);
+            var apiUrl = $"https://localhost:7056/api/cart/all/{orderId}"; // Thay URL phù hợp
+            return await _apiService.GetAsync<List<CartItem>>(apiUrl) ?? new List<CartItem>();
+            //return await _apiService.GetAsync<List<CartItem>>($"cart/all/{orderId}") ?? new List<CartItem>();
         }
 
-        public async Task AddToCartAsync(AddCartRequest request)
+        public async Task<bool> AddToCartAsync(UpdateCartQuantity request)
         {
-            string url = $"{_baseUrl}/add";
-            await _apiService.PostAsync<object>(url, request);
+            var response = await _apiService.PostAsync<ResponseServices<bool>>("cart/add", request);
+            return response?.Success ?? false;
         }
 
-        public async Task UpdateCartItemAsync(UpdateCartItemQuantityRequest request)
+        public async Task<bool> UpdateCartItemQuantityAsync(UpdateCartQuantity request)
         {
-            string url = $"{_baseUrl}/update";
-            await _apiService.PutAsync<object>(url, request);
+            var response = await _apiService.PutAsync<ResponseServices<bool>>("cart/update", request);
+            return response?.Success ?? false;
         }
 
-        public async Task RemoveCartItemAsync(int cartItemId)
+        public async Task<bool> RemoveFromCartAsync(int cartItemId)
         {
-            string url = $"{_baseUrl}/remove/{cartItemId}";
-            await _apiService.DeleteAsync(url);
+            try
+            {
+                await _apiService.DeleteAsync($"cart/remove/{cartItemId}");
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

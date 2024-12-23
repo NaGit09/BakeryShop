@@ -13,30 +13,36 @@ namespace BakeryShop.Services
 
             _httpClient = httpClient;
         }
-        //public async Task<List<T>> GetAsync<T>(string url)
-        //{
-        //    var response = await _httpClient.GetAsync(url);
-        //    response.EnsureSuccessStatusCode();
-
-        //    var data = await response.Content.ReadFromJsonAsync<List<T>>();
-        //    return data ?? new List<T>();
-        //}
-
-        public async Task<T?> GetAsync<T>(string url)
+        public async Task<List<T>> GetAsync<T>(string url)
         {
-            try
-            {
-                var response = await _httpClient.GetAsync(url);
-                response.EnsureSuccessStatusCode();
-                var data = await response.Content.ReadFromJsonAsync<T>();
-                return data;
-            }
-            catch (HttpRequestException ex)
-            {
-                // Log lỗi hoặc xử lý lỗi chi tiết hơn
-                throw new Exception($"Lỗi khi gọi API GET: {ex.Message}");
-            }
+            var response = await _httpClient.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+
+            var data = await response.Content.ReadFromJsonAsync<List<T>>();
+            return data ?? new List<T>();
         }
+
+        //public async Task<T?> GetAsync<T>(string url)
+        //{
+        //    try
+        //    {
+        //        var response = await _httpClient.GetAsync(url);
+        //        response.EnsureSuccessStatusCode();
+
+        //        var jsonString = await response.Content.ReadAsStringAsync(); // Log dữ liệu trả về
+        //        Console.WriteLine("JSON Response: " + jsonString);
+
+        //        var data = JsonSerializer.Deserialize<T>(jsonString, new JsonSerializerOptions
+        //        {
+        //            PropertyNameCaseInsensitive = true // Bỏ qua phân biệt hoa thường
+        //        });
+        //        return data;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception($"Lỗi khi gọi API GET: {ex.Message}");
+        //    }
+        //}
 
         public async Task<T?> PostAsync<T>(string url, object payload)
         {
