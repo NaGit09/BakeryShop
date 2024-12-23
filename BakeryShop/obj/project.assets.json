@@ -5222,11 +5222,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
       "projectName": "BakeryShop",
       "projectPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
       "packagesPath": "C:\\Users\\nhuta\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\nhuta\\Source\\Repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
+      "projectName": "BakeryShop",
+      "projectPath": "C:\\Users\\nhuta\\Source\\Repos\\BakeryShop\\BakeryShop\\BakeryShop.csproj",
+      "packagesPath": "C:\\Users\\nhuta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nhuta\\Source\\Repos\\BakeryShop\\BakeryShop\\obj\\",
+>>>>>>> nhutanh
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nhuta\\AppData\\Roaming\\NuGet\\NuGet.Config",

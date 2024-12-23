@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj": {}
+    "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Bakery_API.csproj": {}
   },
   "projects": {
-    "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj": {
+    "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Bakery_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
+        "projectUniqueName": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
         "projectName": "Bakery_API",
-        "projectPath": "D:\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
-        "packagesPath": "C:\\Users\\Van Tran\\.nuget\\packages\\",
-        "outputPath": "D:\\BakeryShop\\Bakery_API\\obj\\",
+        "projectPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\Bakery_API.csproj",
+        "packagesPath": "C:\\Users\\nhuta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\Bakery_API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Van Tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\nhuta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -100,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

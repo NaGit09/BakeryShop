@@ -20,7 +20,7 @@ namespace BakeryShop.Controllers
         [HttpPost]
         public async Task<IActionResult> SignUp(RegisterValidation request)
         {
-            string apiUrl = "https://localhost:7056/api/User/SignUp";
+            string apiUrl = "https://localhost:7056/Product/GetAll";
 
 
             var response = await _apiService.PostAsync<ResponseServices<Object>>(apiUrl, request);
