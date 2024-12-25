@@ -96,6 +96,74 @@ namespace BakeryShop.Controllers
 
 
         }
+        [HttpPost]
+        public async Task<IActionResult> CheckMail(ForgotPasswordValidation mail)
+        {
+            string apiUrl = "https://localhost:7056/api/User/CheckMail";
+
+            var response = await _apiService.PostAsync<ResponseServices<String>>(apiUrl, mail);
+
+            if (response.Success)
+            {
+
+                TempData["StatusMail"] = response.Message;
+                return RedirectToAction("ForgotPassword", "BakeryShop");
+            }
+            else
+            {
+
+                TempData["StatusMail"] = response.Message;
+                return RedirectToAction("ForgotPassword", "BakeryShop");
+
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ValidToken(String token)
+        {
+            string apiUrl = "https://localhost:7056/api/User/ValidToken?token=" + token;
+            var response = await _apiService.GetAsyncToken<ResponseServices<String>>(apiUrl);
+
+            if (response.Success)
+            {
+
+                TempData["Status"] = response.Message;
+                return RedirectToAction("ResetPassword", "BakeryShop");
+            }
+            else
+            {
+
+                TempData["Status"] = response.Message;
+                return RedirectToAction("ForgotPassword", "BakeryShop");
+
+            }
+
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPassword resetPassword)
+        {
+            string apiUrl = "https://localhost:7056/api/User/ResetPassword";
+            var response = await _apiService.PostAsync<ResponseServices<String>>(apiUrl, resetPassword);
+
+            if (response.Success)
+            {
+                TempData["SuccessMessage"] = response.Message;
+                return RedirectToAction("Index", "BakeryShop");
+            }
+            else
+            {
+                TempData["ErrorMessage"] = response.Message;
+                return RedirectToAction("ResetPassword", "BakeryShop");
+
+            }
+        }
+
+
+
+
+
+
 
 
 
