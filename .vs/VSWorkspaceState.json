@@ -1,13 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github",
     "\\BakeryShop",
-    "\\BakeryShop\\bin",
-    "\\BakeryShop\\bin\\Debug",
-    "\\BakeryShop\\Controllers",
-    "\\BakeryShop\\Models"
+    "\\BakeryShop\\obj\\Release",
+    "\\BakeryShop\\obj\\Release\\net8.0",
+    "\\BakeryShop\\Views",
+    "\\BakeryShop\\Views\\BakeryShop",
+    "\\BakeryShop\\Views\\Shared",
+    "\\Bakery_API",
+    "\\Bakery_API\\DTO",
+    "\\Bakery_API\\obj"
   ],
-  "SelectedNode": "\\BakeryShop\\Models\\Image.cs",
+  "SelectedNode": "\\BakeryShop\\BakeryShop.csproj",
   "PreviewInSolutionExplorer": false
 }

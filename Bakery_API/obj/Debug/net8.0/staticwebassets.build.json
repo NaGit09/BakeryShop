@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "m5sg9KK61pG2tqkx8RIxzcvzZPmSfLg1hpS8TN3rtPk=",
+  "Hash": "TSTiM8q12DZAFst/qPoAxkP4HlFrR9xXRE5yMsPQnvc=",
   "Source": "Bakery_API",
   "BasePath": "_content/Bakery_API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
