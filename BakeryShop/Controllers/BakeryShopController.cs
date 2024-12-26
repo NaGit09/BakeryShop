@@ -29,7 +29,10 @@ namespace BakeryShop.Controllers
             // Truyền danh sách sản phẩm đến View
             return View(response);
         }
-
+        public String ProductDetail(int id)
+        {
+            return id+"";
+        }
 
         public IActionResult login()
         {

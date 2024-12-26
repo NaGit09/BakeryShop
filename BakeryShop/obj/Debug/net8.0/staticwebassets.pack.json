@@ -73,10 +73,6 @@
       "PackagePath": "staticwebassets\\img\\Combo_Gray.png"
     },
     {
-      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\HA538@@Chicken_Mala_4pcs.webp",
-      "PackagePath": "staticwebassets\\img\\HA538@@Chicken_Mala_4pcs.webp"
-    },
-    {
       "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\Logo.png",
       "PackagePath": "staticwebassets\\img\\Logo.png"
     },
@@ -91,6 +87,346 @@
     {
       "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\Water_Gray.webp",
       "PackagePath": "staticwebassets\\img\\Water_Gray.webp"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhcapdong1.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong1.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhcapdong2.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong2.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhcapdong3.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong3.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhcapdong4.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong4.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhcapdong5.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong5.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhcapdong6.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong6.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhcapdong7.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong7.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem1.png",
+      "PackagePath": "staticwebassets\\img\\banhkem1.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem10.png",
+      "PackagePath": "staticwebassets\\img\\banhkem10.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem11.png",
+      "PackagePath": "staticwebassets\\img\\banhkem11.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem12.png",
+      "PackagePath": "staticwebassets\\img\\banhkem12.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem13.png",
+      "PackagePath": "staticwebassets\\img\\banhkem13.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem14.png",
+      "PackagePath": "staticwebassets\\img\\banhkem14.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem15.png",
+      "PackagePath": "staticwebassets\\img\\banhkem15.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem16.png",
+      "PackagePath": "staticwebassets\\img\\banhkem16.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem17.png",
+      "PackagePath": "staticwebassets\\img\\banhkem17.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem18.png",
+      "PackagePath": "staticwebassets\\img\\banhkem18.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem19.png",
+      "PackagePath": "staticwebassets\\img\\banhkem19.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem2.png",
+      "PackagePath": "staticwebassets\\img\\banhkem2.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem21.png",
+      "PackagePath": "staticwebassets\\img\\banhkem21.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem22.png",
+      "PackagePath": "staticwebassets\\img\\banhkem22.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem23.png",
+      "PackagePath": "staticwebassets\\img\\banhkem23.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem24.png",
+      "PackagePath": "staticwebassets\\img\\banhkem24.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem3.png",
+      "PackagePath": "staticwebassets\\img\\banhkem3.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem4.png",
+      "PackagePath": "staticwebassets\\img\\banhkem4.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem5.png",
+      "PackagePath": "staticwebassets\\img\\banhkem5.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem7.png",
+      "PackagePath": "staticwebassets\\img\\banhkem7.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem8.png",
+      "PackagePath": "staticwebassets\\img\\banhkem8.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhkem9.png",
+      "PackagePath": "staticwebassets\\img\\banhkem9.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhlanh1.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh1.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhlanh2.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh2.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhlanh3.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh3.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhlanh4.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh4.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhlanh5.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh5.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhlanh6.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh6.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong1.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong1.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong10.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong10.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong11.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong11.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong12.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong12.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong2.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong2.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong3.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong3.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong4.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong4.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong5.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong5.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong6.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong6.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong7.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong7.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong8.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong8.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhnuong9.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong9.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhquy1.png",
+      "PackagePath": "staticwebassets\\img\\banhquy1.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhquy2.png",
+      "PackagePath": "staticwebassets\\img\\banhquy2.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhquy3.png",
+      "PackagePath": "staticwebassets\\img\\banhquy3.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhquy4.png",
+      "PackagePath": "staticwebassets\\img\\banhquy4.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhquy5.png",
+      "PackagePath": "staticwebassets\\img\\banhquy5.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhquy6.png",
+      "PackagePath": "staticwebassets\\img\\banhquy6.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\banhquy7.png",
+      "PackagePath": "staticwebassets\\img\\banhquy7.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem1.png",
+      "PackagePath": "staticwebassets\\img\\carem1.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem2.png",
+      "PackagePath": "staticwebassets\\img\\carem2.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem3.png",
+      "PackagePath": "staticwebassets\\img\\carem3.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem4.png",
+      "PackagePath": "staticwebassets\\img\\carem4.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem5.png",
+      "PackagePath": "staticwebassets\\img\\carem5.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem6.png",
+      "PackagePath": "staticwebassets\\img\\carem6.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem7.png",
+      "PackagePath": "staticwebassets\\img\\carem7.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem8.png",
+      "PackagePath": "staticwebassets\\img\\carem8.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\carem9.png",
+      "PackagePath": "staticwebassets\\img\\carem9.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\phukien1.png",
+      "PackagePath": "staticwebassets\\img\\phukien1.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\phukien2.png",
+      "PackagePath": "staticwebassets\\img\\phukien2.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\phukien3.png",
+      "PackagePath": "staticwebassets\\img\\phukien3.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\phukien4.png",
+      "PackagePath": "staticwebassets\\img\\phukien4.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\phukien5.png",
+      "PackagePath": "staticwebassets\\img\\phukien5.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\phukien6.png",
+      "PackagePath": "staticwebassets\\img\\phukien6.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\phukien7.png",
+      "PackagePath": "staticwebassets\\img\\phukien7.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\phukien8.png",
+      "PackagePath": "staticwebassets\\img\\phukien8.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-Tôm-Hoàng-Kim.png",
+      "PackagePath": "staticwebassets\\img\\pizza-Tôm-Hoàng-Kim.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-ca-hoi.png",
+      "PackagePath": "staticwebassets\\img\\pizza-ca-hoi.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-con-loc-hai-san.png",
+      "PackagePath": "staticwebassets\\img\\pizza-con-loc-hai-san.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-gap-doi-nhan-doi-phu-hai-san-xot-pesto.png",
+      "PackagePath": "staticwebassets\\img\\pizza-gap-doi-nhan-doi-phu-hai-san-xot-pesto.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-gap-doi-nhan-phu-con-loc-hai-san.png",
+      "PackagePath": "staticwebassets\\img\\pizza-gap-doi-nhan-phu-con-loc-hai-san.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-gap-doi-nhan-phu-hai-san-xot-tieu-den.png",
+      "PackagePath": "staticwebassets\\img\\pizza-gap-doi-nhan-phu-hai-san-xot-tieu-den.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-hai-san-nhiet-doi.png",
+      "PackagePath": "staticwebassets\\img\\pizza-hai-san-nhiet-doi.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-pepperoni.png",
+      "PackagePath": "staticwebassets\\img\\pizza-pepperoni.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-pho-mai.png",
+      "PackagePath": "staticwebassets\\img\\pizza-pho-mai.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-rau-cu-sot-ca-chua.png",
+      "PackagePath": "staticwebassets\\img\\pizza-rau-cu-sot-ca-chua.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-thap-cam.png",
+      "PackagePath": "staticwebassets\\img\\pizza-thap-cam.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-tom-thit-nuong-tieu.png",
+      "PackagePath": "staticwebassets\\img\\pizza-tom-thit-nuong-tieu.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-tu-vi-xuan.png",
+      "PackagePath": "staticwebassets\\img\\pizza-tu-vi-xuan.png"
+    },
+    {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\img\\pizza-vien-pho-mai-hai-loai-nhan-phu.png",
+      "PackagePath": "staticwebassets\\img\\pizza-vien-pho-mai-hai-loai-nhan-phu.png"
     },
     {
       "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\Navbar%Footer.js",

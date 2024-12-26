@@ -8,7 +8,6 @@ namespace BakeryShop.Services
 
         public ApiService(HttpClient httpClient)
         {
-
             _httpClient = httpClient;
         }
         public async Task<List<Product>> GetAsync<T>(string url)
@@ -18,17 +17,8 @@ namespace BakeryShop.Services
             // Đọc toàn bộ JSON trả về
             var responseData = await response.Content.ReadFromJsonAsync<ResponseServices<List<Product>>>();
             // Trả về dữ liệu từ thuộc tính 'Data', hoặc danh sách rỗng nếu không có dữ liệu
-            foreach (var item in responseData.Data)
-            {
-                Console.WriteLine(item.Name);
-                Console.WriteLine(item.Img);
-                Console.WriteLine(item.Description);
-                Console.WriteLine(item.Price);
-            }
             return responseData?.Data ?? new List<Product>();
         }
-
-
         public async Task<T?> PostAsync<T>(string url, object payload)
         {
             var response = await _httpClient.PostAsJsonAsync(url, payload);

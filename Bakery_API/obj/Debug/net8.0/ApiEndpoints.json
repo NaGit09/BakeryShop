@@ -1,16 +1,16 @@
 [
   {
     "ContainingType": "Bakery_API.Controllers.ProductController",
-    "Method": "GetByProductCategoryId",
-    "RelativePath": "api/Product",
+    "Method": "FilterById",
+    "RelativePath": "api/Product/FilterById",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "productCategoryId",
+        "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -23,6 +23,38 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bakery_API.Controllers.ProductController",
+    "Method": "GetByGroupProductId",
+    "RelativePath": "api/Product/GetByGroupProductId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GroupProductId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bakery_API.Controllers.ProductController",
+    "Method": "GetByProductCategoryId",
+    "RelativePath": "api/Product/GetByProductCategoryId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {
