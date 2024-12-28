@@ -9,7 +9,7 @@ public partial class Product
 
     public string Name { get; set; } = null!;
 
-    public decimal Price { get; set; }
+    public decimal? Price { get; set; }
 
     public decimal? Discount { get; set; }
 
@@ -17,7 +17,9 @@ public partial class Product
 
     public int GroupProductId { get; set; }
 
-    public virtual ICollection<Color> Colors { get; set; } = new List<Color>();
+    public string? Description { get; set; }
+
+    public string? Img { get; set; }
 
     public virtual GroupProduct GroupProduct { get; set; } = null!;
 

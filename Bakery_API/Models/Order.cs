@@ -23,8 +23,6 @@ public partial class Order
 
     public virtual Payment Payment { get; set; } = null!;
 
-    public virtual ICollection<ShoppingCartItem> ShoppingCartItems { get; set; } = new List<ShoppingCartItem>();
-
     public virtual ICollection<Status> Statuses { get; set; } = new List<Status>();
 
     public virtual User User { get; set; } = null!;

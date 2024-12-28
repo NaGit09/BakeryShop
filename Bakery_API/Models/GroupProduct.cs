@@ -9,7 +9,5 @@ public partial class GroupProduct
 
     public string Name { get; set; } = null!;
 
-    public byte[]? Image { get; set; }
-
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

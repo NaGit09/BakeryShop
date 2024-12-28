@@ -14,42 +14,36 @@ namespace Bakery_API.Controllers
         {
             _cartService = cartService;
         }
-
-        [HttpGet("all/{orderId}")]
-        public async Task<IActionResult> GetAllCartItems(int orderId)
+        [HttpGet("{cartId}")]
+        public async Task<IActionResult> GetCartItems(int cartId)
         {
-            var items = await _cartService.GetAllCartItemsAsync(orderId);
-            if (items == null || !items.Any())
-            {
-                return Ok(new List<CartItem>()); // Trả về danh sách rỗng thay vì null
-            }
-            return Ok(items);
+            var cartItems = await _cartService.GetCartItemsAsync(cartId);
+            return Ok(cartItems);
         }
 
-        [HttpPost("add")]
-        public async Task<IActionResult> AddToCart([FromBody] AddCartRequest request)
+        [HttpPost]
+        public async Task<IActionResult> AddCartItem(AddCartItemRequest request)
         {
-            var result = await _cartService.AddToCartAsync(request);
-            if (!result) return BadRequest("thêm sản phẩm thất bại");
-            return Ok("sản phẩm đã được thêm.");
+            var success = await _cartService.AddCartItemAsync(request);
+            if (!success) return BadRequest("Thêm sản phẩm thất bại");
+            return Ok("Thêm sản phẩm thành công");
         }
 
-        [HttpPut("update")]
-        public async Task<IActionResult> UpdateCartItemQuantity([FromBody] UpdateCartItemQuantityRequest request)
+        [HttpPut]
+        public async Task<IActionResult> UpdateCartItemQuantity(UpdateCartItemQuantityRequest request)
         {
-            var result = await _cartService.UpdateCartItemQuantityAsync(request);
-            if (!result) return NotFound("Không tìm thấy giỏ hàng.");
-            return Ok("Sản phẩm đã được cập nhật số lượng.");
+            var success = await _cartService.UpdateCartItemQuantityAsync(request);
+            if (!success) return BadRequest("Cập nhật số lượng sản phẩm thất bại");
+            return Ok("Cập nhật số lượng sản phẩm thành công");
         }
 
-        [HttpDelete("remove/{id}")]
-        public async Task<IActionResult> RemoveFromCart(int id)
+        [HttpDelete("{cartItemId}/{cartId}")]
+        public async Task<IActionResult> RemoveCartItem(int cartItemId, int cartId)
         {
-            var result = await _cartService.RemoveFromCartAsync(id);
-            if (!result) return NotFound("Không tìm thấy sản phẩm.");
-            return Ok("Sản phẩm đã được xoá khỏi giỏ hàng.");
+            var success = await _cartService.RemoveCartItemAsync(cartItemId, cartId);
+            if (!success) return BadRequest("Xoá sản phẩm khỏi giỏ hàng thất bại");
+            return Ok("Xoá sản phẩm thành công");
         }
-
 
     }
 }

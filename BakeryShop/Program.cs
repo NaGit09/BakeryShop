@@ -9,7 +9,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 // .NET 6/7/8 (Program.cs)
 
+
 builder.Services.AddHttpClient();
+builder.Services.AddHttpClient("BakeryApi", client =>
+{
+    client.BaseAddress = new Uri("https://localhost:7056/api/"); 
+});
+
 builder.Services.AddHttpClient<ApiService>();
 
 
@@ -32,6 +38,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+
 
 app.MapControllerRoute(
     name: "default",

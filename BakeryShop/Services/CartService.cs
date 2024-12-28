@@ -1,46 +1,42 @@
 ﻿using Bakery_API.Models;
 using BakeryShop.Util;
+using System.Text.Json;
 
 namespace BakeryShop.Services
 {
     public class CartService
     {
-        private readonly ApiService _apiService;
+        private readonly HttpClient _httpClient;
 
-        public CartService(ApiService apiService)
+        public CartService(IHttpClientFactory httpClientFactory)
         {
-            _apiService = apiService;
-        }
-        public async Task<List<CartItem>> GetAllCartItemsAsync(int orderId)
-        {
-            var apiUrl = $"https://localhost:7056/api/cart/all/{orderId}"; // Thay URL phù hợp
-            return await _apiService.GetAsync<List<CartItem>>(apiUrl) ?? new List<CartItem>();
-            //return await _apiService.GetAsync<List<CartItem>>($"cart/all/{orderId}") ?? new List<CartItem>();
+            _httpClient = httpClientFactory.CreateClient("BakeryApi");
         }
 
-        public async Task<bool> AddToCartAsync(UpdateCartQuantity request)
+        public async Task<List<CartItemResponse>> GetCartItemsAsync(int cartId)
         {
-            var response = await _apiService.PostAsync<ResponseServices<bool>>("cart/add", request);
-            return response?.Success ?? false;
+            var response = await _httpClient.GetAsync($"Cart/{cartId}");
+            response.EnsureSuccessStatusCode();
+            var cartItems = await response.Content.ReadFromJsonAsync<List<CartItemResponse>>();
+            return cartItems ?? new List<CartItemResponse>();
         }
 
-        public async Task<bool> UpdateCartItemQuantityAsync(UpdateCartQuantity request)
+        public async Task<bool> AddCartItemAsync(AddCartItemRequest request)
         {
-            var response = await _apiService.PutAsync<ResponseServices<bool>>("cart/update", request);
-            return response?.Success ?? false;
+            var response = await _httpClient.PostAsJsonAsync("Cart", request);
+            return response.IsSuccessStatusCode;
         }
 
-        public async Task<bool> RemoveFromCartAsync(int cartItemId)
+        public async Task<bool> UpdateCartItemQuantityAsync(UpdateCartItemQuantityRequest request)
         {
-            try
-            {
-                await _apiService.DeleteAsync($"cart/remove/{cartItemId}");
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            var response = await _httpClient.PutAsJsonAsync("Cart", request);
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<bool> RemoveCartItemAsync(int cartItemId, int cartId)
+        {
+            var response = await _httpClient.DeleteAsync($"Cart/{cartItemId}/{cartId}");
+            return response.IsSuccessStatusCode;
         }
     }
 }

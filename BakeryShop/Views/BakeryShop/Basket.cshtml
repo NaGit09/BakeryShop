@@ -5,6 +5,8 @@
     <partial name="header2" />
 }
 
+@model List<BakeryShop.Util.CartItemResponse>
+
 
 
 <main>
@@ -17,7 +19,28 @@
             </a>
             <div><h2 class="login-title">Giỏ hàng của bạn</h2></div>
             <div>
-                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.ProductName</td>
+                                <td>@item.Price.ToString("C")</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.TotalPrice.ToString("C")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
             </div>
         </div>
         <div class="container">

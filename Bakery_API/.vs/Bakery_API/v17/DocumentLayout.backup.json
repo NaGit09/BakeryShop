@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\services\\cartservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:services\\cartservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\models\\shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:models\\shoppingcartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\dto\\updatecartitemquantityrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:dto\\updatecartitemquantityrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\dto\\addcartrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:dto\\addcartrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\dto\\addcartitemrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:dto\\addcartitemrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\interfaces\\icart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:interfaces\\icart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|g:\\codec#\\projectdotnet\\bakeryshop\\bakery_api\\dto\\cartitemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B9B90EA-F084-4A65-A91D-5C8C88278DA1}|Bakery_API.csproj|solutionrelative:dto\\cartitemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,67 +50,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
-              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Controllers\\CartController.cs",
-              "RelativeToolTip": "Controllers\\CartController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:49:02.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateCartItemQuantityRequest.cs",
-              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\UpdateCartItemQuantityRequest.cs",
-              "RelativeDocumentMoniker": "DTO\\UpdateCartItemQuantityRequest.cs",
-              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\UpdateCartItemQuantityRequest.cs",
-              "RelativeToolTip": "DTO\\UpdateCartItemQuantityRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:24:28.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AddCartRequest.cs",
-              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\AddCartRequest.cs",
-              "RelativeDocumentMoniker": "DTO\\AddCartRequest.cs",
-              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\AddCartRequest.cs",
-              "RelativeToolTip": "DTO\\AddCartRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ICart.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Interfaces\\ICart.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICart.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Interfaces\\ICart.cs",
+              "RelativeToolTip": "Interfaces\\ICart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:24:23.52Z",
+              "WhenOpened": "2024-12-28T04:43:50.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShoppingCartItem.cs",
-              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Models\\ShoppingCartItem.cs",
-              "RelativeDocumentMoniker": "Models\\ShoppingCartItem.cs",
-              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Models\\ShoppingCartItem.cs",
-              "RelativeToolTip": "Models\\ShoppingCartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:10:46.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CartServices.cs",
               "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Services\\CartServices.cs",
               "RelativeDocumentMoniker": "Services\\CartServices.cs",
               "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Services\\CartServices.cs",
               "RelativeToolTip": "Services\\CartServices.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwE0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T14:02:31.047Z",
+              "WhenOpened": "2024-12-28T04:38:19.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T04:38:14.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateCartItemQuantityRequest.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\UpdateCartItemQuantityRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\UpdateCartItemQuantityRequest.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\UpdateCartItemQuantityRequest.cs",
+              "RelativeToolTip": "DTO\\UpdateCartItemQuantityRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T04:38:11.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartItemResponse.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\CartItemResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\CartItemResponse.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\CartItemResponse.cs",
+              "RelativeToolTip": "DTO\\CartItemResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T04:38:03.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddCartItemRequest.cs",
+              "DocumentMoniker": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\AddCartItemRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\AddCartItemRequest.cs",
+              "ToolTip": "G:\\CodeC#\\projectDotNET\\BakeryShop\\Bakery_API\\DTO\\AddCartItemRequest.cs",
+              "RelativeToolTip": "DTO\\AddCartItemRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T04:38:01.875Z",
               "EditorCaption": ""
             }
           ]

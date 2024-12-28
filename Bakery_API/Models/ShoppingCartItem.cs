@@ -11,9 +11,6 @@ public partial class ShoppingCartItem
 
     public int ProductId { get; set; }
 
-    public int OrderId { get; set; }
-
-    public virtual Order Order { get; set; } = null!;
-
     public virtual Product Product { get; set; } = null!;
+    public int CartId { get; internal set; } // dung de xac dinh gio hang tuong tu nhu sessionID
 }

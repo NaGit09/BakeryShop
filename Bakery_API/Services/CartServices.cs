@@ -14,76 +14,74 @@ namespace Bakery_API.Services
             _context = context;
         }
 
-
-        // do shopping khong co userId nen ta se lay theo orderId thay vi userId
-        //SELECT s.productId, o.orderId, o.totalPrice From ShoppingCartItems s
-        //Join Orders o On s.orderId = o.orderId
-        //Where userId = 1;
-        public async Task<List<CartItem>> GetAllCartItemsAsync(int orderId)
+        public async Task<bool> AddCartItemAsync(AddCartItemRequest request)
         {
-            var cartItems = await _context.ShoppingCartItems
-                .Where(c => c.OrderId == orderId)
-                .Include(c => c.Product) // Giả sử có mối quan hệ với bảng Product
-                .Select(c => new CartItem
+            // Kiểm tra nếu sản phẩm đã tồn tại trong giỏ hàng
+            var existingCartItem = await _context.ShoppingCartItems
+                .FirstOrDefaultAsync(item => item.CartId == request.CartId && item.ProductId == request.ProductId);
+
+            if (existingCartItem != null)
+            {
+                // Nếu sản phẩm đã tồn tại, cập nhật số lượng
+                existingCartItem.Quantity += request.Quantity;
+            }
+            else
+            {
+                // Nếu không, thêm sản phẩm mới vào giỏ hàng
+                var newCartItem = new ShoppingCartItem
                 {
-                    ShoppingCartItemId = c.ShoppingCartItemId,
-                    ProductId = c.ProductId,
-                    ProductName = c.Product.Name,
-                    Quantity = c.Quantity,
-                    Price = c.Product.Price
+                    CartId = request.CartId,
+                    ProductId = request.ProductId,
+                    Quantity = request.Quantity
+                };
+                await _context.ShoppingCartItems.AddAsync(newCartItem);
+            }
+
+            return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<List<CartItemResponse>> GetCartItemsAsync(int cartId)
+        {
+            // Truy vấn danh sách sản phẩm trong giỏ hàng
+            var cartItems = await _context.ShoppingCartItems
+                .Where(item => item.CartId == cartId)
+                .Include(item => item.Product)
+                .Select(item => new CartItemResponse
+                {
+                    CartItemId = item.ShoppingCartItemId,
+                    ProductName = item.Product.Name,
+                    //giá trị mặc định 0 sẽ được sử dụng thay thế nếu giá sản phẩm không tồn tại
+                    Price = (decimal)(item.Product.Price ?? 0), 
+                    Quantity = item.Quantity
                 })
                 .ToListAsync();
 
             return cartItems;
         }
 
-        public async Task<bool> AddToCartAsync(AddCartRequest request)
+        public async Task<bool> RemoveCartItemAsync(int cartItemId, int cartId)
         {
-            var product = await _context.Products.FindAsync(request.ProductId);
-            if (product == null) return false;
+            // Tìm sản phẩm trong giỏ hàng cần xóa
+            var cartItem = await _context.ShoppingCartItems
+                .FirstOrDefaultAsync(item => item.ShoppingCartItemId == cartItemId && item.CartId == cartId);
 
-            var existingItem = await _context.ShoppingCartItems
-                .FirstOrDefaultAsync(c => c.ProductId == request.ProductId && c.OrderId == request.OrderId);
+            if (cartItem == null) return false;
 
-            if (existingItem != null)
-            {
-                existingItem.Quantity += request.Quantity;
-            }
-            else
-            {
-                var cartItem = new ShoppingCartItem
-                {
-                    ProductId = request.ProductId,
-                    OrderId = request.OrderId,
-                    Quantity = request.Quantity
-                };
-                await _context.ShoppingCartItems.AddAsync(cartItem);
-            }
-
-            await _context.SaveChangesAsync();
-            return true;
+            _context.ShoppingCartItems.Remove(cartItem);
+            return await _context.SaveChangesAsync() > 0;
         }
 
         public async Task<bool> UpdateCartItemQuantityAsync(UpdateCartItemQuantityRequest request)
         {
-            var cartItem = await _context.ShoppingCartItems.FindAsync(request.ShoppingCartItemId);
+            // Tìm sản phẩm trong giỏ hàng
+            var cartItem = await _context.ShoppingCartItems
+                .FirstOrDefaultAsync(item => item.ShoppingCartItemId == request.CartItemId);
+
             if (cartItem == null) return false;
 
+            // Cập nhật số lượng
             cartItem.Quantity = request.Quantity;
-            await _context.SaveChangesAsync();
-            return true;
+            return await _context.SaveChangesAsync() > 0;
         }
-
-        public async Task<bool> RemoveFromCartAsync(int shoppingCartItemId)
-        {
-            var cartItem = await _context.ShoppingCartItems.FindAsync(shoppingCartItemId);
-            if (cartItem == null) return false;
-
-            _context.ShoppingCartItems.Remove(cartItem);
-            await _context.SaveChangesAsync();
-            return true;
-        }
-
-       
     }
 }
