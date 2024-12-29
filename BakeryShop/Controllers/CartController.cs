@@ -17,10 +17,8 @@ namespace BakeryShop.Controllers
         public async Task<IActionResult> Index(int cartId)
         {
             var cartItems = await _cartService.GetCartItemsAsync(cartId);
-            return View(cartItems);
+            return View("~/Views/BakeryShop/Basket.cshtml",cartItems); 
         }
-
-
 
 
     }

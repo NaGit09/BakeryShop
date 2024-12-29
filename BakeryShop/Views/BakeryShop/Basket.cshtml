@@ -19,41 +19,44 @@
             </a>
             <div><h2 class="login-title">Giỏ hàng của bạn</h2></div>
             <div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Sản phẩm</th>
-                            <th>Giá</th>
-                            <th>Số lượng</th>
-                            <th>Tổng giá</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>@item.ProductName</td>
-                                <td>@item.Price.ToString("C")</td>
-                                <td>@item.Quantity</td>
-                                <td>@item.TotalPrice.ToString("C")</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
+                
 
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
+                    @*
                     <div class="absolute-center flex-column" style="height: 500px">
-                        <i class="bi bi-bag-check-fill" style="font-size: 120px"></i>
-                        <p class="fs-2 m-3">Giỏ hàng của bạn trống</p>
-                        <p class="fs-5">
-                            Giỏ hàng của bạn trông hơi trống. Tại sao không thử một vài
-                            món <a href="">trong món ăn của chúng tôi?</a>
-                        </p>
+                    <i class="bi bi-bag-check-fill" style="font-size: 120px"></i>
+                    <p class="fs-2 m-3">Giỏ hàng của bạn trống</p>
+                    <p class="fs-5">
+                    Giỏ hàng của bạn trông hơi trống. Tại sao không thử một vài
+                    món <a href="">trong món ăn của chúng tôi?</a>
+                    </p>
                     </div>
+                    *@
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Tổng giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.Price.ToString("C")</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.TotalPrice.ToString("C")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-3 p-2">
