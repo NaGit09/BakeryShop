@@ -1,0 +1,91 @@
+﻿@{
+    ViewData["title"] = "store";
+}
+@section CSS {
+    <link rel="stylesheet" href="~/css/index.css" />
+}
+@section Header {
+    <partial name="header1" />
+}
+@model List<BakeryShop.Services.Product>
+<style>
+    .product {
+        display: none; /* Ẩn sản phẩm mặc định */
+        margin: 10px 0;
+    }
+
+        .product.active {
+            display: block; /* Hiển thị sản phẩm khi được kích hoạt */
+        }
+</style>
+<main class="col-md-9" style="margin-top : 100px;">
+    <h2>Bộ lọc sản phẩm</h2>
+    <!-- Filter Section -->
+    <div class="mb-4">
+        <label class="me-3"><input type="checkbox" class="filter-checkbox" value="Bánh kem"> Bánh</label>
+        <label class="me-3"><input type="checkbox" class="filter-checkbox" value="Pizza"> Bánh mì</label>
+        <label class="me-3"><input type="checkbox" class="filter-checkbox" value="cookie"> Bánh quy</label>
+    </div>
+
+    <!-- Product List -->
+    <div class="row" id="product-list">
+        @foreach (var product in Model)
+        {
+            <div class="col-6 product-item" data-category="">
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="@product.Img" class="img-fluid rounded-start" alt="..." style="object-fit: cover;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="ms-3 card-body mb-3">
+                                <h5 class="card-title fs-4 text-wrap text-nowrap overflow-hidden" style=" text-overflow: ellipsis;">@product.Name</h5>
+                            </div>
+                            <div class="card-footer text-danger fs-4">
+                                <p class="ms-3 card-text">@product.Price VNĐ</p>
+                                <a class="ms-3 card-link btn btn-primary" asp-action="ProductDetail" asp-controller="BakeryShop" asp-route-id="@product.ProductId">Mua ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Pagination -->
+    <nav class="mt-4" aria-label="Page navigation sample">
+        <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const checkboxes = document.querySelectorAll(".filter-checkbox");
+        const products = document.querySelectorAll(".product-item");
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener("change", () => {
+                // Lấy danh mục đã chọn
+                const selectedCategories = Array.from(checkboxes)
+                    .filter(cb => cb.checked)
+                    .map(cb => cb.value);
+
+                // Hiển thị hoặc ẩn sản phẩm dựa trên danh mục
+                products.forEach(product => {
+                    const category = product.getAttribute("data-category");
+                    if (selectedCategories.length === 0 || selectedCategories.includes(category)) {
+                        product.style.display = "block"; // Hiển thị
+                    } else {
+                        product.style.display = "none"; // Ẩn
+                    }
+                });
+            });
+        });
+    });
+</script>

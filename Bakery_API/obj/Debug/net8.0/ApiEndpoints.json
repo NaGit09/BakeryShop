@@ -58,6 +58,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Bakery_API.Controllers.ProductController",
+    "Method": "SearchProduct",
+    "RelativePath": "api/Product/SearchProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Bakery_API.Controllers.UserController",
     "Method": "CheckOTP",
     "RelativePath": "api/User/CheckOTP",

@@ -429,6 +429,10 @@
       "PackagePath": "staticwebassets\\img\\pizza-vien-pho-mai-hai-loai-nhan-phu.png"
     },
     {
+      "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\Controller\\UserController.js",
+      "PackagePath": "staticwebassets\\js\\Controller\\UserController.js"
+    },
+    {
       "Id": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\Navbar%Footer.js",
       "PackagePath": "staticwebassets\\js\\Navbar%Footer.js"
     },

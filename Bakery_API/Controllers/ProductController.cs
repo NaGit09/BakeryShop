@@ -134,5 +134,33 @@ namespace Bakery_API.Controllers
 
             }
         }
+        [HttpGet("SearchProduct")]
+        public IActionResult SearchProduct(string input)
+        {
+            List<dynamic> listProducts = _productServices.SearchProduct(input);
+
+            if (listProducts != null)
+            {
+                return Ok(new ResponseServices<List<dynamic>>
+                {
+                    Success = true,
+                    Message = "Show product with catelogy",
+                    Data = listProducts,
+
+                });
+
+            }
+            else
+            {
+                return Ok(new ResponseServices<List<dynamic>>
+                {
+                    Success = true,
+                    Message = "Don't product with catelogy",
+                    Data = new List<dynamic>(),
+
+                });
+
+            }
+        }
     }
 }

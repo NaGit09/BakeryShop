@@ -8,7 +8,8 @@ namespace Bakery_API.Interfaces
         List<dynamic> GetByProductCategoryId (int CategoryId);
         List<dynamic> GetProducts();
         List<dynamic> FilterById(int id);
-
+        List<dynamic> SearchProduct(String input);
+        public List<dynamic> Order(String type);
 
     }
 }

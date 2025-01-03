@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cJBhlFSrw7MJ9SDLq2zyZF93sbesnjjhM67Cr/i262Q=",
+  "Hash": "78VunCfSCmT9QlDjGUip8zHEqCfjCbRmQG7B75uyVuo=",
   "Source": "BakeryShop",
   "BasePath": "_content/BakeryShop",
   "Mode": "Default",
@@ -2067,6 +2067,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Water_Gray.webp"
+    },
+    {
+      "Identity": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\Controller\\UserController.js",
+      "SourceId": "BakeryShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\",
+      "BasePath": "_content/BakeryShop",
+      "RelativePath": "js/Controller/UserController.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Controller\\UserController.js"
     },
     {
       "Identity": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\Navbar%Footer.js",

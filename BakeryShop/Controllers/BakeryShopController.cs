@@ -16,22 +16,37 @@ namespace BakeryShop.Controllers
 
         public BakeryShopController(ApiService apiService)
         {
-            _apiService=apiService;
+            _apiService = apiService;
         }
 
-     public async Task<IActionResult> Index()
-{
-  
+        public async Task<IActionResult> Index()
+        {
+
             // Giả sử GetAsync là hàm gọi API và trả về dữ liệu
             string url = "https://localhost:7056/api/Product/GetAll";
             var response = await _apiService.GetAsync<ResponseServices<List<Product>>>(url);
-           
+
             // Truyền danh sách sản phẩm đến View
+            return View(response);
+        }
+        public async Task<IActionResult> store()
+        {
+
+            // Giả sử GetAsync là hàm gọi API và trả về dữ liệu
+            string url = "https://localhost:7056/api/Product/GetAll";
+            var response = await _apiService.GetAsync<ResponseServices<List<Product>>>(url);
+            return View(response);
+        }
+        [HttpPost]
+        public async Task<IActionResult> store (String type)
+        {
+            String url = "https://localhost:7056/api/Product/SearchProduct?input="+type;
+            var response = await _apiService.GetAsync<ResponseServices<List<Product>>>(url);
             return View(response);
         }
         public String ProductDetail(int id)
         {
-            return id+"";
+            return id + "";
         }
 
         public IActionResult login()

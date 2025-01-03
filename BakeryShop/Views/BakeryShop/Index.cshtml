@@ -65,10 +65,10 @@
         </div>
     </div>
     <div class="menu d-flex align-items-center m-5 justify-content-between text-center">
-        <div class="group menu_btn">
+        <a  asp-action="store" asp-controller="BakeryShop" class="group menu_btn">
             <i class="icon bi bi-search fs-3"></i>
             <p class="menu_btn-search mt-4 fs-5">Tìm kiếm</p>
-        </div>
+        </a>
         <div class="group menu_btn">
             <img src="./img/Combo_Gray.png" alt="" class="type-img" />
 
@@ -99,7 +99,9 @@
             <img src="./img/CateBanner_BOGO_Desktop_VI.webp"
                  class="img mt-2 mb-2"
                  alt="" />
-            <div class="row row-cols-1 row-cols-xxl-2 g-5 mt-5">
+          
+
+            <div class="row row-cols-1 row-cols-xxl-2 g-3 mt-5">
                 @foreach (var product in Model)
                 {
                     <div class="col">
@@ -113,9 +115,9 @@
                                         <h5 class="card-title fs-4">@product.Name</h5>
                                         <p class="card-text"><small class="text-body-secondary"> @product.Description </small></p>
                                     </div>
-                                    <div class="ms-3 card-footer text-danger fs-4 ">
-                                        <p class="card-text">@product.Price VNĐ</p>
-                                        <a class="card-link" asp-action="ProductDetail" asp-controller="BakeryShop" asp-route-id="@product.ProductId">Mua ngay </a>
+                                    <div class=" card-footer text-danger fs-4 ">
+                                        <p class="ms-3 mb-3 card-text">@product.Price VNĐ</p>
+                                        <a class="ms-3 card-link btn btn-primary" asp-action="ProductDetail" asp-controller="BakeryShop" asp-route-id="@product.ProductId">Mua ngay </a>
                                     </div>
                                 </div>
                             </div>
@@ -126,3 +128,31 @@
         </div>
     </div>
 </main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#searchBox').on('input', function () {
+            var query = $(this).val();
+
+            if (query.length > 0) {
+                $.ajax({
+                    url: 'https://localhost:7056/api/Product/SearchProduct',
+                    type: 'GET',
+                    data: { input: query },
+                    success: function (data) {
+                        $('#results').empty(); // Xóa kết quả cũ
+                        data.forEach(function (item) {
+                            $('#results').append('<li>' + item + '</li>');
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Search failed: " + error);
+                        $('#results').empty().append('<li>Error loading results</li>');
+                    }
+                });
+            } else {
+                $('#results').empty(); // Xóa kết quả khi ô tìm kiếm rỗng
+            }
+        });
+    });
+</script>
