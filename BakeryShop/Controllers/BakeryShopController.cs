@@ -44,9 +44,11 @@ namespace BakeryShop.Controllers
             var response = await _apiService.GetAsync<ResponseServices<List<Product>>>(url);
             return View(response);
         }
-        public String ProductDetail(int id)
+        public async Task<IActionResult> ProductDetail(int id)
         {
-            return id + "";
+            String url = "https://localhost:7056/api/Product/FilterById?id=" + id;
+            var response = await _apiService.GetAsync<ResponseServices<List<Product>>>(url);
+            return View(response);
         }
 
         public IActionResult login()

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "78VunCfSCmT9QlDjGUip8zHEqCfjCbRmQG7B75uyVuo=",
+  "Hash": "a3WkcC41kijWQsSvW4S8bLxdWK+ZhJppTbtpQPpMRhY=",
   "Source": "BakeryShop",
   "BasePath": "_content/BakeryShop",
   "Mode": "Default",
@@ -186,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\store.css",
+      "SourceId": "BakeryShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\",
+      "BasePath": "_content/BakeryShop",
+      "RelativePath": "css/store.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\store.css"
     },
     {
       "Identity": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\css\\Track.css",
@@ -2143,6 +2162,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\js\\store.js",
+      "SourceId": "BakeryShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\",
+      "BasePath": "_content/BakeryShop",
+      "RelativePath": "js/store.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\store.js"
     },
     {
       "Identity": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

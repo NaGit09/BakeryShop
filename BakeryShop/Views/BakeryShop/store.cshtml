@@ -2,22 +2,16 @@
     ViewData["title"] = "store";
 }
 @section CSS {
-    <link rel="stylesheet" href="~/css/index.css" />
+    <link rel="stylesheet" href="~/css/store.css" />
 }
 
 @model IEnumerable<BakeryShop.Services.Category>
-<style>
-    .product {
-        display: none; /* Ẩn sản phẩm mặc định */
-        margin: 10px 0;
-    }
-
-        .product.active {
-            display: block; /* Hiển thị sản phẩm khi được kích hoạt */
-        }
-</style>
-<section class="section-content padding-y" style="margin-top : 100px;">
+<main class="section-content padding-y" style="margin-top : 100px;">
     <div class="container">
+
+        <div class="form-outline row mb-5" data-mdb-input-init >
+            <input type="search" id="form1" class="form-control" placeholder="Enter your products" aria-label="Search" />
+        </div>
         <div class="row">
             <aside class="col-md-3">
                 <div class="card">
@@ -113,8 +107,8 @@
                 <div class="row" id="product-list">
                     @foreach (var category in Model)
                     {
-                        <h3 class="fs-1 text-center product-item product">@category.CategoryName</h3>
-                        <p class="mb-3 fs-5 p-4 text-center product-item product">@category.Description</p>
+                        <h3 class="fs-1 text-center product-item product" data-category="@category.CategoryName">@category.CategoryName</h3>
+                        <p class="mb-3 fs-5 p-4 text-center product-item product" data-category="@category.CategoryName">@category.Description</p>
                         @foreach (var product in category.Products)
                         {
                             <div class="col-6 product-item product" data-price="@product.Price" data-category="@category.CategoryName">
@@ -144,59 +138,7 @@
 
         </div>
     </div>
-</section>
-
-<script>
-    document.querySelector(".Apply-btn").addEventListener("click", function (event) {
-        console.log("Check");
-        event.preventDefault(); // Ngăn việc form submit
-
-        // Lấy giá trị từ dropdown Min và Max
-        const minPrice = parseInt(document.querySelector('select[name="minPrice"]').value)  || 0;
-        const maxPrice = parseInt(document.querySelector('select[name="maxPrice"]').value) || Infinity;
-
-        // Lấy danh sách các sản phẩm
-        const products = document.querySelectorAll("#product-list .product");
-
-        // Lọc sản phẩm
-        products.forEach(product => {
-            const price = parseFloat(product.getAttribute("data-price"));
-
-            // Hiển thị hoặc ẩn sản phẩm dựa trên giá
-            if (price >= minPrice && price <= maxPrice) {
-                product.style.display = "block";
-            } else {
-                product.style.display = "none";
-            }
-        });
-    });
-    document.addEventListener("DOMContentLoaded", () => {
-        const checkboxes = document.querySelectorAll(".filter-checkbox");
-        const products = document.querySelectorAll(".product-item");
-
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener("change", () => {
-                // Lấy danh mục đã chọn
-                const selectedCategories = Array.from(checkboxes)
-                    .filter(cb => cb.checked)
-                    .map(cb => cb.value);
-                console.log(selectedCategories.length);
-                // Hiển thị hoặc ẩn sản phẩm dựa trên danh mục
-                products.forEach(product => {
-                    const category = product.getAttribute("data-category");
-                    if (selectedCategories.length ===0 || selectedCategories.includes(category)) {
-                        product.style.display = "block"; // Hiển thị
-                    } else {
-                        product.style.display = "none"; // Ẩn
-                    }
-                });
-            });
-        });
-
-        // Khi tải trang, đảm bảo hiển thị tất cả sản phẩm
-        products.forEach(product => {
-            product.style.display = "block";
-        });
-    });
-
-</script>
+</main>
+@section JS {
+    <script src="~/js/store.js"></script>
+}

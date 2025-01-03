@@ -1,0 +1,8 @@
+﻿.product {
+    display: none; /* Ẩn sản phẩm mặc định */
+    margin: 10px 0;
+}
+
+    .product.active {
+        display: block; /* Hiển thị sản phẩm khi được kích hoạt */
+    }
