@@ -30,3 +30,9 @@
     margin-left: 10px;
     color: #c8102e;
 }
+
+#email-error {
+    display: block; /* Đảm bảo phần tử hiển thị */
+    color: red; /* Màu sắc để dễ nhận biết */
+    font-size: 12px; /* Đảm bảo font dễ nhìn */
+}

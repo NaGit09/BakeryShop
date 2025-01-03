@@ -1,9 +1,9 @@
 ﻿using Bakery_API.Interfaces;
 using Bakery_API.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Bakery_API.Services
 {
@@ -15,24 +15,6 @@ namespace Bakery_API.Services
         {
             _bakerySqlContext = bakerySqlContext;
         }
-
-        public List<Product> GetByProductCategoryName(string productCategoryName)
-        {
-            if (string.IsNullOrWhiteSpace(productCategoryName))
-                return new List<Product>(); // Trả về danh sách rỗng nếu input không hợp lệ
-
-            // Chuyển query về chữ thường để đảm bảo so sánh không phân biệt chữ hoa/thường
-            var lowerCaseQuery = productCategoryName.ToLower();
-
-            // Thực hiện truy vấn EF Core
-            var products = _bakerySqlContext.Products
-                .Where(item => EF.Functions.Like(item.Name.ToLower(), $"{lowerCaseQuery}%")) // Sử dụng LIKE
-                .Take(5) // Giới hạn 5 kết quả
-                .ToList();
-
-            return products;
-        }
-
         public List<dynamic> SearchProduct(String input = "")
         {
             var products = _bakerySqlContext.Products.Where(x => x.Name.Contains(input)).Select(x => new { x.Name, x.Description, x.ProductId, x.Price })
@@ -49,11 +31,23 @@ namespace Bakery_API.Services
         }
         public List<dynamic> GetProductsStore()
         {
-            var products = _bakerySqlContext.Products.Include(x => x.ProductCategory).Select(x => new { x.Price, x.Name, x.Description, x.GroupProduct, x.Img });
+            var categoriesWithProducts = _bakerySqlContext.ProductCategories
+        .Select(pc => new
+        {
+            CategoryName = pc.Name,
+            Description = pc.Description,
+            Products = pc.Products.Select(p => new
+            {
+                Name = p.Name,
+                Price = p.Price,
+                Img = p.Img,
+                ProductId = p.ProductId
+            })
+        })
+        .Cast<dynamic>().ToList();
 
+            return categoriesWithProducts;
 
-
-            return products.Cast<dynamic>().ToList();
         }
         public List<dynamic> GetProducts()
         {
@@ -95,7 +89,4 @@ namespace Bakery_API.Services
             return null;
         }
     }
-
-
-
 }

@@ -128,6 +128,16 @@
   },
   {
     "ContainingType": "Bakery_API.Controllers.ProductController",
+    "Method": "GetProductsStore",
+    "RelativePath": "api/Product/GetProductsStore",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bakery_API.Controllers.ProductController",
     "Method": "SearchProduct",
     "RelativePath": "api/Product/SearchProduct",
     "HttpMethod": "GET",
@@ -153,6 +163,22 @@
       {
         "Name": "forgotPasswordValidation",
         "Type": "Bakery_API.DTO.ForgotPasswordValidation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bakery_API.Controllers.UserController",
+    "Method": "CheckMailLogin",
+    "RelativePath": "api/User/CheckMailLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

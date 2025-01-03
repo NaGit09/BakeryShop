@@ -31,6 +31,7 @@ namespace Bakery_API.Controllers
         [HttpPost("SignIn")]
         public IActionResult SignIn([FromBody] UserSignInRequest request)
         {
+
             var response = _user.SignIn(request);
 
             if (response.Success)
@@ -125,6 +126,27 @@ namespace Bakery_API.Controllers
             }
 
         }
+
+        [HttpPost("CheckMailLogin")]
+        public IActionResult CheckMailLogin([FromBody] string email)
+        {
+            var isValid = _user.CheckMailLogin(email);
+
+            if (isValid.Success)
+            {
+                return Ok(new ResponseServices<string>
+                {
+                    Success = isValid.Success
+                });
+            }
+
+            return Ok(new ResponseServices<string>
+            {
+                Success = isValid.Success
+            });
+        }
+
+
         [HttpPost("CheckMail")]
 
         public IActionResult CheckMail([FromBody] ForgotPasswordValidation forgotPasswordValidation)

@@ -1,28 +1,27 @@
-﻿namespace BakeryShop.Filter;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-
-
-
-public class LoginFilter : IActionFilter
+﻿namespace BakeryShop.Filter
 {
-    public void OnActionExecuting(ActionExecutingContext context)
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.Filters;
+
+    public class LoginFilter : IActionFilter
     {
-        // Kiểm tra session "UserName"
-        var authToken = context.HttpContext.Request.Cookies["AuthToken"];
-
-
-        if (string.IsNullOrEmpty(authToken))
+        public void OnActionExecuting(ActionExecutingContext context)
         {
-            // Chuyển hướng đến trang đăng nhập nếu chưa đăng nhập
-            context.Result = new RedirectToActionResult("Index", "BakeryShop", null);
+            // Kiểm tra cookie "AuthToken"
+            var authToken = context.HttpContext.Request.Cookies["AuthToken"];
+
+            if (string.IsNullOrEmpty(authToken))
+            {
+                // Sử dụng TempData thay vì Session
+                context.HttpContext.Response.Cookies.Append("LoginRequired", "true");
+
+                context.Result = new RedirectToActionResult("Index", "BakeryShop", null);
+            }
+        }
+
+        public void OnActionExecuted(ActionExecutedContext context)
+        {
+            // Không cần xử lý sau khi action thực thi
         }
     }
-
-    public void OnActionExecuted(ActionExecutedContext context)
-    {
-        // Không cần xử lý sau khi action thực thi
-    }
 }
-
-

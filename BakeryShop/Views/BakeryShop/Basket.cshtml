@@ -1,9 +1,7 @@
 ﻿@section CSS {
     <link rel="stylesheet" href="~/css/Basket.css" />
 }
-@section Header {
-    <partial name="header2" />
-}
+
 
 @{
     var totalPrice = Model.Sum(item => item.TotalPrice) ;

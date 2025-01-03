@@ -4,9 +4,7 @@ namespace Bakery_API.Interfaces
 {
     public interface IProduct
     {
-
-        List<Product> GetByProductCategoryName(string productCategoryName);
-
+        List<dynamic> GetProductsStore();
         List<dynamic> GetByProductGroupProductId(int GroupProductId);
         List<dynamic> GetByProductCategoryId(int CategoryId);
         List<dynamic> GetProducts();

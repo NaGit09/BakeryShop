@@ -18,7 +18,7 @@ namespace Bakery_API.Services
         {
             // Kiểm tra nếu sản phẩm đã tồn tại trong giỏ hàng
             var existingCartItem = await _context.ShoppingCartItems
-                .FirstOrDefaultAsync(item => item.ShoppingCartItemId == request.CartId && item.ProductId == request.ProductId);
+                .FirstOrDefaultAsync(item => item.UserId == request.CartId && item.ProductId == request.ProductId);
 
             if (existingCartItem != null)
             {
@@ -30,7 +30,7 @@ namespace Bakery_API.Services
                 // Nếu không, thêm sản phẩm mới vào giỏ hàng
                 var newCartItem = new ShoppingCartItem
                 {
-                    ShoppingCartItemId = request.CartId,
+                    UserId = request.CartId,
                     ProductId = request.ProductId,
                     Quantity = request.Quantity
                 };

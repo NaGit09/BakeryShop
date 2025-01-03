@@ -1,4 +1,30 @@
-﻿<!DOCTYPE html>
+﻿@using System.Text.Json
+@using BakeryShop.Util
+@using System.IdentityModel.Tokens.Jwt
+@using System.Linq
+
+@{
+    // Lấy access token từ cookie
+    var token = Context.Request.Cookies["AuthToken"];
+    var name = string.Empty;
+
+    if (!string.IsNullOrEmpty(token))
+    {
+        try
+        {
+            // Giải mã token và lấy thông tin từ payload
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadToken(token) as JwtSecurityToken;
+            name = jsonToken?.Claims.FirstOrDefault(c => c.Type == "Name")?.Value;
+        }
+        catch (Exception ex)
+        {
+            // Log lỗi nếu cần
+            Console.WriteLine("Error decoding JWT: " + ex.Message);
+        }
+    }
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -14,8 +40,69 @@
     @RenderSection("CSS", required: false);
 </head>
 <body>
-    <div class="container-lg">
-        @RenderSection("Header", required: false);
+    <div class="container">
+        <header class="fixed-top header bg-light">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="address flex-1 text-left overflow-hidden">
+                        <p class="address_order">Mua mang về :</p>
+                        <p class="address_locate">Go ! dĩ an</p>
+                    </div>
+                    <div class="flex-1 ms-5">
+                        <a asp-controller="BakeryShop" asp-action="Index"><img src="~/img/Logo.png" alt="" class="logo" /></a>
+
+                    </div>
+                    <div class="feature d-flex gap-4 align-items-center">
+                        <button type="button" title="bell" id="toggleSidebar" class="btn rounded-circle">
+                            <i class="icon feature-Notify bi bi-bell"></i>
+                        </button>
+                        <a asp-controller="BakeryShop" asp-action="Basket"
+                           class="feature-cart p-4 text-light rounded-pill d-flex gap-2 align-items-center">
+                            0 <i class="icon bi bi-cart"></i>
+                        </a>
+                        <a asp-controller="BakeryShop" asp-action="store"
+                           class="feature-cart p-4 bg-success text-light rounded-pill d-flex gap-2 align-items-center">
+                            Store
+                        </a>
+
+                        <div class="dropdown">
+                            <button title="btn" class=" rounded-pill d-flex gap-2 align-items-center btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="icon bi bi-list"></i>
+                                <i class="icon bi bi-person-circle"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+
+                                @if (!string.IsNullOrEmpty(name))
+                                {
+                                    <li>
+                                        <a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="User">
+                                            Xin chào,@name
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Track">Theo dõi đơn hàng </a></li>
+                                }
+                                else
+                                {
+                                    <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Login">Đăng Nhập</a></li>
+                                    <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Register">Đăng ký</a></li>
+                                }
+                                <li>
+                                    <div class="text-center">
+                                        <button type="button"
+                                                class="btn"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                            Hỗ trợ khách hàng
+                                        </button>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <div id="rightSidebar" class="sidebar">
             <div class="sidebar-header">
                 Thông báo
@@ -125,11 +212,27 @@
         </footer>
     </div>
 
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="./js/Navbar%Footer.js"></script>
     @RenderSection("JS", required: false);
-    @RenderSection("Scripts", required: false)
-
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    // Kiểm tra cookie "LoginRequired"
+    var loginRequired = document.cookie.split('; ').find(row => row.startsWith('LoginRequired='));
+
+    if (loginRequired) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Bạn cần đăng nhập',
+            text: 'Vui lòng đăng nhập để tiếp tục!',
+            showConfirmButton: true
+        });
+
+        // Xóa cookie sau khi hiển thị thông báo
+        document.cookie = "LoginRequired=;expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+    }
+</script>

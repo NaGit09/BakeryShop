@@ -4,6 +4,7 @@ using BakeryShop.Util;
 using UpdateCartItemQuantityRequest = BakeryShop.Util.UpdateCartItemQuantityRequest;
 using System.IdentityModel.Tokens.Jwt;
 using System.Reflection.Metadata.Ecma335;
+using BakeryShop.Filter;
 
 namespace BakeryShop.Controllers
 {
@@ -16,7 +17,20 @@ namespace BakeryShop.Controllers
             _cartService = cartService;
         }
 
+        [ServiceFilter(typeof(LoginFilter))]
+        [HttpPost]
+        public async Task<IActionResult> AddCartItem(AddCartItemRequest request)
+        {
+            var result = await _cartService.AddCartItemAsync(request);
 
+            if (!result)
+            {
+                return RedirectToAction("Index", "BakeryShop");
+            }
+
+            return RedirectToAction("Basket", "BakeryShop");
+
+        }
         [HttpPost]
         public async Task<IActionResult> UpdateQuantity(UpdateCartItemQuantityRequest request)
         {

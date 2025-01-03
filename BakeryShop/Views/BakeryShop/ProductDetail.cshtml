@@ -1,0 +1,89 @@
+﻿@using System.Text.Json
+@using BakeryShop.Util
+@using System.IdentityModel.Tokens.Jwt
+@using System.Linq
+
+@{
+    // Lấy access token từ cookie
+    var token = Context.Request.Cookies["AuthToken"];
+    var userId = 0;
+
+    if (!string.IsNullOrEmpty(token))
+    {
+        try
+        {
+            // Giải mã token và lấy thông tin từ payload
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadToken(token) as JwtSecurityToken;
+              userId = int.Parse( jsonToken?.Claims.FirstOrDefault(c => c.Type == "UserId")?.Value);
+        }
+        catch (Exception ex)
+        {
+            // Log lỗi nếu cần
+            Console.WriteLine("Error decoding JWT: " + ex.Message);
+        }
+    }
+}
+
+ @model List<BakeryShop.Services.Product>
+
+<main class="section-content padding-y bg" style="margin-top : 100px;">
+    <div class="container">
+        @foreach (var Product in Model)
+        {
+            <div class="card">
+                <div class="row no-gutters">
+                    <aside class="col-md-6">
+                        <article class="gallery-wrap">
+                            <div class="img-big-wrap">
+                                <img src="@Product.Img" alt="@Product.Name" style="width : 500px;">
+                            </div>
+                        </article>
+                    </aside>
+                    <main class="col-md-6 border-left">
+                        <article class="content-body">
+
+                            <h2 class="title fs-1 mb-4 mt-5">@Product.Name</h2>
+
+                            <div class="mb-3 fs-2 text-danger">
+                                @Product.Price VNĐ
+                            </div>
+
+                            <p class="fs-4">@Product.Description</p>
+                            <div class="row mt-5">
+                                <div class="item-option-select">
+                                    <h6 class="fs-5 mb-2">Select size</h6>
+                                    <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-light ">
+                                            <input type="radio" checked name="radio_color"> Small
+                                        </label>
+                                        <label class="btn btn-light">
+                                            <input type="radio" name="radio_color"> Medium
+                                        </label>
+                                        <label class="btn btn-light ">
+                                            <input type="radio" name="radio_color"> Large
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+                            <form asp-action="AddCartItem" asp-controller="Cart" method="post">
+
+                                <input type="hidden" name="CartId" value="@userId">
+                                <input type="hidden" name="ProductId" value="@Product.ProductId">
+                                <input type="number" name="Quantity" min="1" value="1" class="form-control mb-2" required>
+                                <button type="submit" class="btn btn-primary  mt-5">
+                                    <span class="text">Add to cart</span>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </form>
+                        </article>
+                    </main>
+                </div>
+            </div>
+
+        }
+        <br>
+    </div>
+</main>

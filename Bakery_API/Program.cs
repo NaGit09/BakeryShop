@@ -109,6 +109,7 @@ namespace Bakery_API
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseCors("AllowMVC");  // Kích hoạt chính sách CORS sau khi cấu hình các middleware khác
 
             app.MapControllers();
 

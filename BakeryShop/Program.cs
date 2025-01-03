@@ -19,7 +19,7 @@ builder.Services.AddHttpClient();
 builder.Services.AddHttpClient("BakeryApi", client =>
 {
     client.BaseAddress = new Uri("https://localhost:7056/api/");
-}); 
+});
 builder.Services.AddScoped<ApiService>();
 builder.Services.AddScoped<LoginFilter>();
 builder.Services.AddScoped<CartService>();

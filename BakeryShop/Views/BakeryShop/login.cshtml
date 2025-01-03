@@ -1,12 +1,17 @@
 ﻿@section CSS {
     <link rel="stylesheet" href="~/css/login.css" />
 }
-@section Header {
-    <partial name="header2" />
-}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation.unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/checkMailAJAX.js"></script>
+
+
 
 
 @model BakeryShop.Util.LoginValidation
+
 <main>
     <div class="d-flex align-items-start flex-column">
         <div class="d-flex align-items-center justify-content-between w100">
@@ -19,11 +24,18 @@
         </div>
         <div class="form d-flex align-items-center justify-content-center w100 mb-5">
             <form method="POST" asp-controller="User" asp-action="SignIn" class="login-form rounded shadow">
-                <div class="mb-3 form-group">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
+                <div class="mb-3 form-group">
                     <label class="form-label" asp-for="Gmail"></label>
-                    <input class="form-control input-hover" asp-for="Gmail" placeholder="Vui lòng nhập Email của bạn" />
+                    <input class="form-control input-hover" asp-for="Gmail" id="email" 
+                    placeholder="Vui lòng nhập Email của bạn" />
                     <span asp-validation-for="Gmail" class="text-danger"></span>
+                    <!-- Thêm phần tử để hiển thị lỗi nếu có -->
+                    <span id="email-error" class="text-danger"></span>
+
+
+
                 </div>
                 <div class="mb-3 form-group">
                     <label class="form-label" asp-for="Password"></label>
@@ -47,6 +59,8 @@
                 <div class="mb-3 text-center">
                     <p>Bạn chưa có tài khoản <a asp-action="Register" asp-controller="BakeryShop">Tạo tài khoản </a></p>
                 </div>
+
+               
 
                 @if (TempData["ErrorSignIn"] != null)
                 {

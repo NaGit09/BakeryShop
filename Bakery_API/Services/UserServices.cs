@@ -310,12 +310,24 @@ namespace Bakery_API.Services
             throw new NotImplementedException();
         }
 
-        //public bool DeleteToken(string token)
-        //{
-        //    var user = _bakerySqlContext.Users.SingleOrDefault(us => us.RememberMeToken == token);
+        public ResponseServices<string> CheckMailLogin(string email)
+        {
+            var user = _bakerySqlContext.Users.SingleOrDefault(us => us.Gmail == email);
 
+            if (user != null) {
+                return new ResponseServices<string>
+                {
+                    Success = true,
+                };
+        }
+            return new ResponseServices<string>
+            {
+                Success = false,
+            };
 
-        //}
+            }
+
+      
     }
 }
 

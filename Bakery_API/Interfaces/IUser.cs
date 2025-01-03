@@ -21,6 +21,9 @@ namespace Bakery_API.Interfaces
 
         bool DeleteToken(String token);
 
+        ResponseServices<String> CheckMailLogin(String email);
+
+
 
 
         // Khai báo những chức năng cơ bản của User

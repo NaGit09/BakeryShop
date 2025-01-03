@@ -2,90 +2,144 @@
     ViewData["title"] = "store";
 }
 @section CSS {
-    <link rel="stylesheet" href="~/css/index.css" />
+    <link rel="stylesheet" href="~/css/store.css" />
 }
-@section Header {
-    <partial name="header1" />
-}
-@model List<BakeryShop.Services.Product>
-<style>
-    .product {
-        display: none; /* Ẩn sản phẩm mặc định */
-        margin: 10px 0;
-    }
 
-        .product.active {
-            display: block; /* Hiển thị sản phẩm khi được kích hoạt */
-        }
-</style>
-<main class="col-md-9" style="margin-top : 100px;">
-    <h2>Bộ lọc sản phẩm</h2>
-    <!-- Filter Section -->
-    <div class="mb-4">
-        <label class="me-3"><input type="checkbox" class="filter-checkbox" value="Bánh kem"> Bánh</label>
-        <label class="me-3"><input type="checkbox" class="filter-checkbox" value="Pizza"> Bánh mì</label>
-        <label class="me-3"><input type="checkbox" class="filter-checkbox" value="cookie"> Bánh quy</label>
-    </div>
+@model IEnumerable<BakeryShop.Services.Category>
+<main class="section-content padding-y" style="margin-top : 100px;">
+    <div class="container">
 
-    <!-- Product List -->
-    <div class="row" id="product-list">
-        @foreach (var product in Model)
-        {
-            <div class="col-6 product-item" data-category="">
-                <div class="card mb-4">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="~/img/@product.Img" class="img-fluid rounded-start" alt="..." style="object-fit: cover;">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="ms-3 card-body mb-3">
-                                <h5 class="card-title fs-4 text-wrap text-nowrap overflow-hidden" style=" text-overflow: ellipsis;">@product.Name</h5>
+        <div class="form-outline row mb-5" data-mdb-input-init>
+            <input type="search" id="form1" class="form-control" placeholder="Enter your products" aria-label="Search" />
+        </div>
+        <div class="row">
+            <aside class="col-md-3">
+                <div class="card">
+                    <!-- Các Filter cho sizes và price range có thể giữ nguyên -->
+                    <article class="filter-group">
+                        <header class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapse_4" aria-expanded="true" class="">
+                                <i class="icon-control fa fa-chevron-down"></i>
+                                <h6 class="title">Sizes</h6>
+                            </a>
+                        </header>
+                        <div class="filter-content collapse show" id="collapse_4">
+                            <div class="card-body">
+
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" class="filter-checkbox" value="Pizza">
+                                    <span class="btn btn-light"> Pizza </span>
+                                </label>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" class="filter-checkbox" value="Bánh Kem">
+                                    <span class="btn btn-light"> Bánh Kem </span>
+                                </label>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" class="filter-checkbox" value="Bánh Nướng">
+                                    <span class="btn btn-light"> Bánh Nướng </span>
+                                </label>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" class="filter-checkbox" value="Sản Phẩm Khác">
+                                    <span class="btn btn-light"> Phụ Kiện </span>
+                                </label>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" class="filter-checkbox" value="Kem & Cà Rem">
+                                    <span class="btn btn-light"> Kem & Cà Rem </span>
+                                </label>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" class="filter-checkbox" value="Bánh Mì Cấp Đông">
+                                    <span class="btn btn-light"> Bánh Mì Cấp Đông </span>
+                                </label>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" class="filter-checkbox" value="Bánh Lạnh">
+                                    <span class="btn btn-light"> Bánh Lạnh </span>
+                                </label>
+                                <label class="checkbox-btn">
+                                    <input type="checkbox" class="filter-checkbox" value="Bánh Quy">
+                                    <span class="btn btn-light"> Bánh Quy </span>
+                                </label>
                             </div>
-                            <div class="card-footer text-danger fs-4">
-                                <p class="ms-3 card-text">@product.Price VNĐ</p>
-                                <a class="ms-3 card-link btn btn-primary" asp-action="ProductDetail" asp-controller="BakeryShop" asp-route-id="@product.ProductId">Mua ngay</a>
+                        </div>
+                    </article>
+                    <article class="filter-group">
+                        <header class="card-header">
+                            <a href="#" data-toggle="collapse" data-target="#collapse_3" aria-expanded="true"
+                               class="">
+                                <i class="icon-control fa fa-chevron-down"></i>
+                                <h6 class="title">Price range</h6>
+                            </a>
+                        </header>
+                        <div class="filter-content collapse show" id="collapse_3">
+                            <div class="card-body">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Min</label>
+                                        <select name="minPrice" class="mr-2 form-control">
+                                            <option value="0">0.000VNĐ</option>
+                                            <option value="50">50.000VNĐ</option>
+                                            <option value="100">100.000VNĐ</option>
+                                            <option value="150">150.000VNĐ</option>
+                                            <option value="200">200.000VNĐ</option>
+                                            <option value="500">500.000VNĐ</option>
+                                            <option value="1000">1000.000VNĐ</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group text-right col-md-6">
+                                        <label>Max</label>
+                                        <select name="maxPrice" class="mr-2 form-control">
+                                            <option value="50">50.000VNĐ</option>
+                                            <option value="100">100.000VNĐ</option>
+                                            <option value="150">150.000VNĐ</option>
+                                            <option value="200">200.000VNĐ</option>
+                                            <option selected value="500">500.000VNĐ</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-block btn-primary Apply-btn">Apply</button>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
-            </div>
-        }
-    </div>
+            </aside>
 
-    <!-- Pagination -->
-    <nav class="mt-4" aria-label="Page navigation sample">
-        <ul class="pagination">
-            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-    </nav>
-</main>
+            <main class="col-md-9 " style="height : 600px; overflow-y : scroll;">
+                <!-- Product List -->
+                <div class="row" id="product-list">
+                    @foreach (var category in Model)
+                    {
+                        <h3 class="fs-1 text-center product-item product" data-category="@category.CategoryName">@category.CategoryName</h3>
+                        <p class="mb-3 fs-5 p-4 text-center product-item product" data-category="@category.CategoryName">@category.Description</p>
+                        @foreach (var product in category.Products)
+                        {
+                            <div class="col-6 product-item product" data-price="@product.Price" data-category="@category.CategoryName">
+                                <div class="card mb-4">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="@product.Img" class="img-fluid rounded-start" alt="..." style="object-fit: cover;">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="ms-3 card-body mb-3">
+                                                <h5 class="card-title fs-4 text-wrap text-nowrap overflow-hidden" style=" text-overflow: ellipsis;">@product.Name</h5>
+                                            </div>
+                                            <div class="card-footer text-danger fs-4 d-flex align-items-center justify-content-center">
+                                                <span class="ms-3 card-text">
+                                                    @product.Price VNĐ
+                                                </span>
+                                                <a class="ms-3 card-link btn btn-primary" asp-action="ProductDetail" asp-controller="BakeryShop" asp-route-id="@product.ProductId" style="float:right;">Mua ngay</a>
 
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const checkboxes = document.querySelectorAll(".filter-checkbox");
-        const products = document.querySelectorAll(".product-item");
-
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener("change", () => {
-                // Lấy danh mục đã chọn
-                const selectedCategories = Array.from(checkboxes)
-                    .filter(cb => cb.checked)
-                    .map(cb => cb.value);
-
-                // Hiển thị hoặc ẩn sản phẩm dựa trên danh mục
-                products.forEach(product => {
-                    const category = product.getAttribute("data-category");
-                    if (selectedCategories.length === 0 || selectedCategories.includes(category)) {
-                        product.style.display = "block"; // Hiển thị
-                    } else {
-                        product.style.display = "none"; // Ẩn
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
                     }
-                });
-            });
-        });
-    });
-</script>
+                </div>
+            </main>
+
+        </div>
+    </div>
+</main>
+@section JS {
+    <script src="~/js/store.js"></script>
+}
