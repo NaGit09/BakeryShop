@@ -29,6 +29,11 @@ namespace BakeryShop.Services
 
         public async Task<bool> UpdateCartItemQuantityAsync(UpdateCartItemQuantityRequest request)
         {
+            if ( request.CartItemId <= 0)
+            {
+                throw new ArgumentException(" CartItemId là bắt buộc.");
+            }
+
             var response = await _httpClient.PutAsJsonAsync("Cart", request);
             return response.IsSuccessStatusCode;
         }
@@ -38,6 +43,9 @@ namespace BakeryShop.Services
             var response = await _httpClient.DeleteAsync($"Cart/{cartItemId}/{cartId}");
             return response.IsSuccessStatusCode;
         }
+
+
+
     }
 }
 
