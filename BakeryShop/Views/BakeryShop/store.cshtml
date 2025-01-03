@@ -118,15 +118,18 @@
                                             <img src="@product.Img" class="img-fluid rounded-start" alt="..." style="object-fit: cover;">
                                         </div>
                                         <div class="col-md-8">
-                                            <div class="ms-3 card-body mb-3">
-                                                <h5 class="card-title fs-4 text-wrap text-nowrap overflow-hidden" style=" text-overflow: ellipsis;">@product.Name</h5>
-                                            </div>
-                                            <div class="card-footer text-danger fs-4 d-flex align-items-center justify-content-center">
-                                                <span class="ms-3 card-text">@product.Price VNĐ 
-                                           </span>
-                                                <a class="ms-3 card-link btn btn-primary" asp-action="ProductDetail" asp-controller="BakeryShop" asp-route-id="@product.ProductId" style="float:right;">Mua ngay</a>
+                                            <div class="card-body">
+                                                <div class="ms-3  mb-3">
+                                                    <h5 class="card-title fs-4 text-wrap text-nowrap overflow-hidden" style=" text-overflow: ellipsis;">@product.Name</h5>
+                                                </div>
+                                                <div class="mt-5 text-danger fs-4 d-flex align-items-center justify-content-center">
+                                                    <span class="ms-3 card-text">
+                                                        @product.Price VNĐ
+                                                    </span>
+                                                    <a class="ms-3 card-link btn btn-primary" asp-action="ProductDetail" asp-controller="BakeryShop" asp-route-id="@product.ProductId" style="float:right;">Mua ngay</a>
 
-                                            </div>
+                                                </div>
+</div>
                                         </div>
                                     </div>
                                 </div>

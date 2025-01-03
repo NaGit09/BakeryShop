@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,6 +50,10 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
@@ -72,7 +76,7 @@
               "RelativeDocumentMoniker": "Views\\BakeryShop\\store.cshtml",
               "ToolTip": "C:\\Users\\nhuta\\source\\repos\\BakeryShop\\BakeryShop\\Views\\BakeryShop\\store.cshtml",
               "RelativeToolTip": "Views\\BakeryShop\\store.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-03T15:46:59.785Z",
               "EditorCaption": ""
@@ -87,8 +91,7 @@
               "RelativeToolTip": "Controllers\\BakeryShopController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T13:29:01.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-03T13:29:01.157Z"
             }
           ]
         }
