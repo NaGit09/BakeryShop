@@ -1,6 +1,13 @@
 ﻿namespace BakeryShop.Services
 {
-    public class Product
+    public class Category
+    {
+        public String? CategoryName { get; set; }
+        public String? Description { get; set; }
+        public List<Product>? Products { get; set; }
+
+    }
+        public class Product
     {
         public  int ProductId { get; set; }
         public decimal Price { get; set; }

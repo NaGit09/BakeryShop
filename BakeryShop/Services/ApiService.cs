@@ -19,6 +19,15 @@ namespace BakeryShop.Services
             // Trả về dữ liệu từ thuộc tính 'Data', hoặc danh sách rỗng nếu không có dữ liệu
             return responseData?.Data ?? new List<Product>();
         }
+        public async Task<List<Category>> GetAsyncStore<T>(string url)
+        {
+            var response = await _httpClient.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+            // Đọc toàn bộ JSON trả về
+            var responseData = await response.Content.ReadFromJsonAsync<ResponseServices<List<Category>>>();
+            // Trả về dữ liệu từ thuộc tính 'Data', hoặc danh sách rỗng nếu không có dữ liệu
+            return responseData?.Data ?? new List<Category>();
+        }
         public async Task<T?> PostAsync<T>(string url, object payload)
         {
             var response = await _httpClient.PostAsJsonAsync(url, payload);

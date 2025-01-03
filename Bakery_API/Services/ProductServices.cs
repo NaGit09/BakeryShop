@@ -31,11 +31,23 @@ namespace Bakery_API.Services
         }
         public List<dynamic> GetProductsStore()
         {
-            var products = _bakerySqlContext.Products.Include(x => x.ProductCategory).Select(x => new { x.Price , x.Name , x.description , x.GroupProduct , x.Img });
+            var categoriesWithProducts = _bakerySqlContext.ProductCategories
+        .Select(pc => new
+        {
+            CategoryName = pc.Name,
+            Description = pc.Description,
+            Products = pc.Products.Select(p => new
+            {
+                Name = p.Name,
+                Price = p.Price,
+                Img = p.Img,
+                ProductId = p.ProductId
+            })
+        })
+        .Cast<dynamic>().ToList();
 
+            return categoriesWithProducts;
 
-
-            return products.Cast<dynamic>().ToList();
         }
         public List<dynamic> GetProducts()
         {

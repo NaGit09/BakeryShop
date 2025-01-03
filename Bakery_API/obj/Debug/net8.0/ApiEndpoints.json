@@ -59,6 +59,16 @@
   },
   {
     "ContainingType": "Bakery_API.Controllers.ProductController",
+    "Method": "GetProductsStore",
+    "RelativePath": "api/Product/GetProductsStore",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bakery_API.Controllers.ProductController",
     "Method": "SearchProduct",
     "RelativePath": "api/Product/SearchProduct",
     "HttpMethod": "GET",

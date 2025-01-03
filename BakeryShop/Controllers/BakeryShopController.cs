@@ -29,14 +29,14 @@ namespace BakeryShop.Controllers
             // Truyền danh sách sản phẩm đến View
             return View(response);
         }
-        public async Task<IActionResult> store()
+        public async Task<IActionResult> Store()
         {
-
-            // Giả sử GetAsync là hàm gọi API và trả về dữ liệu
-            string url = "https://localhost:7056/api/Product/GetAll";
-            var response = await _apiService.GetAsync<ResponseServices<List<Product>>>(url);
+            string url = "https://localhost:7056/api/Product/GetProductsStore";
+            var response = await _apiService.GetAsyncStore<ResponseServices<List<Category>>>(url);
             return View(response);
         }
+
+
         [HttpPost]
         public async Task<IActionResult> store (String type)
         {

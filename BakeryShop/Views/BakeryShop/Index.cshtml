@@ -4,9 +4,7 @@
 @section CSS {
     <link rel="stylesheet" href="~/css/index.css" />
 }
-@section Header {
-    <partial name="header1" />
-}
+
  @model List<BakeryShop.Services.Product>
 <main style="margin-top: 100px">
     <div class="slider container">
@@ -64,43 +62,8 @@
             </button>
         </div>
     </div>
-    <div class="menu d-flex align-items-center m-5 justify-content-between text-center">
-        <a  asp-action="store" asp-controller="BakeryShop" class="group menu_btn">
-            <i class="icon bi bi-search fs-3"></i>
-            <p class="menu_btn-search mt-4 fs-5">Tìm kiếm</p>
-        </a>
-        <div class="group menu_btn">
-            <img src="./img/Combo_Gray.png" alt="" class="type-img" />
-
-            <p class="menu_btn-search mt-4 fs-5">Bánh Sinh nhật</p>
-        </div>
-        <div class="group menu_btn">
-            <img src="./img/Chicken_Gray.webp" alt="" class="type-img" />
-
-            <p class="menu_btn-search mt-4 fs-5">Gà rán</p>
-        </div>
-        <div class="group menu_btn">
-            <img src="./img/Mybox_Gray.webp" alt="" class="type-img" />
-            <p class="menu_btn-search mt-4 fs-5">Bánh ngọt</p>
-        </div>
-        <div class="group menu_btn">
-            <img src="./img/Water_Gray.webp" alt="" class="type-img" />
-
-            <p class="menu_btn-search mt-4 fs-5">Giải khát</p>
-        </div>
-    </div>
     <div class="discount">
         <div class="discount-title mb-2">
-            <h2 class="discount-title-h2 d-flex justify-content-center align-items-center">
-                <hr />
-                Mua 1 tặng 1
-                <hr />
-            </h2>
-            <img src="./img/CateBanner_BOGO_Desktop_VI.webp"
-                 class="img mt-2 mb-2"
-                 alt="" />
-          
-
             <div class="row row-cols-1 row-cols-xxl-2 g-3 mt-5">
                 @foreach (var product in Model)
                 {
