@@ -141,13 +141,47 @@
 
                         </div>
                     </div>
-                    <button class="rounded w100 btn-pay fs-4 p-2 " type="button">
+                    <button class="rounded w100 btn-pay fs-4 p-2" type="button" data-bs-toggle="modal" data-bs-target="#checkoutModal">
                         Thanh toán
                     </button>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Thông tin thanh toán</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form asp-action="Checkout" method="post">
+                    <input type="hidden" name="CartId" value="@ViewData["CartId"]" />
+                    <div class="mb-3">
+                        <label for="PaymentMethod">Phương thức thanh toán</label>
+                        <select id="PaymentMethod" name="PaymentMethod" class="form-control">
+                            <option value="Cash">Tiền mặt</option>
+                            <option value="Card">Thẻ</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ShippingAddress">Địa chỉ giao hàng</label>
+                        <input type="text" id="ShippingAddress" name="ShippingAddress" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label for="ContactNumber">Số điện thoại</label>
+                        <input type="text" id="ContactNumber" name="ContactNumber" class="form-control" required />
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary">Thanh toán</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
 </main>
 
 @*@section JS {

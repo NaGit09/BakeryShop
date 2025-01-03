@@ -44,6 +44,17 @@ namespace BakeryShop.Services
             return response.IsSuccessStatusCode;
         }
 
+        public async Task<bool> ProcessCheckoutAsync(CheckoutRequest request)
+        {
+            var response = await _httpClient.PostAsJsonAsync("Checkout", request);
+            if (!response.IsSuccessStatusCode)
+            {
+                var error = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Checkout failed: {error}");
+            }
+            return response.IsSuccessStatusCode;
+        }
+
 
 
     }

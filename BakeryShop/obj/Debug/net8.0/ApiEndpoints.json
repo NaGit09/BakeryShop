@@ -69,6 +69,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Bakery_API.Controllers.CheckoutController",
+    "Method": "ProcessCheckout",
+    "RelativePath": "api/Checkout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Bakery_API.DTO.CheckoutRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Bakery_API.Controllers.ProductController",
     "Method": "GetByProductCategoryId",
     "RelativePath": "api/Product",

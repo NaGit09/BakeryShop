@@ -3,6 +3,7 @@ using Bakery_API.DTO;
 using Microsoft.AspNetCore.Mvc;
 using BakeryShop.Util;
 using UpdateCartItemQuantityRequest = BakeryShop.Util.UpdateCartItemQuantityRequest;
+using CheckoutRequest = BakeryShop.Util.CheckoutRequest;
 
 namespace BakeryShop.Controllers
 {
@@ -55,6 +56,33 @@ namespace BakeryShop.Controllers
             }
 
             return RedirectToAction("Index");
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Checkout(CheckoutRequest request)
+        {
+            if (string.IsNullOrEmpty(request.ShippingAddress) || string.IsNullOrEmpty(request.ContactNumber))
+            {
+                TempData["Error"] = "Thông tin giao hàng không đầy đủ.";
+                return RedirectToAction("Index");
+            }
+
+            var success = await _cartService.ProcessCheckoutAsync(request);
+
+            if (success)
+            {
+                TempData["Message"] = "Thanh toán thành công!";
+                return RedirectToAction("OrderSuccess");
+            }
+
+            TempData["Error"] = "Thanh toán thất bại. Vui lòng thử lại.";
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult OrderSuccess()
+        {
+            return View("~/Views/BakeryShop/OrderSuccess.cshtml");
         }
 
 
