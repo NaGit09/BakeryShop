@@ -1,0 +1,753 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BakeryShop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BakeryShop.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\css\\style.css",
+      "PackagePath": "staticwebassets\\asset\\css\\style.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\imgs\\favicon.ico",
+      "PackagePath": "staticwebassets\\asset\\imgs\\favicon.ico"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\imgs\\logo.png",
+      "PackagePath": "staticwebassets\\asset\\imgs\\logo.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\imgs\\oakley.jpg",
+      "PackagePath": "staticwebassets\\asset\\imgs\\oakley.jpg"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\imgs\\product1.jpg",
+      "PackagePath": "staticwebassets\\asset\\imgs\\product1.jpg"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\imgs\\product1b.jpg",
+      "PackagePath": "staticwebassets\\asset\\imgs\\product1b.jpg"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\imgs\\product1c.jpg",
+      "PackagePath": "staticwebassets\\asset\\imgs\\product1c.jpg"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\imgs\\product2.jpg",
+      "PackagePath": "staticwebassets\\asset\\imgs\\product2.jpg"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\imgs\\site.webmanifest",
+      "PackagePath": "staticwebassets\\asset\\imgs\\site.webmanifest"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\index.html",
+      "PackagePath": "staticwebassets\\asset\\index.html"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\js\\app.js",
+      "PackagePath": "staticwebassets\\asset\\js\\app.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\js\\datapresudo.js",
+      "PackagePath": "staticwebassets\\asset\\js\\datapresudo.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\main.js",
+      "PackagePath": "staticwebassets\\asset\\main.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\package.json",
+      "PackagePath": "staticwebassets\\asset\\package.json"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\asset\\styles.css",
+      "PackagePath": "staticwebassets\\asset\\styles.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\css\\Basket.css",
+      "PackagePath": "staticwebassets\\css\\Basket.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\css\\Nabar&Footer.css",
+      "PackagePath": "staticwebassets\\css\\Nabar&Footer.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\css\\Track.css",
+      "PackagePath": "staticwebassets\\css\\Track.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\B1G3_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\B1G3_Gray.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\BOGO_Red.webp",
+      "PackagePath": "staticwebassets\\img\\BOGO_Red.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\CateBanner_BOGO_Desktop_VI.webp",
+      "PackagePath": "staticwebassets\\img\\CateBanner_BOGO_Desktop_VI.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\CateBanner_Chicken_Desktop_VI.webp",
+      "PackagePath": "staticwebassets\\img\\CateBanner_Chicken_Desktop_VI.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\Chicken_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\Chicken_Gray.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\ComboLarge_Product_Desktop_VIwebp.webp",
+      "PackagePath": "staticwebassets\\img\\ComboLarge_Product_Desktop_VIwebp.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\ComboMedium_Product_Desktop_VI.webp",
+      "PackagePath": "staticwebassets\\img\\ComboMedium_Product_Desktop_VI.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\Combo_Gray.png",
+      "PackagePath": "staticwebassets\\img\\Combo_Gray.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\HA538@@Chicken_Mala_4pcs.webp",
+      "PackagePath": "staticwebassets\\img\\HA538@@Chicken_Mala_4pcs.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\Logo.png",
+      "PackagePath": "staticwebassets\\img\\Logo.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\Mybox_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\Mybox_Gray.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\Pizza_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\Pizza_Gray.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\Water_Gray.webp",
+      "PackagePath": "staticwebassets\\img\\Water_Gray.webp"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhcapdong1.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong1.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhcapdong2.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong2.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhcapdong3.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong3.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhcapdong4.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong4.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhcapdong5.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong5.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhcapdong6.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong6.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhcapdong7.png",
+      "PackagePath": "staticwebassets\\img\\banhcapdong7.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem1.png",
+      "PackagePath": "staticwebassets\\img\\banhkem1.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem10.png",
+      "PackagePath": "staticwebassets\\img\\banhkem10.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem11.png",
+      "PackagePath": "staticwebassets\\img\\banhkem11.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem12.png",
+      "PackagePath": "staticwebassets\\img\\banhkem12.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem13.png",
+      "PackagePath": "staticwebassets\\img\\banhkem13.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem14.png",
+      "PackagePath": "staticwebassets\\img\\banhkem14.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem15.png",
+      "PackagePath": "staticwebassets\\img\\banhkem15.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem16.png",
+      "PackagePath": "staticwebassets\\img\\banhkem16.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem17.png",
+      "PackagePath": "staticwebassets\\img\\banhkem17.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem18.png",
+      "PackagePath": "staticwebassets\\img\\banhkem18.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem19.png",
+      "PackagePath": "staticwebassets\\img\\banhkem19.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem2.png",
+      "PackagePath": "staticwebassets\\img\\banhkem2.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem21.png",
+      "PackagePath": "staticwebassets\\img\\banhkem21.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem22.png",
+      "PackagePath": "staticwebassets\\img\\banhkem22.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem23.png",
+      "PackagePath": "staticwebassets\\img\\banhkem23.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem24.png",
+      "PackagePath": "staticwebassets\\img\\banhkem24.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem3.png",
+      "PackagePath": "staticwebassets\\img\\banhkem3.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem4.png",
+      "PackagePath": "staticwebassets\\img\\banhkem4.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem5.png",
+      "PackagePath": "staticwebassets\\img\\banhkem5.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem7.png",
+      "PackagePath": "staticwebassets\\img\\banhkem7.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem8.png",
+      "PackagePath": "staticwebassets\\img\\banhkem8.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhkem9.png",
+      "PackagePath": "staticwebassets\\img\\banhkem9.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhlanh1.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh1.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhlanh2.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh2.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhlanh3.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh3.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhlanh4.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh4.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhlanh5.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh5.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhlanh6.png",
+      "PackagePath": "staticwebassets\\img\\banhlanh6.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong1.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong1.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong10.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong10.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong11.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong11.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong12.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong12.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong2.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong2.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong3.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong3.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong4.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong4.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong5.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong5.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong6.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong6.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong7.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong7.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong8.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong8.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhnuong9.png",
+      "PackagePath": "staticwebassets\\img\\banhnuong9.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhquy1.png",
+      "PackagePath": "staticwebassets\\img\\banhquy1.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhquy2.png",
+      "PackagePath": "staticwebassets\\img\\banhquy2.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhquy3.png",
+      "PackagePath": "staticwebassets\\img\\banhquy3.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhquy4.png",
+      "PackagePath": "staticwebassets\\img\\banhquy4.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhquy5.png",
+      "PackagePath": "staticwebassets\\img\\banhquy5.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhquy6.png",
+      "PackagePath": "staticwebassets\\img\\banhquy6.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\banhquy7.png",
+      "PackagePath": "staticwebassets\\img\\banhquy7.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem1.png",
+      "PackagePath": "staticwebassets\\img\\carem1.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem2.png",
+      "PackagePath": "staticwebassets\\img\\carem2.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem3.png",
+      "PackagePath": "staticwebassets\\img\\carem3.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem4.png",
+      "PackagePath": "staticwebassets\\img\\carem4.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem5.png",
+      "PackagePath": "staticwebassets\\img\\carem5.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem6.png",
+      "PackagePath": "staticwebassets\\img\\carem6.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem7.png",
+      "PackagePath": "staticwebassets\\img\\carem7.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem8.png",
+      "PackagePath": "staticwebassets\\img\\carem8.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\carem9.png",
+      "PackagePath": "staticwebassets\\img\\carem9.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\phukien1.png",
+      "PackagePath": "staticwebassets\\img\\phukien1.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\phukien2.png",
+      "PackagePath": "staticwebassets\\img\\phukien2.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\phukien3.png",
+      "PackagePath": "staticwebassets\\img\\phukien3.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\phukien4.png",
+      "PackagePath": "staticwebassets\\img\\phukien4.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\phukien5.png",
+      "PackagePath": "staticwebassets\\img\\phukien5.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\phukien6.png",
+      "PackagePath": "staticwebassets\\img\\phukien6.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\phukien7.png",
+      "PackagePath": "staticwebassets\\img\\phukien7.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\phukien8.png",
+      "PackagePath": "staticwebassets\\img\\phukien8.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-Tôm-Hoàng-Kim.png",
+      "PackagePath": "staticwebassets\\img\\pizza-Tôm-Hoàng-Kim.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-ca-hoi.png",
+      "PackagePath": "staticwebassets\\img\\pizza-ca-hoi.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-con-loc-hai-san.png",
+      "PackagePath": "staticwebassets\\img\\pizza-con-loc-hai-san.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-gap-doi-nhan-doi-phu-hai-san-xot-pesto.png",
+      "PackagePath": "staticwebassets\\img\\pizza-gap-doi-nhan-doi-phu-hai-san-xot-pesto.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-gap-doi-nhan-phu-con-loc-hai-san.png",
+      "PackagePath": "staticwebassets\\img\\pizza-gap-doi-nhan-phu-con-loc-hai-san.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-gap-doi-nhan-phu-hai-san-xot-tieu-den.png",
+      "PackagePath": "staticwebassets\\img\\pizza-gap-doi-nhan-phu-hai-san-xot-tieu-den.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-hai-san-nhiet-doi.png",
+      "PackagePath": "staticwebassets\\img\\pizza-hai-san-nhiet-doi.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-pepperoni.png",
+      "PackagePath": "staticwebassets\\img\\pizza-pepperoni.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-pho-mai.png",
+      "PackagePath": "staticwebassets\\img\\pizza-pho-mai.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-rau-cu-sot-ca-chua.png",
+      "PackagePath": "staticwebassets\\img\\pizza-rau-cu-sot-ca-chua.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-thap-cam.png",
+      "PackagePath": "staticwebassets\\img\\pizza-thap-cam.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-tom-thit-nuong-tieu.png",
+      "PackagePath": "staticwebassets\\img\\pizza-tom-thit-nuong-tieu.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-tu-vi-xuan.png",
+      "PackagePath": "staticwebassets\\img\\pizza-tu-vi-xuan.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\img\\pizza-vien-pho-mai-hai-loai-nhan-phu.png",
+      "PackagePath": "staticwebassets\\img\\pizza-vien-pho-mai-hai-loai-nhan-phu.png"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\js\\Navbar%Footer.js",
+      "PackagePath": "staticwebassets\\js\\Navbar%Footer.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\js\\Register.js",
+      "PackagePath": "staticwebassets\\js\\Register.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\workspace2\\DoAnDotNet\\BakeryShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BakeryShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BakeryShop.props",
+      "PackagePath": "build\\BakeryShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BakeryShop.props",
+      "PackagePath": "buildMultiTargeting\\BakeryShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BakeryShop.props",
+      "PackagePath": "buildTransitive\\BakeryShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

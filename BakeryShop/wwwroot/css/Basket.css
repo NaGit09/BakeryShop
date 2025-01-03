@@ -1,0 +1,21 @@
+﻿.basket-title {
+    font-size: 20px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.login-title {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.back {
+    font: 15px;
+}
+
+.btn-pay {
+    background-color: rgb(243 244 246);
+    border: none;
+}

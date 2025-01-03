@@ -1,0 +1,42 @@
+﻿@model List<BakeryShop.Areas.Admin.ViewModels.ProductVM>
+<div class="admin-content main">
+    <div class="admin-content-main-title">
+        <h1>Danh sách sản phẩm</h1>
+    </div>
+    <div class="admin-content-main-content">
+        <div class="admin-content-main-content-product-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã sản phẩm</th>
+                        <th>Ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        
+                        <th>Giá bán</th>                        
+                        <th>Tùy chỉnh</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var item in Model)
+                    {
+                        <tr>
+                            <td>@item.ProductId</td>
+                            <td><img width="70px" src="@item.Img" alt=""></td>
+                            <td>@item.Name</td>
+                            <td>@item.FormatPrice</td>
+                            <td>
+                                <a class="edit-class" href="">Sửa</a>
+                                |
+                                <a class="delete-class" href="">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

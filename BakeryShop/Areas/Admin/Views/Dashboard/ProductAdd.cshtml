@@ -1,0 +1,36 @@
+﻿@model BakeryShop.Areas.Admin.ViewModels.AddProductVM
+
+<div class="admin-content main">
+    <div class="admin-content-main-title">
+        <h1>Thêm sản phẩm</h1>
+    </div>
+    <div class="admin-content-main-content">
+        <div class="admin-content-main-content-product-add">
+            <div class="admin-content-main-content-left">
+                @using (Html.BeginForm())
+                {
+                    <div class="admin-content-main-content-two-input">
+                        <input asp-for="Name" class="form-control" placeholder="Tên sản phẩm" />
+                        <input asp-for="Price" class="form-control" placeholder="Giá" />
+                        <input asp-for="Discount" class="form-control" placeholder="Giảm giá" />
+                        <select asp-for="ProductCategoryId" asp-items="ViewBag.Categories" class="form-control">
+                            <option value="">Chọn loại</option>
+                        </select>
+                        <select asp-for="GroupProductId" asp-items="ViewBag.Groups" class="form-control">
+                            <option value="">Chọn nhóm sản phẩm</option>
+                        </select>
+                        <textarea asp-for="Description" class="form-control" placeholder="Chi tiết sản phẩm" id="editor"></textarea>
+                        <button type="submit" class="main-btn">Thêm sản phẩm</button>
+                    </div>
+                }
+            </div>
+            <div class="admin-content-main-content-right">
+                <div class="admin-content-main-content-right-image">
+                    <label for="Img">Ảnh</label>
+                    <input asp-for="Img" class="form-control" id="file" />
+                    <div class="image-show"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

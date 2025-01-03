@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+          rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/icon" sizes="32x32" href="~/asset/imgs/favicon.ico">
+
+    <link rel="stylesheet" href="~/asset/css/style.css">
+    <title>Trang quản lý</title>
+</head>
+<body>
+    <section class="admin">
+        <div class="row-grid">
+            <div class="admin-sidebar">
+                <div class="admin-sidebar-top">
+                    <img src="~/asset/imgs/logo.png" alt="">
+                </div>
+                <div class="admin-sidebar-content">
+                    <ul>
+                        <li>
+                            <a href=""><i class="ri-dashboard-line"></i>Trang quản lý<i class="ri-add-box-line"></i></a>
+                            <ul class="sub-menu">
+                                <div class="sub-menu-items">
+                                <li><a asp-controller ="Dashboard" asp-action="Index"><i class="ri-arrow-right-s-fill"></i>Tổng quan</a></li>
+                </div>
+                </ul>
+                </li>
+                <li>
+                    <a href=""><i class="ri-file-list-line"></i>Đơn hàng<i class="ri-add-box-line"></i></a>
+                    <ul class="sub-menu">
+                        <div class="sub-menu-items">
+                        <li><a href="order_list.html"><i class="ri-arrow-right-s-fill"></i>Danh sách đơn hàng</a></li>
+
+            </div>
+
+            </ul>
+            </li>
+            <li>
+                </i><a href=""><i class="ri-file-list-line"></i>Sản phẩm<i class="ri-add-box-line"></i></a>
+                <ul class="sub-menu">
+                    <div class="sub-menu-items">
+                    <li><a asp-area="admin" asp-action="ProductList" asp-controller="Dashboard"><i class="ri-arrow-right-s-fill"></i>Danh sách sản phẩm</a></li>
+                    <li><a asp-area="admin" asp-action="ProductAdd" asp-controller="Dashboard"><i class="ri-arrow-right-s-fill"></i>Thêm</a></li>
+        </div>
+        </ul>
+
+        </li>
+
+        
+        <li>
+            </i><a href=""><i class="ri-discount-percent-line"></i>Khuyến mãi<i class="ri-add-box-line"></i></a>
+            <ul class="sub-menu">
+                <div class="sub-menu-items">
+                <li><a href="promotion.html"><i class="ri-arrow-right-s-fill"></i>Danh sách mã giảm giá</a></li>
+                </div>
+            </ul>
+        </li>
+        <li>
+            <a href=""><i class="ri-user-line"></i>Người dùng<i class="ri-add-box-line"></i></a>
+            <ul class="sub-menu">
+                <div class="sub-menu-items">
+                <li><a href="manager_user.html"><i class="ri-arrow-right-s-fill"></i>Quản lý người dùng</a></li>
+
+                </div>
+
+            </ul>
+        </li>
+        <li>
+            <a href=""><i class="ri-feedback-line"></i>Phản hồi<i class="ri-add-box-line"></i></a>
+            <ul class="sub-menu">
+                <div class="sub-menu-items">
+                <li><a href="feedback.html"><i class="ri-arrow-right-s-fill"></i>Phản hồi</a></li>
+                </div>
+
+            </ul>
+        </li>
+        </ul>
+        </div>
+        </div>
+        <div class="admin-content">
+            <div class="admin-content-top">
+                <div class="admin-content-top-left">
+                    <ul class="flex-box">
+                        <li><input type="text" name="" id="" placeholder="Tìm kiếm sản phẩm"></li>
+                        <li><i class="ri-search-line"></i></li>
+                    </ul>
+                </div>
+                <div class="admin-content-top-right">
+                    <ul class="flex-box">
+                        <li></li>
+                        <li class="mssg-list">
+                            <i number="5" class="ri-message-2-fill"></i>
+                            <ul class="message-sub-list hidden">
+                                <li>
+                                    <i class="ri-user-line"></i>
+                                    <div class="info-mssg-user">
+                                        <span><b>Tên Người Dùng</b></span>
+                                        <br>
+                                        <span>Phản hồi</span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <i class="ri-user-line"></i>
+                                    <div class="info-mssg-user">
+                                        <span><b>Tên Người Dùng</b></span>
+                                        <br>
+                                        <span>Phản hồi</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="flex-box">
+                            <img style="max-width: 50px;" src="~/asset/imgs/logo.png" alt="" class="admin-menu">
+                            <div class="sub-menu-admin-container hidden">
+                                <div class="traingle"></div>
+                                <ul class="sub-menu-admin">
+
+                                    <li>
+                                        <div class="logout">
+                                            <a href="../dang_nhap.html">Đăng xuất</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            
+            @RenderBody()
+        </div>
+
+        </div>
+    </section>
+
+    <script src="~/asset/js/app.js"></script>
+    <script src="~/asset/js/datapresudo.js"></script>
+   
+
+</body>
+</html>
