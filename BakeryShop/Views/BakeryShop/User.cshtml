@@ -1,0 +1,280 @@
+﻿@using System.Text.Json
+@using BakeryShop.Util
+@using System.IdentityModel.Tokens.Jwt
+@using System.Linq
+
+@{
+    // Lấy access token từ cookie
+    var token = Context.Request.Cookies["AuthToken"];
+    var name = string.Empty;
+    var gender = string.Empty;
+    var point = string.Empty;
+
+
+    if (!string.IsNullOrEmpty(token))
+    {
+        try
+        {
+            // Giải mã token và lấy thông tin từ payload
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadToken(token) as JwtSecurityToken;
+            name = jsonToken?.Claims.FirstOrDefault(c => c.Type == "Name")?.Value;
+            gender = jsonToken?.Claims.FirstOrDefault(c => c.Type == "Gender")?.Value;
+            point = jsonToken?.Claims.FirstOrDefault(c => c.Type == "Point")?.Value;
+
+        }
+        catch (Exception ex)
+        {
+            // Log lỗi nếu cần
+            Console.WriteLine("Error decoding JWT: " + ex.Message);
+        }
+    }
+}
+
+@{
+    ViewData["title"] = "index";
+}
+
+@section Header {
+    <partial name="header1" />
+}
+
+@section CSS {
+    <link rel="stylesheet" href="~/css/user.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+}
+
+@section Scripts {
+    <script src="~/js/user.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   
+}
+
+<main>
+<header>
+    <nav></nav>
+    <div class="under-navigation">
+        <div style="padding-top: 100px;" class="container">
+            <div class="row">
+                <div id="header-user" class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div>
+                                <h3>
+                                        Hi, @name
+                                </h3>
+                                <img id="rankCurrent" src="assets/rankImage/none.png" alt="">
+                                <div class="spendMore">
+                                    <p>
+                                        Chi tiêu thêm
+                                        <span style="color: #2f5acf;"> </span>
+                                        để lên hạng
+                                    </p>
+                                    <img id="rankNext" src="assets/rankImage/silver.png" alt="">
+                                </div>
+                                <div id="lineSpend">
+                                    <div class="lineSpend__progress">
+                                    </div>
+                                    <div style=" left: 0;" class="poinNone">
+                                        <img src="assets/rankImage/none.png" alt="">
+                                    </div>
+                                    <div style=" left: 33.3%;" class="poinNone">
+                                        <img src="assets/rankImage/silver.png" alt="">
+                                    </div>
+                                    <div style=" left: 66.6%;" class="poinNone">
+                                        <img src="assets/rankImage/gold.png" alt="">
+                                    </div>
+                                    <div style=" left: 99.9%;" class="poinNone">
+                                        <img src="assets/rankImage/platinum.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div id="header-left">
+                                <div class="CoolCashFull">
+                                    <p style="text-align: end;">Bạn đang có</p>
+                                    <div class="CoolCash">
+                                        <img src="assets/user/mceclip6_39.png" alt="">
+                                            <p>@point đ CoolCash</p>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                <div id="reward">
+                                    <div class="btn">
+                                        <div class="text">
+                                            <div class="">
+                                                SirkRoad
+                                            </div>
+                                            <div class="">Rewards Hub</div>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="fa-solid fa-right-long"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 20px;" class="container">
+            <div class="row">
+                <div style="padding: 0;" class="col-md-3">
+                    <div class="">
+                        <div id="user__menu">
+                            <div class="user__menu-item">
+                                <div class="">
+                                    Lịch sử đơn hàng
+                                </div>
+                                <div class="">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                            <div class="user__menu-item">
+                                <div class="">
+                                    Chính sách và câu hỏi thường gặp
+                                </div>
+                                <div class="">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                                <a asp-action="Logout" asp-controller="User">
+                                    <div id="btnLogout" class="user__menu-item-logOut">
+                                        Đăng xuất
+                                    </div>
+                                </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-right: 0;" class="col-md-9">
+                    <div class="content-center">
+                        <div class="infoPersonal">
+
+                            <h2>
+                                Thông tin tài khoản
+                            </h2>
+                            <div class="content-center__info">
+                                <div class="content-center__info-item">
+                                    <div class="content-center__info-item__title">
+                                        <p>
+                                            Họ và tên
+                                        </p>
+                                    </div>
+                                    <div class="content-center__info-item__content">
+                                        <p>
+                                            @name
+                                        </p>
+                                    </div>
+                                </div>
+@*                                 <div class="content-center__info-item">
+                                    <div class="content-center__info-item__title">
+                                        <p>
+                                            Số điện thoại
+                                        </p>
+                                    </div>
+                                    <div class="content-center__info-item__content">
+                                        <p>
+                                            0987654321
+                                        </p>
+                                    </div>
+                                </div>
+ *@                                <div class="content-center__info-item">
+                                    <div class="content-center__info-item__title">
+                                        <p>
+                                            Giới tính
+                                        </p>
+                                    </div>
+                                    <div class="content-center__info-item__content">
+                                        <p>
+                                            @gender
+                                        </p>
+                                    </div>
+                                </div>
+@*                                 <div class="content-center__info-item">
+                                    <div class="content-center__info-item__title">
+                                        <p>
+                                            Ngày tháng năm sinh
+                                        </p>
+                                    </div>
+                                    <div class="content-center__info-item__content">
+                                        <p>
+                                            10/01/2003
+                                        </p>
+                                    </div>
+                                </div>
+ *@
+                                <div class="content-center__info-item">
+                                    <div class="content-center__info-item__title">
+                                        <p>
+                                            Địa chỉ
+                                        </p>
+                                    </div>
+                                    <div class="content-center__info-item__content">
+                                        <p>
+                                            ""
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <button class="btnEditInfo">Chỉnh sửa thông tin cá nhân</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;" class="inforLogin">
+                            <h2>
+                                Thông tin đăng nhập
+                            </h2>
+                            <div class="content-center__info-item">
+                                <div class="content-center__info-item__title">
+                                    <p>
+                                        Email
+                                    </p>
+                                </div>
+                                <div class="content-center__info-item__content">
+                                    <p> ******</p>
+                                </div>
+
+                            </div>
+                            <div class="content-center__info-item">
+                                <div class="content-center__info-item__title">
+                                    <p>
+                                        Mật khẩu
+                                    </p>
+                                </div>
+                                <div class="content-center__info-item__content">
+                                    <p>********</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="btnEditInfo">Chỉnh sửa thông tin cá nhân</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+</main>
+
+
+
+
+
+
+
+
+<

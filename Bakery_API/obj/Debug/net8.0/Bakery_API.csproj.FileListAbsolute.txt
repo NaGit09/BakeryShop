@@ -169,3 +169,4 @@ D:\BakeryShop\Bakery_API\obj\Debug\net8.0\Bakery_API.genruntimeconfig.cache
 D:\BakeryShop\Bakery_API\obj\Debug\net8.0\ref\Bakery_API.dll
 D:\BakeryShop\Bakery_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\BakeryShop\Bakery_API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\BakeryShop\Bakery_API\bin\Debug\net8.0\Microsoft.VisualStudio.LiveShare.dll

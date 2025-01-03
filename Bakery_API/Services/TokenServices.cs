@@ -11,7 +11,8 @@ namespace Bakery_API.Services
     {
         private readonly AppSettings _appSettings;
 
-        public TokenServices(IOptionsMonitor<AppSettings> optionsMonitor) {
+        public TokenServices(IOptionsMonitor<AppSettings> optionsMonitor)
+        {
 
             _appSettings = optionsMonitor.CurrentValue;
         }
@@ -25,10 +26,14 @@ namespace Bakery_API.Services
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                    new Claim("Id", user.UserId.ToString()),
-                    new Claim("Role", user.Role)          
+                    new Claim("UserId", user.UserId.ToString()),
+                    new Claim("Role", user.Role),
+                    new Claim ("Name", user.Name),
+                    new Claim ("Gender", user.Gender.ToString()),
+                    new Claim ("Point", user.Point.ToString()),
+
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(30),  // Thời gian hết hạn có thể tùy chỉnh
+                Expires = DateTime.UtcNow.AddMinutes(1),  // Thời gian hết hạn có thể tùy chỉnh
                 SigningCredentials = new SigningCredentials(
                     new SymmetricSecurityKey(secretKeyBytes),
                     SecurityAlgorithms.HmacSha256Signature)

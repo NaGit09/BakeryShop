@@ -37,60 +37,20 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\css\\user.css",
+      "PackagePath": "staticwebassets\\css\\user.css"
+    },
+    {
       "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\B1G3_Gray.webp",
-      "PackagePath": "staticwebassets\\img\\B1G3_Gray.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\BOGO_Red.webp",
-      "PackagePath": "staticwebassets\\img\\BOGO_Red.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\CateBanner_BOGO_Desktop_VI.webp",
-      "PackagePath": "staticwebassets\\img\\CateBanner_BOGO_Desktop_VI.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\CateBanner_Chicken_Desktop_VI.webp",
-      "PackagePath": "staticwebassets\\img\\CateBanner_Chicken_Desktop_VI.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\Chicken_Gray.webp",
-      "PackagePath": "staticwebassets\\img\\Chicken_Gray.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\ComboLarge_Product_Desktop_VIwebp.webp",
-      "PackagePath": "staticwebassets\\img\\ComboLarge_Product_Desktop_VIwebp.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\ComboMedium_Product_Desktop_VI.webp",
-      "PackagePath": "staticwebassets\\img\\ComboMedium_Product_Desktop_VI.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\Combo_Gray.png",
-      "PackagePath": "staticwebassets\\img\\Combo_Gray.png"
     },
     {
       "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\HA538@@Chicken_Mala_4pcs.webp",
       "PackagePath": "staticwebassets\\img\\HA538@@Chicken_Mala_4pcs.webp"
     },
     {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\Logo.png",
-      "PackagePath": "staticwebassets\\img\\Logo.png"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\Mybox_Gray.webp",
-      "PackagePath": "staticwebassets\\img\\Mybox_Gray.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\Pizza_Gray.webp",
-      "PackagePath": "staticwebassets\\img\\Pizza_Gray.webp"
-    },
-    {
-      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\img\\Water_Gray.webp",
-      "PackagePath": "staticwebassets\\img\\Water_Gray.webp"
+      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\js\\Controller\\UserController.js",
+      "PackagePath": "staticwebassets\\js\\Controller\\UserController.js"
     },
     {
       "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\js\\Navbar%Footer.js",
@@ -99,6 +59,10 @@
     {
       "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\js\\Register.js",
       "PackagePath": "staticwebassets\\js\\Register.js"
+    },
+    {
+      "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\js\\resetPassword.js",
+      "PackagePath": "staticwebassets\\js\\resetPassword.js"
     },
     {
       "Id": "D:\\BakeryShop\\BakeryShop\\wwwroot\\js\\site.js",

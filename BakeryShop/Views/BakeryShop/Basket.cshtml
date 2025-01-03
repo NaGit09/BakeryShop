@@ -4,6 +4,18 @@
 @section Header {
     <partial name="header2" />
 }
+
+@{
+    var totalPrice = Model.Sum(item => item.TotalPrice) ;
+    var totalQuantity = Model.Sum(item => item.Quantity);
+
+}
+
+
+@model List<BakeryShop.Util.CartItemResponse>
+
+
+
 <main>
     <div class="d-flex align-items-start flex-column"
          style="margin-top: 120px">
@@ -13,19 +25,68 @@
                 <span class="fs-5">Quay lại</span>
             </a>
             <div><h2 class="login-title">Giỏ hàng của bạn</h2></div>
-            <div></div>
+            <div>
+            </div>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
+                    @*
                     <div class="absolute-center flex-column" style="height: 500px">
-                        <i class="bi bi-bag-check-fill" style="font-size: 120px"></i>
-                        <p class="fs-2 m-3">Giỏ hàng của bạn trống</p>
-                        <p class="fs-5">
-                            Giỏ hàng của bạn trông hơi trống. Tại sao không thử một vài
-                            món <a href="">trong món ăn của chúng tôi?</a>
-                        </p>
+                    <i class="bi bi-bag-check-fill" style="font-size: 120px"></i>
+                    <p class="fs-2 m-3">Giỏ hàng của bạn trống</p>
+                    <p class="fs-5">
+                    Giỏ hàng của bạn trông hơi trống. Tại sao không thử một vài
+                    món <a href="">trong món ăn của chúng tôi?</a>
+                    </p>
                     </div>
+                    *@
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Tổng giá</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.ProductName</td>
+                                    <td>@item.Price.ToString("C")</td>
+                                    <td>
+                                        <form asp-action="UpdateQuantity" method="post">
+                                            <input type="hidden" name="CartItemId" value="@item.CartItemId" />
+                                            <input type="hidden" name="CartId" value="@ViewData["CartId"]" />
+                                            <input type="number" name="Quantity" value="@item.Quantity" min="1" style="width: 60px;" />
+                                            <button type="submit" class="btn btn-primary btn-sm">Cập nhật</button>
+                                        </form>
+
+
+                                    </td>
+                                    <td>@item.TotalPrice.ToString("C")</td>
+                                    <td>
+                                        <form asp-action="Delete" method="post">
+                                            <input type="hidden" name="CartItemId" value="@item.CartItemId" />
+                                            <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                @*<tr>
+                            <td>@item.ProductName</td>
+                            <td>@item.Price</td>
+                            <td>
+                            <input type="number" value="@item.Quantity" min="1" data-cart-item-id="@item.CartItemId" class="quantity-input" />
+                            </td>
+                            <td class="total-price">@item.TotalPrice</td>
+                            </tr>*@
+
+                            }
+                        </tbody>
+
+                    </table>
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-3 p-2">
@@ -74,8 +135,9 @@
                             </div>
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <span class="fs-5">Tổng cộng</span>
-                                <span class="fs-2">0đ</span>
+                                <span class="fs-2 total-cart-price">@totalPrice.ToString("C")</span>
                             </div>
+
                         </div>
                     </div>
                     <button class="rounded w100 btn-pay fs-4 p-2 " type="button">
@@ -86,3 +148,36 @@
         </div>
     </div>
 </main>
+
+@*@section JS {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.quantity-input').on('change', function () {
+                var cartItemId = $(this).data('cart-item-id');
+                var quantity = $(this).val();
+                var row = $(this).closest('tr');
+
+                // Gửi yêu cầu AJAX để cập nhật số lượng
+                $.ajax({
+                    url: '@Url.Action("UpdateCartItemQuantity", "Cart")',
+                    type: 'POST',
+                    data: {
+                        cartItemId: cartItemId,
+                        quantity: quantity
+                    },
+                    success: function (response) {
+                        // Cập nhật giá trị tổng giá sản phẩm
+                        row.find('.total-price').text(response.totalPrice);
+
+                        // Cập nhật tổng giá trị giỏ hàng
+                        $('.total-cart-price').text(response.totalCartPrice);
+                    },
+                    error: function () {
+                        alert('Cập nhật số lượng thất bại. Vui lòng thử lại.');
+                    }
+                });
+            });
+        });
+    </script>
+}*@

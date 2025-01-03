@@ -76,6 +76,10 @@
               "target": "Package",
               "version": "[1.21.0, )"
             },
+            "Microsoft.VisualStudio.LiveShare": {
+              "target": "Package",
+              "version": "[1.1.57, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"

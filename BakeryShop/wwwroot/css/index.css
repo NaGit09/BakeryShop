@@ -77,6 +77,18 @@ svg {
 .price {
     font-size: 30px;
 }
+
 .img-fluid {
-    max-height : 250px;
+    max-height: 250px;
 }
+
+#searchResults div {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+    #searchResults div:hover {
+        background-color: #f0f0f0;
+    }

@@ -35,7 +35,7 @@ namespace Bakery_API.Controllers
 
             if (response.Success)
             {
-                return Ok(new ResponseServices<String>
+                return Ok(new ResponseServices<User>
                 {
                     Data = response.Data,
                     Message = response.Message,
@@ -47,7 +47,7 @@ namespace Bakery_API.Controllers
             }
             else
             {
-                return Ok(new ResponseServices<String>
+                return Ok(new ResponseServices<User>
                 {
                     Data = response.Data,
                     Message = response.Message,
@@ -57,7 +57,7 @@ namespace Bakery_API.Controllers
                 });
 
             }
-            
+
         }
 
 
@@ -151,10 +151,12 @@ namespace Bakery_API.Controllers
             }
 
         }
-        [HttpGet("ValidToken")]
-        public IActionResult ValidToken(String token)
+
+
+        [HttpGet("ValidTokenInMail")]
+        public IActionResult ValidTokenInMail(String token)
         {
-            var check = _user.ValidToken(token);
+            var check = _user.ValidTokenInMail(token);
             if (check.Success)
             {
                 return Ok(new ResponseServices<String>
@@ -203,7 +205,36 @@ namespace Bakery_API.Controllers
 
         }
 
+        [HttpPost("CheckTokenInCookies")]
+        public IActionResult CheckTokenInCookies(string token)
+        {
+            var checkToken = _user.CheckTokenInCookies(token);
+
+            if (checkToken.Success)
+            {
+                return Ok(new ResponseServices<User>
+                {
+                    Success = checkToken.Success,
+                    Message = checkToken.Message,
+                    Data = checkToken.Data
+
+                });
+
+            }
+            return Ok(new ResponseServices<User>
+            {
+                Success = checkToken.Success,
+                Message = checkToken.Message,
+                Data = checkToken.Data
+
+            });
+        }
+
+
+
     }
+
+
 
 }
 

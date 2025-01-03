@@ -7,6 +7,14 @@
         public string Message { get; set; } // Thông báo
     }
 
+    public class Product
+    {
+        public int ProductId { get; set; }
+        public decimal Price { get; set; }
+        public string? Name { get; set; }
+        public string? Description { get; set; }
+        public string? Img { get; set; }
+    }
 
 
 }

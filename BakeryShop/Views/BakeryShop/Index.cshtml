@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="~/css/index.css" />
 }
 @section Header {
-    <partial name="header1"/>
+    <partial name="header1" />
 }
+ @model List<BakeryShop.Services.Product>
 <main style="margin-top: 100px">
     <div class="slider container">
         <div id="carouselExampleDark"
@@ -64,10 +65,10 @@
         </div>
     </div>
     <div class="menu d-flex align-items-center m-5 justify-content-between text-center">
-        <div class="group menu_btn">
+        <a asp-action="store" asp-controller="BakeryShop" class="group menu_btn">
             <i class="icon bi bi-search fs-3"></i>
             <p class="menu_btn-search mt-4 fs-5">Tìm kiếm</p>
-        </div>
+        </a>
         <div class="group menu_btn">
             <img src="./img/Combo_Gray.png" alt="" class="type-img" />
 
@@ -98,213 +99,60 @@
             <img src="./img/CateBanner_BOGO_Desktop_VI.webp"
                  class="img mt-2 mb-2"
                  alt="" />
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/ComboMedium_Product_Desktop_VI.webp"
-                             class="card-img-top"
-                             alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title discount-title-h5 fw-bold">
-                                mua 1 tặng 1 pizza (cỡ vừa)
-                            </h5>
-                            <p class="card-text truncated-text">
-                                This is a longer card with supporting text below as a
-                                natural lead-in to additional content. This content is a
-                                little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="./img/ComboLarge_Product_Desktop_VIwebp.webp"
-                             class="card-img-top"
-                             alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title discount-title-h5 fw-bold">
-                                mua 1 tặng 1 pizza (cỡ lớn)
-                            </h5>
-                            <p class="card-text truncated-text">
-                                This is a longer card with supporting text below as a
-                                natural lead-in to additional content. This content is a
-                                little bit longer.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="product">
-        <div class="product-title mt-4 mb-2">
-            <h2 class="product-title-h2 d-flex justify-content-center align-items-center">
-                <hr />
-                Ghiền gà
-                <hr />
-            </h2>
-            <img src="./img/CateBanner_Chicken_Desktop_VI.webp"
-                 class="img mt-2 mb-2"
-                 alt="" />
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://plus.unsplash.com/premium_photo-1700590072629-c051ca7ce0f3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                     class="img-fluid rounded-start object-fit-cover"
-                                     style="height : 250px; width:200px;"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title product-title-h5 fw-bold">
-                                      Bánh Mochi 
-                                    </h5>
-                                    <p class="card-text">
-                                        Bánh Nhật dẻo mềm, nhân kem lạnh hoặc đậu đỏ, hương vị đa dạng.
-                                    </p>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                             fill="none"
-                                             viewBox="0 0 34 16"
-                                             class="md:h-6 h-4 object-contain new-label">
-                                            <rect width="34"
-                                                  height="16"
-                                                  fill="#C8102E"
-                                                  rx="4"></rect>
-                                            <path fill="#fff"
-                                                  d="M12.003 3.273V12h-1.21L6.357 5.6h-.081V12H4.959V3.273h1.219l4.44 6.409h.08v-6.41zm4.64 8.86q-.968 0-1.667-.414a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183.519.183.933.575t.652 1.018q.24.623.239 1.513v.452h-5.203v-.955h3.954a1.9 1.9 0 0 0-.205-.89 1.55 1.55 0 0 0-.575-.618 1.6 1.6 0 0 0-.86-.226q-.538 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933-.371.396-.934.618a3.5 3.5 0 0 1-1.274.217M22.271 12l-1.926-6.545h1.316l1.283 4.806h.064l1.287-4.806h1.317l1.278 4.785h.064l1.274-4.785h1.317L27.624 12h-1.3l-1.33-4.726h-.097L23.567 12z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <p class="price">20.000/ 2 cái</p>
-                                        <button type="button" class="AddToCart text-light rounded-circle">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1529978215771-45f0bcc12de3?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                     class="img-fluid rounded-start object-fit-cover"
-                                     style="height : 250px; width:200px;"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title product-title-h5 fw-bold">
-                                        Bánh Croissant
-                                    </h5>
-                                    <p class="card-text">
-                                        Bánh giòn, xốp với nhiều lớp bơ thơm béo, thường ăn kèm mứt hoặc phô mai.
-                                    </p>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                             fill="none"
-                                             viewBox="0 0 34 16"
-                                             class="md:h-6 h-4 object-contain new-label">
-                                            <rect width="34"
-                                                  height="16"
-                                                  fill="#C8102E"
-                                                  rx="4"></rect>
-                                            <path fill="#fff"
-                                                  d="M12.003 3.273V12h-1.21L6.357 5.6h-.081V12H4.959V3.273h1.219l4.44 6.409h.08v-6.41zm4.64 8.86q-.968 0-1.667-.414a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183.519.183.933.575t.652 1.018q.24.623.239 1.513v.452h-5.203v-.955h3.954a1.9 1.9 0 0 0-.205-.89 1.55 1.55 0 0 0-.575-.618 1.6 1.6 0 0 0-.86-.226q-.538 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933-.371.396-.934.618a3.5 3.5 0 0 1-1.274.217M22.271 12l-1.926-6.545h1.316l1.283 4.806h.064l1.287-4.806h1.317l1.278 4.785h.064l1.274-4.785h1.317L27.624 12h-1.3l-1.33-4.726h-.097L23.567 12z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <p class="price"> 35.000 VNĐ/cái</p>
-                                        <button type="button" class="AddToCart text-light rounded-circle">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://images.unsplash.com/photo-1601654847092-712aff26313c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                     class="img-fluid rounded-start object-fit-cover"
-                                     style="height : 250px; width:200px;"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title product-title-h5 fw-bold">
-                                        Panna Cotta
-                                    </h5>
-                                    <p class="card-text">
-                                        Bánh có kết cấu mềm mại, tan ngay trong miệng, rất thích hợp làm món tráng miệng trong các bữa tiệc.
-                                    </p>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                             fill="none"
-                                             viewBox="0 0 34 16"
-                                             class="md:h-6 h-4 object-contain new-label">
-                                            <rect width="34"
-                                                  height="16"
-                                                  fill="#C8102E"
-                                                  rx="4"></rect>
-                                            <path fill="#fff"
-                                                  d="M12.003 3.273V12h-1.21L6.357 5.6h-.081V12H4.959V3.273h1.219l4.44 6.409h.08v-6.41zm4.64 8.86q-.968 0-1.667-.414a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183.519.183.933.575t.652 1.018q.24.623.239 1.513v.452h-5.203v-.955h3.954a1.9 1.9 0 0 0-.205-.89 1.55 1.55 0 0 0-.575-.618 1.6 1.6 0 0 0-.86-.226q-.538 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933-.371.396-.934.618a3.5 3.5 0 0 1-1.274.217M22.271 12l-1.926-6.545h1.316l1.283 4.806h.064l1.287-4.806h1.317l1.278 4.785h.064l1.274-4.785h1.317L27.624 12h-1.3l-1.33-4.726h-.097L23.567 12z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <p class="price">50.000 VNĐ/ly</p>
-                                        <button type="button" class="AddToCart text-light rounded-circle">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="https://plus.unsplash.com/premium_photo-1670895802275-ed748ced4309?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                     class="img-fluid rounded-start object-fit-cover"
-                                     style="height : 250px; width:200px;"
-                                     alt="..." />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title product-title-h5 fw-bold">
-                                        Cookie
-                                    </h5>
-                                    <p class="card-text">
-                                        tiện lợi để ăn nhẹ, làm quà tặng, hoặc dùng kèm trà và cà phê.
-                                    </p>
-                                    <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                             fill="none"
-                                             viewBox="0 0 34 16"
-                                             class="md:h-6 h-4 object-contain new-label">
-                                            <rect width="34"
-                                                  height="16"
-                                                  fill="#C8102E"
-                                                  rx="4"></rect>
-                                            <path fill="#fff"
-                                                  d="M12.003 3.273V12h-1.21L6.357 5.6h-.081V12H4.959V3.273h1.219l4.44 6.409h.08v-6.41zm4.64 8.86q-.968 0-1.667-.414a2.8 2.8 0 0 1-1.074-1.172q-.375-.759-.375-1.777 0-1.005.375-1.773.38-.766 1.057-1.197.682-.43 1.594-.43.554 0 1.074.183.519.183.933.575t.652 1.018q.24.623.239 1.513v.452h-5.203v-.955h3.954a1.9 1.9 0 0 0-.205-.89 1.55 1.55 0 0 0-.575-.618 1.6 1.6 0 0 0-.86-.226q-.538 0-.938.264-.396.26-.614.682a2 2 0 0 0-.213.908v.745q0 .657.23 1.117.235.46.652.703.418.239.976.239.363 0 .66-.103.3-.106.516-.315a1.4 1.4 0 0 0 .333-.516l1.206.218q-.145.533-.52.933-.371.396-.934.618a3.5 3.5 0 0 1-1.274.217M22.271 12l-1.926-6.545h1.316l1.283 4.806h.064l1.287-4.806h1.317l1.278 4.785h.064l1.274-4.785h1.317L27.624 12h-1.3l-1.33-4.726h-.097L23.567 12z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="card-footer d-flex align-items-center justify-content-between">
-                                        <p class="price">80.000 VNĐ/hộp</p>
-                                        <button type="button" class="AddToCart text-light rounded-circle">+</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
+
+            <div class="row row-cols-1 row-cols-xxl-2 g-3 mt-5">
+                @foreach (var product in Model)
+                {
+                    <div class="col">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="~/img/@product.Img" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="ms-3 card-body mb-3">
+                                        <h5 class="card-title fs-4">@product.Name</h5>
+                                        <p class="card-text"><small class="text-body-secondary"> @product.Description </small></p>
+                                    </div>
+                                    <div class=" card-footer text-danger fs-4 ">
+                                        <p class="ms-3 mb-3 card-text">@product.Price VNĐ</p>
+                                        <a class="ms-3 card-link btn btn-primary" asp-action="ProductDetail" asp-controller="BakeryShop" asp-route-id="@product.ProductId">Mua ngay </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 </main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#searchBox').on('input', function () {
+            var query = $(this).val();
+
+            if (query.length > 0) {
+                $.ajax({
+                    url: 'https://localhost:7056/api/Product/SearchProduct',
+                    type: 'GET',
+                    data: { input: query },
+                    success: function (data) {
+                        $('#results').empty(); // Xóa kết quả cũ
+                        data.forEach(function (item) {
+                            $('#results').append('<li>' + item + '</li>');
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Search failed: " + error);
+                        $('#results').empty().append('<li>Error loading results</li>');
+                    }
+                });
+            } else {
+                $('#results').empty(); // Xóa kết quả khi ô tìm kiếm rỗng
+            }
+        });
+    });
+</script>

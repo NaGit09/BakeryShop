@@ -1,0 +1,183 @@
+#header-user {
+    background-color: #f5f5f7;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#header-user h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+#rankCurrent {
+    height: 38px;
+}
+
+#rankNext {
+    height: 26px;
+    margin-left: 5px;
+}
+
+#lineSpend {
+    width: 80%;
+    height: 5px;
+    background-color: #d9d9d9;
+    position: relative;
+}
+
+.spendMore {
+    display: flex;
+    font-weight: 700;
+
+}
+
+
+
+.lineSpend__progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    background-color: #2f5acf;
+    height: 100%;
+}
+
+.poinNone {
+    position: absolute;
+    top: 10px;
+}
+
+.poinNone img {
+    width: 60px;
+}
+
+.poinNone::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -13px;
+    left: -5px;
+    background-color: #2f5acf;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.CoolCashFull p {
+    font-size: 1.25rem;
+    margin: 0;
+    color: #666666;
+}
+
+.CoolCash {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+
+}
+
+.CoolCash img {
+    margin-right: 5px;
+    width: 24px;
+}
+
+.CoolCash p {
+    color: black;
+}
+
+#header-left {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#reward {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+#reward .btn {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+#reward i {
+    font-size: 50px;
+}
+
+#user__menu {}
+
+.user__menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f5f7;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.user__menu-item:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.user__menu-item-logOut {
+    background-color: red;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.user__menu-item-logOut:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.content-center {
+    padding: 20px 20px 20px 40px;
+    background-color: #f5f5f7;
+    border: 8px;
+}
+
+.content-center__info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.btnEditInfo {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.btnEditInfo:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

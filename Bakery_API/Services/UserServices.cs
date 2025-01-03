@@ -24,7 +24,7 @@ namespace Bakery_API.Services
             _tokenServices = tokenServices;
         }
 
-        public ResponseServices<String> SignIn(UserSignInRequest request) // Hiện thực 
+        public ResponseServices<User> SignIn(UserSignInRequest request) // Hiện thực 
         {
             var user = _bakerySqlContext.Users.SingleOrDefault
                  (us => us.Gmail == request.Gmail);
@@ -32,19 +32,23 @@ namespace Bakery_API.Services
             {
                 if (VerifyPassword(request.Password, user.Password))
                 {
-                    return new ResponseServices<String>
+                    user.RememberMeToken = _tokenServices.GenerateToken(user);
+                    _bakerySqlContext.Users.Update(user);
+                    _bakerySqlContext.SaveChanges();
+
+                    return new ResponseServices<User>
                     {
-                        Data = _tokenServices.GenerateToken(user),
+                        Data = user,
                         Success = true,
-                        Message = "Đăng nhập thành công",
+                        Message = _tokenServices.GenerateToken(user),
 
                     };
                 }
                 else
                 {
-                    return new ResponseServices<String>
+                    return new ResponseServices<User>
                     {
-                        Data = "",
+                        Data = null,
                         Success = false,
                         Message = "Sai mật khẩu",
 
@@ -56,9 +60,9 @@ namespace Bakery_API.Services
 
             else
             {
-                return new ResponseServices<String>
+                return new ResponseServices<User>
                 {
-                    Data = "",
+                    Data = null,
                     Success = false,
                     Message = "Sai mật khẩu và email",
 
@@ -186,6 +190,7 @@ namespace Bakery_API.Services
 
             }
         }
+
         public ResponseServices<String> CheckMail(ForgotPasswordValidation forgotPasswordValidation)
         {
             var user = _bakerySqlContext.Users.FirstOrDefault(u => u.Gmail == forgotPasswordValidation.Email);
@@ -193,7 +198,7 @@ namespace Bakery_API.Services
             if (user != null)
             {
                 String token = _tokenServices.GenerateToken(user);
-                String url = "https://localhost:7223/User/ValidToken?token=" + token;
+                String url = "https://localhost:7223/User/ValidTokenInMail?token=" + token;
                 _session.SetString("token", token);
                 _session.SetString("email", forgotPasswordValidation.Email);
                 EmailServices emailServices = new EmailServices();
@@ -211,13 +216,13 @@ namespace Bakery_API.Services
             return new ResponseServices<String>
             {
                 Success = false,
-                Message = "Có lỗi xảy ra trong khi xác thực email, hãy thử lại sau."
+                Message = "Email chưa tồn tại trong hệ thống."
 
 
             }; ;
         }
 
-        public ResponseServices<String> ValidToken(string token)
+        public ResponseServices<String> ValidTokenInMail(string token)
         {
             if (token == _session.GetString("token"))
             {
@@ -273,6 +278,44 @@ namespace Bakery_API.Services
 
 
         }
+
+        public ResponseServices<User> CheckTokenInCookies(string token)
+        {
+            var user = _bakerySqlContext.Users.SingleOrDefault(us => us.RememberMeToken == token);
+            if (user != null)
+            {
+                return new ResponseServices<User>
+                {
+
+                    Success = true,
+                    Message = "Xác thực thành công",
+                    Data = user
+
+
+                };
+
+            }
+            return new ResponseServices<User>
+            {
+
+                Success = true,
+                Message = "Xác thực thành công",
+                Data = null
+
+            };
+        }
+
+        public bool DeleteToken(string token)
+        {
+            throw new NotImplementedException();
+        }
+
+        //public bool DeleteToken(string token)
+        //{
+        //    var user = _bakerySqlContext.Users.SingleOrDefault(us => us.RememberMeToken == token);
+
+
+        //}
     }
 }
 

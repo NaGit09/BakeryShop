@@ -49,6 +49,7 @@ namespace Bakery_API
             builder.Services.AddSqlServer<BakeryShopContext>(builder.Configuration.GetConnectionString("Shop"));
 
             // Cấu hình Dependency Injection (DI)
+            builder.Services.AddScoped<ICart, CartServices>(); // Đăng ký DI cho CartServices
             builder.Services.AddScoped<IUser, UserServices>();
             builder.Services.AddScoped<IProduct, ProductServices>();
             builder.Services.AddScoped<TokenServices>();

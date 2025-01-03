@@ -1,7 +1,9 @@
-﻿using BakeryShop.Services;
+﻿using Azure.Core;
+using BakeryShop.Services;
 using BakeryShop.Util;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.Eventing.Reader;
+using System.Text.Json;
 
 namespace BakeryShop.Controllers
 {
@@ -47,18 +49,33 @@ namespace BakeryShop.Controllers
 
         {
             string apiUrl = "https://localhost:7056/api/User/SignIn";
-            
-            var response = await _apiService.PostAsync<ResponseServices<String>>(apiUrl, request);
+
+            var response = await _apiService.PostAsync<ResponseServices<User>>(apiUrl, request);
 
             if (response.Success == true)
             {
+                if (!string.IsNullOrEmpty(response.Message))
+                {
+                    var cookieOptions = new CookieOptions
+                    {
+                        HttpOnly = true,    // Không cho phép JavaScript truy cập cookie này
+                        Secure = true,      // Chỉ gửi cookie qua HTTPS
+                        SameSite = SameSiteMode.Strict  // Cấu hình SameSite để bảo vệ khỏi CSRF
+                    };
+
+                    // Lưu token vào cookie
+                    HttpContext.Response.Cookies.Append("AuthToken", response.Message, cookieOptions);
+                }
+
+
+
                 return RedirectToAction("Index", "BakeryShop"); // Chuyển hướng đến trang chính
 
             }
             else
             {
 
-                TempData["ErrorSignIn"] = response.Message ;
+                TempData["ErrorSignIn"] = response.Message;
                 return RedirectToAction("login", "BakeryShop"); // Chuyển hướng về trang đăng nhập
 
             }
@@ -77,8 +94,6 @@ namespace BakeryShop.Controllers
                 if (response.Success)
                 {
                     return RedirectToAction("login", "BakeryShop");
-
-
                 }
                 else
                 {
@@ -119,9 +134,9 @@ namespace BakeryShop.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ValidToken(String token)
+        public async Task<IActionResult> ValidTokenInMail(String token)
         {
-            string apiUrl = "https://localhost:7056/api/User/ValidToken?token=" + token;
+            string apiUrl = "https://localhost:7056/api/User/ValidTokenInMail?token=" + token;
             var response = await _apiService.GetAsyncToken<ResponseServices<String>>(apiUrl);
 
             if (response.Success)
@@ -148,18 +163,29 @@ namespace BakeryShop.Controllers
 
             if (response.Success)
             {
-                TempData["SuccessMessage"] = response.Message;
-                return RedirectToAction("Index", "BakeryShop");
+                TempData["SwalMessage"] = response.Message; // Thông báo thành công
+                TempData["SwalType"] = "success"; // Loại thông báo
+                return RedirectToAction("ResetPassword", "BakeryShop");
             }
             else
             {
-                TempData["ErrorMessage"] = response.Message;
+                TempData["SwalMessage"] = response.Message; // Thông báo lỗi
+                TempData["SwalType"] = "error"; // Loại thông báo
                 return RedirectToAction("ResetPassword", "BakeryShop");
-
             }
         }
 
 
+
+
+        public IActionResult Logout()
+        {
+            // Xóa cookie chứa access token
+            HttpContext.Response.Cookies.Delete("AuthToken");
+
+            // Chuyển hướng người dùng về trang đăng nhập (hoặc trang khác nếu cần)
+            return RedirectToAction("Index", "BakeryShop");
+        }
 
 
 

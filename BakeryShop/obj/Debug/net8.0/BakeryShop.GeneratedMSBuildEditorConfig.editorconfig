@@ -54,8 +54,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/BakeryShop/BakeryShop/Views/BakeryShop/store.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxzdG9yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/BakeryShop/BakeryShop/Views/BakeryShop/Track.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxUcmFjay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BakeryShop/BakeryShop/Views/BakeryShop/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFrZXJ5U2hvcFxVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/BakeryShop/BakeryShop/Views/Shared/Error.cshtml]

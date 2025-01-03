@@ -1,4 +1,32 @@
-﻿<header class="fixed-top header bg-light">
+﻿@using System.Text.Json
+@using BakeryShop.Util
+@using System.IdentityModel.Tokens.Jwt
+@using System.Linq
+
+@{
+    // Lấy access token từ cookie
+    var token = Context.Request.Cookies["AuthToken"];
+    var name = string.Empty;
+
+    if (!string.IsNullOrEmpty(token))
+    {
+        try
+        {
+            // Giải mã token và lấy thông tin từ payload
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadToken(token) as JwtSecurityToken;
+            name = jsonToken?.Claims.FirstOrDefault(c => c.Type == "Name")?.Value;
+        }
+        catch (Exception ex)
+        {
+            // Log lỗi nếu cần
+            Console.WriteLine("Error decoding JWT: " + ex.Message);
+        }
+    }
+}
+
+
+<header class="fixed-top header bg-light">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <div class="address flex-1 text-left overflow-hidden">
@@ -25,9 +53,21 @@
                         <i class="icon bi bi-person-circle"></i>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Login" >Đăng Nhập</a></li>
-                        <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Register">Đăng ký</a></li>
-                        <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Track">Theo dõi đơn hàng </a></li>
+
+                        @if (!string.IsNullOrEmpty(name))
+                        {
+                            <li>
+                                <a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="User">
+                                    Xin chào,@name
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Track">Theo dõi đơn hàng </a></li>
+                        }
+                        else
+                        {
+                            <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Login">Đăng Nhập</a></li>
+                            <li><a class="dropdown-item mb-1" asp-controller="BakeryShop" asp-action="Register">Đăng ký</a></li>
+                        }
                         <li>
                             <div class="text-center">
                                 <button type="button"
