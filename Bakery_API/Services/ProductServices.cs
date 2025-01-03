@@ -17,7 +17,7 @@ namespace Bakery_API.Services
         }
         public List<dynamic> SearchProduct(String input="")
         {
-                var products = _bakerySqlContext.Products.Where(x => x.Name.Contains(input)).Select(x => new { x.Name, x.description, x.ProductId, x.Price })
+                var products = _bakerySqlContext.Products.Where(x => x.Name.Contains(input)).Select(x => new { x.Name, x.description, x.ProductId, x.Price , x.Img })
                 .ToList();
             return products.Cast<dynamic>().ToList();
         }

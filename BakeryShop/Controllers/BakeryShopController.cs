@@ -8,8 +8,6 @@ using System.Text.Json;
 
 namespace BakeryShop.Controllers
 {
-
-
     public class BakeryShopController : Controller
     {
         private readonly ApiService _apiService;
@@ -35,8 +33,12 @@ namespace BakeryShop.Controllers
             var response = await _apiService.GetAsyncStore<ResponseServices<List<Category>>>(url);
             return View(response);
         }
-
-
+        public async Task<IActionResult> Track()
+        {
+            string url = "https://localhost:7056/api/Product/GetProductsStore";
+            var response = await _apiService.GetAsyncStore<ResponseServices<List<Category>>>(url);
+            return View(response);
+        }
         [HttpPost]
         public async Task<IActionResult> store (String type)
         {
@@ -50,22 +52,16 @@ namespace BakeryShop.Controllers
             var response = await _apiService.GetAsync<ResponseServices<List<Product>>>(url);
             return View(response);
         }
-
         public IActionResult login()
         {
-
             return View();
         }
-
         public IActionResult Register()
         {
-
             return View();
         }
-
         public IActionResult ConfirmOTP()
         {
-
             return View();
         }
 
